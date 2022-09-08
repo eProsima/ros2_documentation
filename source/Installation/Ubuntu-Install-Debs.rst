@@ -140,10 +140,9 @@ Hooray!
 
 If you want to use other RMW implementations, you can check the :doc:`guide <./RMW-Implementations>`.
 
-Next steps
-----------
-
-Continue with the :doc:`tutorials and demos <../../Tutorials>` to configure your environment, create your own workspace and packages, and learn ROS 2 core concepts.
+Next steps after installing
+---------------------------
+Continue with the :doc:`tutorials and demos <../Tutorials>` to configure your environment, create your own workspace and packages, and learn ROS 2 core concepts.
 
 Troubleshoot
 ------------
