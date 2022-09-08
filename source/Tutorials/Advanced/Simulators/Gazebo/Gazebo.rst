@@ -30,7 +30,8 @@ You'll need to install both ROS 2 and Gazebo.
 ROS 2
 ^^^^^
 
-For ROS 2 you should follow the :doc:`ROS 2 install instructions <../../../../Installation>`.
+   - :doc:`ROS 2 install instructions <../../../../Installation>`
+   - `Gazebo install instructions <https://gazebosim.org/docs>`__
 
 Gazebo
 ^^^^^^
