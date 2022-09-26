@@ -2,6 +2,8 @@
 
     About-Quality-of-Service-Settings
 
+.. _QoSSettings:
+
 About Quality of Service settings
 =================================
 

@@ -1,3 +1,4 @@
+.. _DomainID:
 
 The ROS_DOMAIN_ID
 =================
