@@ -3,6 +3,8 @@
     About-Quality-of-Service-Settings
     Concepts/About-Quality-of-Service-Settings
 
+.. _concepts_about_qos:
+
 Quality of Service settings
 ===========================
 
