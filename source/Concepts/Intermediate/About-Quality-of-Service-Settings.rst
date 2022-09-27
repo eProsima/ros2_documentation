@@ -3,8 +3,10 @@
     About-Quality-of-Service-Settings
     Concepts/About-Quality-of-Service-Settings
 
-Quality of Service settings
-===========================
+.. _concepts_about_qos:
+
+About Quality of Service settings
+=================================
 
 .. contents:: Table of Contents
    :local:
