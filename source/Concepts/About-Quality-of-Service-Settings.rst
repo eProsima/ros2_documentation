@@ -2,7 +2,7 @@
 
     About-Quality-of-Service-Settings
 
-.. _QoSSettings:
+.. _concepts_about_qos:
 
 About Quality of Service settings
 =================================
