@@ -51,6 +51,8 @@ For example:
    int32 my_int
    string my_string
 
+.. _message_descriptions_field_types:
+
 Field types
 ~~~~~~~~~~~
 
