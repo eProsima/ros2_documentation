@@ -2,7 +2,7 @@
 
     Tutorials/Monitoring-For-Parameter-Changes-CPP
 
-.. _MonitorParams:
+.. _intermediate_monitor_parameters:
 
 Monitoring for parameter changes (C++)
 ======================================

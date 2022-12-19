@@ -2,7 +2,7 @@
 
     DDS-and-ROS-middleware-implementations
 
-.. _RO2Vendors:
+.. _concepts_ros2_vendors:
 
 About different ROS 2 DDS/RTPS vendors
 ======================================
