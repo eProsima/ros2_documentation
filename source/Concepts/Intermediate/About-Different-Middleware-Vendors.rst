@@ -3,11 +3,10 @@
     DDS-and-ROS-middleware-implementations
     Concepts/About-Different-Middleware-Vendors
 
-Different ROS 2 middleware vendors
-==================================
+.. _concepts_ros2_vendors:
 
-.. contents:: Table of Contents
-   :local:
+Different ROS 2 DDS/RTPS vendors
+======================================
 
 ROS 2 supports multiple middleware implementations which provide discovery, serialisation, and transportation communications.
 This flexibility exists because it is not necessarily "one size fits all" when it comes to choosing a middleware vendor/implementation.
