@@ -3,8 +3,10 @@
     DDS-and-ROS-middleware-implementations
     Concepts/About-Different-Middleware-Vendors
 
-Different ROS 2 middleware vendors
-==================================
+About different ROS 2 DDS/RTPS vendors
+======================================
+
+.. _concepts_ros2_vendors:
 
 .. contents:: Table of Contents
    :local:
