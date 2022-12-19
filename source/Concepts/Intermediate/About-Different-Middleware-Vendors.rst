@@ -3,11 +3,10 @@
     DDS-and-ROS-middleware-implementations
     Concepts/About-Different-Middleware-Vendors
 
-Different ROS 2 middleware vendors
-==================================
+.. _concepts_ros2_vendors:
 
-.. contents:: Table of Contents
-   :local:
+Different ROS 2 DDS/RTPS vendors
+======================================
 
 ROS 2 is built on top of DDS/RTPS as its middleware, which provides discovery, serialization and transportation.
 `This article <https://design.ros2.org/articles/ros_on_dds.html>`__ explains the motivation behind using DDS implementations, and/or the RTPS wire protocol of DDS, in detail.
