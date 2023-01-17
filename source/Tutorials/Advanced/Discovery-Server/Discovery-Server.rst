@@ -3,6 +3,8 @@
     Discovery-Server
     Tutorials/Discovery-Server/Discovery-Server
 
+.. _ros2-advanced-tutorial-fastdds-discovery-server:
+
 Using Fast DDS Discovery Server as discovery protocol [community-contributed]
 =============================================================================
 
