@@ -134,7 +134,7 @@ At the end of these steps, the structure of */enclaves* sub-directory within *~/
 
 .. code-block:: text
 
-  keystore
+  enclaves
   ├── governance.p7s
   ├── governance.xml
   └── talker_listener
