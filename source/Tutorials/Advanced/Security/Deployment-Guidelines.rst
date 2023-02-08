@@ -161,7 +161,8 @@ Now, create and populate the */keystore* directory that will be embarked onto th
 
   # Move to remote system path
   cd ~/deploy_gd_tutorial/remote_system
-  # Ship governance files, listener enclave and public/ directories only, minimizing security threat
+  # Ship governance files, listener enclave and public/ directories only
+  # minimizing security threat
   mkdir -p keystore/enclaves/talker_listener
   cp -R ../keystore/public keystore
   cp -R ../keystore/enclaves/governance.* keystore/enclaves
