@@ -91,7 +91,7 @@ Since the keys are just text files, we can use ``scp`` to copy them.
 
 .. warning::
 
-  Note that in this case the entire keystore is shared across the different machines and this may not be the desired behavior or result in a security risk.
+  Note that in this case the entire keystore is shared across the different machines which may not be the desired behavior, as it may result in a security risk.
   Please, refer to :ref:`Deployment-Guidelines` for more information in this regard.
 
 That will be very quick, since it's just copying some very small text files.
