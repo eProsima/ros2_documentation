@@ -304,14 +304,14 @@ In this sense, ROS 2 introspection tools can be configured as **Super Client**, 
     In this section we use the term *Participant* as a DDS entity. Each DDS *Participant* corresponds with a ROS 2 *Context*, a ROS 2 abstraction over DDS.
     `Nodes <ROS2Nodes>` are ROS 2 entities that rely on DDS communication interfaces: ``DataWriter`` and ``DataReader``.
     Each *Participant* can hold multiple ROS 2 Nodes.
-    For further details about these concepts, please visit the `ROS 2 Design web page <http://design.ros2.org/articles/Node_to_Participant_mapping.html>`__
+    For further details about these concepts, please visit the `Node to Participant mapping design document <http://design.ros2.org/articles/Node_to_Participant_mapping.html>`__
 
 
 Daemon's related tools
 ^^^^^^^^^^^^^^^^^^^^^^
 
 The ROS 2 Daemon is used in several ROS 2 CLI introspection tools.
-It creates it's own Participant to add a ROS 2 Node to the network, in order to receive all the data sent.
+It creates its own Participant to add a ROS 2 Node to the network, in order to receive all the data sent.
 In order for the ROS 2 CLI to work when using Discovery Server mechanism, the ROS 2 Daemon needs to be
 configured as **Super Client**.
 Therefore, this section is devoted to explain how to use ROS 2 CLI with ROS 2 Daemon running as a **Super Client**.
