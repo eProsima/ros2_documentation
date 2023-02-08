@@ -208,7 +208,7 @@ For the purpose of running a secure listener at the docker image startup, a new 
   source /opt/ros/${ROS_DISTRO}/setup.bash
   ros2 run demo_nodes_cpp listener --ros-args --enclave /talker_listener/listener $@
 
-In order to build a new docker image, a Dockerfile is also needed within this directory.
+In order to build a new docker image, a Dockerfile is also needed.
 Create a new file ``Dockerfile`` in the same directory with preferred text editor.
 
 .. code-block:: bash
@@ -236,6 +236,19 @@ Create a new file ``Dockerfile`` in the same directory with preferred text edito
   RUN chmod +x /entrypoint.sh
 
   ENTRYPOINT ["/entrypoint.sh"]
+
+The resultant directory structure should be the one depicted below:
+
+.. code-block:: text
+
+  remote_system
+    ├── Dockerfile
+    ├── entrypoint.sh
+    └── keystore
+        ├── enclaves
+        │   ├── ...
+        └── public
+            ├── ...
 
 Build the docker image with the command:
 
