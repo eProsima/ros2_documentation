@@ -302,7 +302,7 @@ In this sense, ROS 2 introspection tools can be configured as **Super Client**, 
 .. note::
 
     In this section we use the term *Participant* as a DDS entity. Each DDS *Participant* corresponds with a ROS 2 *Context*, a ROS 2 abstraction over DDS.
-    `Nodes <ROS2Nodes>` are ROS 2 entities: ``publisher``, ``subscription``, ``service``, etc. that relies on DDS communication interfaces: ``DataWriter`` and ``DataReader``.
+    `Nodes <ROS2Nodes>` are ROS 2 entities that rely on DDS communication interfaces: ``DataWriter`` and ``DataReader``.
     Each *Participant* can hold multiple ROS 2 Nodes.
     For further details about these concepts, please visit the `ROS 2 Design web page <http://design.ros2.org/articles/Node_to_Participant_mapping.html>`__
 
