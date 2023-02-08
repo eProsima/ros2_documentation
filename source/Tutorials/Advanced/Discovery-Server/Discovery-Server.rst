@@ -311,7 +311,7 @@ Daemon's related tools
 ^^^^^^^^^^^^^^^^^^^^^^
 
 The ROS 2 Daemon is used in several ROS 2 CLI introspection tools.
-It creates its own Participant to add a ROS 2 Node to the network, in order to receive all the data sent.
+It creates its own Participant to add a ROS 2 Node to the network graph, in order to receive all the data sent.
 In order for the ROS 2 CLI to work when using Discovery Server mechanism, the ROS 2 Daemon needs to be
 configured as **Super Client**.
 Therefore, this section is devoted to explain how to use ROS 2 CLI with ROS 2 Daemon running as a **Super Client**.
