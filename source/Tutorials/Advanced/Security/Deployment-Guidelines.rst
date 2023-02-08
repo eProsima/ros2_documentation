@@ -158,6 +158,7 @@ At the end of these steps, the structure of */enclaves* sub-directory within *~/
 Now, create and populate the */keystore* directory that will be embarked onto the remote system with necessary files only.
 
 .. code-block:: bash
+
   # Move to remote system path
   cd ~/deploy_gd_tutorial/remote_system
   # Ship governance files, listener enclave and public/ directories only, minimizing security threat
