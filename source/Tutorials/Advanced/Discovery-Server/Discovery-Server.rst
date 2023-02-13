@@ -322,7 +322,7 @@ To do so, a Fast DDS XML configuration file is used to configure the ROS 2 Daemo
     Although it is possible to run the ROS 2 Daemon as a **Server**, this is not recommended since the daemon will stop
     after two hours of inactivity, taking the **Server** down with it.
 
-Below you can find a XML configuration profile, which for this tutorial, should be saved in the working directory as ```super_client_configuration_file.xml``` file.
+Below you can find a XML configuration profile, which for this tutorial should be saved in the working directory as ```super_client_configuration_file.xml``` file.
 This file will configure every new participant using it, as a **Super Client**.
 
 .. code-block:: xml
@@ -357,7 +357,7 @@ This file will configure every new participant using it, as a **Super Client**.
 
 .. note::
 
-    Under the *RemoteServer* tag, for *prefix* attribute, its value should be updated according to the server ID passed on the CLI, following this guide of the `Fast DDS CLI <https://fast-dds.docs.eprosima.com/en/latest/fastddscli/cli/cli.html#discovery>`__.
+    Under the *RemoteServer* tag, the *prefix* attribute value should be updated according to the server ID passed on the CLI (see `Fast DDS CLI <https://fast-dds.docs.eprosima.com/en/latest/fastddscli/cli/cli.html#discovery>`__).
     The value specified in the shown XML snippet corresponds to an ID of value 0.
 
 First of all, instantiate a Discovery Server using `Fast DDS CLI <https://fast-dds.docs.eprosima.com/en/latest/fastddscli/cli/cli.html#discovery>`__ specifying an ID of value 0.
