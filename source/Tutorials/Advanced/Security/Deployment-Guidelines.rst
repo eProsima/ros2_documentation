@@ -124,7 +124,7 @@ Now, build the docker image with the command:
 Understanding the compose file
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A compose configration file takes an image to create containers as services.
+A compose configuration file takes an image to create containers as services.
 In this tutorial, three services are defined within the configuration:
 
 * *keystore-creator*: That, similarly to previous tutorials, it internally initializes a new keystore tree directory.
