@@ -5,6 +5,8 @@
 
 .. include:: ../../../global_substitutions.txt
 
+.. _ros-2-client-libraries:
+
 Client libraries
 ================
 
