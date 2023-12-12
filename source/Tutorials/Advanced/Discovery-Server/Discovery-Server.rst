@@ -209,15 +209,37 @@ In several terminals, run the following code to establish a communication with r
 
 ``--server-id N`` means server with id N. When referencing the servers with ``ROS_DISCOVERY_SERVER``, server ``0`` must be in first place and server ``1`` in second place.
 
-.. code-block:: console
+.. tabs::
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+    .. group-tab:: Linux
 
-.. code-block:: console
+        .. code-block:: console
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
 
 Now, if one of these servers fails, there will still be discovery capability available and nodes will still discover each other.
 
@@ -237,15 +259,37 @@ In different terminals, run the following code to establish a communication with
 
     fastdds discovery --server-id 0 --ip-address 127.0.0.1 --port 11811 --backup
 
-.. code-block:: console
+.. tabs::
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+    .. group-tab:: Linux
 
-.. code-block:: console
+        .. code-block:: console
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
 
 Several backup files are created in the discovery server's working directory (the directory it was launched in).
 The two ``SQLite`` files and two ``json`` files contain the information required to start a new server and restore the failed server's state in case of failure, avoiding the need for the discovery process to happen again, and without losing information.
@@ -280,25 +324,70 @@ In another terminal run the second server listening on localhost using another p
 
 Now, run each node in a different terminal. Use ``ROS_DISCOVERY_SERVER`` environment variable to decide which server they are connected to. Be aware that the `ids must match <https://fast-dds.docs.eprosima.com/en/v2.1.0/fastdds/env_vars/env_vars.html>`__.
 
-.. code-block:: console
+.. tabs::
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_1
+    .. group-tab:: Linux
 
-.. code-block:: console
+        .. code-block:: console
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_1
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_1
 
-.. code-block:: console
+   .. group-tab:: Windows
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_2
+        .. code-block:: console
 
-.. code-block:: console
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_1
 
-    export ROS_DISCOVERY_SERVER=";127.0.0.1:11888"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_2
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_1
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_1
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_2
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_2
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER=";127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_2
+
+   .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER=";127.0.0.1:11888"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_2
+
 
 We should see how ``Listener 1`` is receiving messages from both talker nodes, while ``Listener 2`` is in a different partition from ``Talker 2`` and so does not receive messages from it.
 
@@ -483,13 +572,16 @@ It will generate the trace for using the discovery server.
     Depending on your configuration of ``tcpdump``, this script may require ``sudo`` privileges to read traffic across your network device.
 
 After both executions are done, run the Python script to generate a graph similar to the one below.
+.. tabs::
 
-.. code-block:: console
+    .. group-tab:: Linux
 
-    $ export FASTRTPS_DEFAULT_PROFILES_FILE="no_intraprocess_configuration.xml"
-    $ sudo bash generate_discovery_packages.bash ~/ros2_foxy/install/local_setup.bash
-    $ sudo bash generate_discovery_packages.bash ~/ros2_foxy/install/local_setup.bash SERVER
-    $ python3 discovery_packets.py
+        .. code-block:: console
+
+            $ export FASTRTPS_DEFAULT_PROFILES_FILE="no_intraprocess_configuration.xml"
+            $ sudo bash generate_discovery_packages.bash ~/ros2_foxy/install/local_setup.bash
+            $ sudo bash generate_discovery_packages.bash ~/ros2_foxy/install/local_setup.bash SERVER
+            $ python3 discovery_packets.py
 
 .. image:: figures/discovery_packets.svg
     :align: center
