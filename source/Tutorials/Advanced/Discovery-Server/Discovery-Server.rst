@@ -143,7 +143,7 @@ Open a new terminal and set the ``ROS_DISCOVERY_SERVER`` environment variable as
 
         .. code-block:: console
 
-            set export ROS_DISCOVERY_SERVER=127.0.0.1:11811
+            set ROS_DISCOVERY_SERVER=127.0.0.1:11811
 
 .. code-block:: console
 
