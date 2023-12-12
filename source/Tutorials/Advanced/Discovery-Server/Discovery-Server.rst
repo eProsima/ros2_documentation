@@ -111,7 +111,7 @@ In a new terminal, set the environment variable ``ROS_DISCOVERY_SERVER`` to the 
 
             export ROS_DISCOVERY_SERVER=127.0.0.1:11811
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -139,7 +139,7 @@ Open a new terminal and set the ``ROS_DISCOVERY_SERVER`` environment variable as
 
             export ROS_DISCOVERY_SERVER=127.0.0.1:11811
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -218,7 +218,7 @@ In several terminals, run the following code to establish a communication with r
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
             ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -234,7 +234,7 @@ In several terminals, run the following code to establish a communication with r
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
             ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -268,7 +268,7 @@ In different terminals, run the following code to establish a communication with
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
             ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -284,7 +284,7 @@ In different terminals, run the following code to establish a communication with
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
             ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -333,7 +333,7 @@ Now, run each node in a different terminal. Use ``ROS_DISCOVERY_SERVER`` environ
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
             ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_1
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -349,7 +349,7 @@ Now, run each node in a different terminal. Use ``ROS_DISCOVERY_SERVER`` environ
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811;127.0.0.1:11888"
             ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_1
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -365,7 +365,7 @@ Now, run each node in a different terminal. Use ``ROS_DISCOVERY_SERVER`` environ
             export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
             ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker_2
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -381,7 +381,7 @@ Now, run each node in a different terminal. Use ``ROS_DISCOVERY_SERVER`` environ
             export ROS_DISCOVERY_SERVER=";127.0.0.1:11888"
             ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener_2
 
-   .. group-tab:: Windows
+    .. group-tab:: Windows
 
         .. code-block:: console
 
@@ -476,34 +476,83 @@ First of all, instantiate a Discovery Server using `Fast DDS CLI <https://fast-d
 
 Run a talker and a listener that will discover each other through the Server (notice that ``ROS_DISCOVERY_SERVER`` configuration is the same as the one in ``super_client_configuration_file.xml``).
 
-.. code-block:: console
+.. tabs::
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+    .. group-tab:: Linux
 
-.. code-block:: console
+        .. code-block:: console
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
 
 Then, instantiate a ROS 2 Daemon using the **Super Client** configuration (remember to source ROS 2 installation in every new terminal).
 
-.. code-block:: console
+.. tabs::
 
-    export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
-    ros2 daemon stop
-    ros2 daemon start
-    ros2 topic list
-    ros2 node info /talker
-    ros2 topic info /chatter
-    ros2 topic echo /chatter
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            ros2 daemon stop
+            ros2 daemon start
+            ros2 topic list
+            ros2 node info /talker
+            ros2 topic info /chatter
+            ros2 topic echo /chatter
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            ros2 daemon stop
+            ros2 daemon start
+            ros2 topic list
+            ros2 node info /talker
+            ros2 topic info /chatter
+            ros2 topic echo /chatter
 
 We can also see the Node's Graph using the ROS 2 tool ``rqt_graph`` as follows (you may need to press the refresh button):
 
-.. code-block:: console
+.. tabs::
 
-    export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
-    rqt_graph
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            rqt_graph
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            rqt_graph
 
 
 No Daemon tools
@@ -521,26 +570,59 @@ First, run a **Server**:
 
 Then, run the talker and listener in separate terminals:
 
-.. code-block:: console
+.. tabs::
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+    .. group-tab:: Linux
 
-.. code-block:: console
+        .. code-block:: console
 
-    export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
-    ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp listener --ros-args --remap __node:=listener
+
+.. tabs::
+
+    .. group-tab:: Linux
+
+        .. code-block:: console
+
+            export ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set ROS_DISCOVERY_SERVER="127.0.0.1:11811"
+            ros2 run demo_nodes_cpp talker --ros-args --remap __node:=talker
 
 Continue using the ROS 2 CLI with ``--no-daemon`` option with the new configuration.
 New nodes will connect with the existing Server and will know every topic.
 Exporting ``ROS_DISCOVERY_SERVER`` is not needed as the ROS 2 tools will be configured through the ``FASTRTPS_DEFAULT_PROFILES_FILE``.
 
-.. code-block:: console
+.. tabs::
 
-    export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
-    ros2 topic list --no-daemon
-    ros2 node info /talker --no-daemon --spin-time 2
+    .. group-tab:: Linux
 
+        .. code-block:: console
+
+            export FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            ros2 topic list --no-daemon
+            ros2 node info /talker --no-daemon --spin-time 2
+
+    .. group-tab:: Windows
+
+        .. code-block:: console
+
+            set FASTRTPS_DEFAULT_PROFILES_FILE=super_client_configuration_file.xml
+            ros2 topic list --no-daemon
+            ros2 node info /talker --no-daemon --spin-time 2
 
 Compare Fast DDS Discovery Server with Simple Discovery Protocol
 ----------------------------------------------------------------
@@ -572,6 +654,7 @@ It will generate the trace for using the discovery server.
     Depending on your configuration of ``tcpdump``, this script may require ``sudo`` privileges to read traffic across your network device.
 
 After both executions are done, run the Python script to generate a graph similar to the one below.
+
 .. tabs::
 
     .. group-tab:: Linux
