@@ -233,7 +233,7 @@ Assuming the above launch configuration is in a file named ``mylaunch.xml``, a d
 
    $ ros2 launch mylaunch.xml topic_name:=custom_topic_name
 
-There is some additional information about passing command-line arguments in :doc:`Using Substitutions <../../../Tutorials/Intermediate/Launch/Using-Substitutions>`.
+There is some additional information about passing command-line arguments in :doc:`Using Substitutions <../../Tutorials/Intermediate/Launch/Using-Substitutions>`.
 
 env
 ^^^
