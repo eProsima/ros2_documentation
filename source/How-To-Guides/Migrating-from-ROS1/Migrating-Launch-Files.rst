@@ -20,7 +20,7 @@ This guide describes how to write ROS 2 XML launch files for an easy migration f
 Background
 ----------
 
-A description of the ROS 2 launch system and its Python API can be found in :doc:`Launch System tutorial <../../../Tutorials/Intermediate/Launch/Launch-system>`.
+A description of the ROS 2 launch system and its Python API can be found in :doc:`Launch System tutorial <../../Tutorials/Intermediate/Launch/Launch-system>`.
 
 
 Migrating tags
@@ -231,7 +231,7 @@ Assuming the above launch configuration is in a file named ``mylaunch.xml``, a d
 
    ros2 launch mylaunch.xml topic_name:=custom_topic_name
 
-There is some additional information about passing command-line arguments in :doc:`Using Substitutions <../../../Tutorials/Intermediate/Launch/Using-Substitutions>`.
+There is some additional information about passing command-line arguments in :doc:`Using Substitutions <../../Tutorials/Intermediate/Launch/Using-Substitutions>`.
 
 env
 ^^^
