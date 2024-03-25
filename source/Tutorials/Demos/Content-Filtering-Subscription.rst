@@ -2,6 +2,8 @@
 
     Tutorials/Content-Filtering-Subscription
 
+.. _content_filtering_subscription_tutorial:
+
 Creating a content filtering subscription
 =========================================
 
