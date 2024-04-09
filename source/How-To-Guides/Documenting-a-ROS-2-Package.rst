@@ -13,7 +13,7 @@ For information on how to contribute to this documentation on docs.ros.org, see 
 Prerequisites
 -------------
 
-- :doc:`Install ROS <../../Installation>`
+- :doc:`Install ROS <../Installation>`
 
 - `Install rosdoc2 <https://github.com/ros-infrastructure/rosdoc2#installation>`__
 
