@@ -202,7 +202,7 @@ Migrating a Wiki File
 
 #. For each image files downloaded update the image file links to point to the correct image directory for the ROS Docs.
    If any of the images require updating, or could be replaced with a `Mermaid <https://mermaid.js.org/intro/>`__ chart, please make this change.
-   Be aware that Mermaid.js is only supported in the core ROS 2 documenation currently.
+   Be aware that Mermaid.js is only supported in the core ROS 2 documentation currently.
 
 #. Once your document is complete add a table of contents to the top of your new rst document using the appropriate Sphinx commands.
    This block should replace any existing table of contents from the old ROS Wiki.
