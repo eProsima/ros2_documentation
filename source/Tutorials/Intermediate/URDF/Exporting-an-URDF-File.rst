@@ -40,11 +40,9 @@ However, we figured it would be helpful to produce a list of available URDF expo
  * The `Blender Robotics Tools <https://github.com/robotology/blender-robotics-utils/>`_ respository includes a number of useful tools, including a tool to export `URDF files from Blender. <https://github.com/robotology/blender-robotics-utils/tree/master?tab=readme-ov-file#urdftoblender>`_
  * `CoppeliaSim URDF Exporter <https://manual.coppeliarobotics.com/en/importExport.htm#urdf>`_
  * `Isaac Sim URDF Exporter <https://docs.omniverse.nvidia.com/isaacsim/latest/advanced_tutorials/tutorial_advanced_export_urdf.html>`_
-
-**Viewing URDF & SDF Files**
- * `Examples of Common URDF Launch Files <https://github.com/ros/urdf_launch>`_
- * Web Viewer for URDF Files: `GitHub Repo <https://github.com/gkjohnson/urdf-loaders/>`_ & `Live Website <https://gkjohnson.github.io/urdf-loaders/javascript/example/bundle/index.html>`_
- * `View SDF Models in RViz <https://github.com/Yadunund/view_sdf_rviz>`_
- * `Jupyterlab URDF Viewer <https://github.com/IsabelParedes/jupyterlab-urdf>`_
+ * `Blender URDF Exporter <https://github.com/dfki-ric/phobos>`_
+ * `Gazebo SDFormat to URDF Parser <https://github.com/ros/sdformat_urdf/tree/ros2>`_
+ * `SDF to URDF Converter in Python <https://github.com/andreasBihlmaier/pysdf>`_
+ * The `Blender Robotics Tools <https://github.com/robotology/blender-robotics-utils/>`_ repository includes a number of useful tools, including a tool to export `URDF files from Blender. <https://github.com/robotology/blender-robotics-utils/tree/master?tab=readme-ov-file#urdftoblender>`_
 
 If you have an URDF tool you like please consider adding it to the list above!
