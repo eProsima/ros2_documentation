@@ -1,9 +1,6 @@
 Discovery
 =========
 
-.. contents:: Table of Contents
-   :local:
-
 Discovery of nodes happens automatically through the underlying middleware of ROS 2.
 It can be summarized as follows:
 

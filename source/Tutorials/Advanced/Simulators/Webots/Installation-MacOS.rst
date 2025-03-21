@@ -7,10 +7,6 @@ Installation (macOS)
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -106,9 +102,10 @@ The following instructions and commands are all run inside the VM.
 
 You can either install ``webots_ros2`` from the official released package, or install it from the latest up-to-date sources from `Github <https://github.com/cyberbotics/webots_ros2>`_.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Install ``webots_ros2`` distributed package
+    .. tab-item:: Install ``webots_ros2`` distributed package
+        :sync: Install ``webots_ros2`` distributed package
 
         Run the following command in the VM terminal.
 
@@ -116,7 +113,8 @@ You can either install ``webots_ros2`` from the official released package, or in
 
             sudo apt-get install ros-{DISTRO}-webots-ros2
 
-    .. group-tab:: Install ``webots_ros2`` from sources
+    .. tab-item:: Install ``webots_ros2`` from sources
+        :sync: Install ``webots_ros2`` from sources
 
         Install git.
 

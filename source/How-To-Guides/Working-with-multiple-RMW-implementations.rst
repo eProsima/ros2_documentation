@@ -7,10 +7,6 @@
 Working with multiple ROS 2 middleware implementations
 ======================================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page explains the default RMW implementation and how to specify an alternative.
 
 Prerequisites
@@ -31,18 +27,10 @@ The user may set this variable to a specific implementation identifier, such as 
 
 For example, to run the talker demo using the C++ talker and Python listener with the Connext RMW implementation:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-       RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_cpp talker
-
-       # Run in another terminal
-       RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_py listener
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
@@ -51,7 +39,18 @@ For example, to run the talker demo using the C++ talker and Python listener wit
        # Run in another terminal
        RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_py listener
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: bash
+
+       RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_cpp talker
+
+       # Run in another terminal
+       RMW_IMPLEMENTATION=rmw_connextdds ros2 run demo_nodes_py listener
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bat
 

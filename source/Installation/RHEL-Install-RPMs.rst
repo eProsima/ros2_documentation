@@ -1,10 +1,6 @@
 RHEL (RPM packages)
 ===================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 RPM packages for ROS 2 {DISTRO_TITLE_FULL} are currently available for RHEL 9.
 The target platforms are defined in `REP 2000 <https://ros.org/reps/rep-2000.html>`__.
 

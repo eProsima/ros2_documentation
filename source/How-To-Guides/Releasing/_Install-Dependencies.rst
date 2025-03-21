@@ -1,20 +1,23 @@
 Install tools that you will use in the upcoming steps according to your platform:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: deb (eg. Ubuntu)
+   .. tab-item:: deb (eg. Ubuntu)
+      :sync: deb (eg. Ubuntu)
 
       .. code-block:: bash
 
          sudo apt install python3-bloom python3-catkin-pkg
 
-   .. group-tab:: RPM (eg. RHEL)
+   .. tab-item:: RPM (eg. RHEL)
+      :sync: RPM (eg. RHEL)
 
       .. code-block:: bash
 
           sudo dnf install python3-bloom python3-catkin_pkg
 
-   .. group-tab:: Other
+   .. tab-item:: Other
+      :sync: Other
 
       .. code-block:: bash
 

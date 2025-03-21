@@ -5,10 +5,6 @@
 Using Python, XML, and YAML for ROS 2 Launch Files
 ==================================================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 ROS 2 launch files can be written in Python, XML, and YAML.
 This guide shows how to use these different formats to accomplish the same task, as well as has some discussion on when to use each format.
 
@@ -25,9 +21,10 @@ Each launch file performs the following actions:
 * Start a node, setting its namespace, and setting parameters in that node (using the args)
 * Create a node to remap messages from one topic to another
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: python
 
@@ -171,7 +168,8 @@ Each launch file performs the following actions:
             ])
 
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+      :sync: XML
 
       .. code-block:: xml
 
@@ -224,7 +222,8 @@ Each launch file performs the following actions:
             </node>
         </launch>
 
-   .. group-tab:: YAML
+   .. tab-item:: YAML
+      :sync: YAML
 
       .. code-block:: yaml
 

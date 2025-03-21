@@ -1,10 +1,6 @@
 Documenting a ROS 2 package
 ###########################
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 This guide introduces the standard way to create documentation for ROS 2 packages.
 For packages with binary releases this also results in the docs being hosted at ``docs.ros.org/en/<distro>/p/<package>/``.

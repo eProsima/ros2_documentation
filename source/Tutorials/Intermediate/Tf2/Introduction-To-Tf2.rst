@@ -13,30 +13,29 @@ Introducing ``tf2``
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Installing the demo
 -------------------
 
 Let's start by installing the demo package and its dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Ubuntu Packages
+   .. tab-item:: Ubuntu Packages
+      :sync: Ubuntu Packages
 
       .. code-block:: console
 
          sudo apt-get install ros-{DISTRO}-rviz2 ros-{DISTRO}-turtle-tf2-py ros-{DISTRO}-tf2-ros ros-{DISTRO}-tf2-tools ros-{DISTRO}-turtlesim
 
-   .. group-tab:: RHEL Packages
+   .. tab-item:: RHEL Packages
+      :sync: RHEL Packages
 
       .. code-block:: console
 
          sudo dnf install ros-{DISTRO}-rviz2 ros-{DISTRO}-turtle-tf2-py ros-{DISTRO}-tf2-ros ros-{DISTRO}-tf2-tools ros-{DISTRO}-turtlesim
 
-   .. group-tab:: From Source
+   .. tab-item:: From Source
+      :sync: From Source
 
       .. code-block:: console
 
@@ -159,15 +158,17 @@ rviz2 and tf2
 ``rviz2`` is a visualization tool that is useful for examining tf2 frames.
 Let's look at our turtle frames using ``rviz2`` by starting it with a configuration file using the ``-d`` option:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       ros2 run rviz2 rviz2 -d $(ros2 pkg prefix --share turtle_tf2_py)/rviz/turtle_rviz.rviz
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

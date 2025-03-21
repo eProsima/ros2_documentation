@@ -13,10 +13,6 @@ Adding physical and collision properties
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 In this tutorial, we’ll look at how to add some basic physical properties to your URDF model and how to specify its collision properties.
 
 Collision

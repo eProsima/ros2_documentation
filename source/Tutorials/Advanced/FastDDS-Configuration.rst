@@ -12,10 +12,6 @@ Unlocking the potential of Fast DDS middleware [community-contributed]
 
 **Time:** 20 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -59,9 +55,10 @@ Create the node with the publishers
 
 First, create a new package named ``sync_async_node_example_cpp`` on a new workspace:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+       :sync: Linux
 
        .. code-block:: console
 
@@ -69,7 +66,8 @@ First, create a new package named ``sync_async_node_example_cpp`` on a new works
          cd ~/ros2_ws/src
          ros2 pkg create --build-type ament_cmake --license Apache-2.0 --dependencies rclcpp std_msgs -- sync_async_node_example_cpp
 
-    .. group-tab:: macOS
+    .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -77,7 +75,8 @@ First, create a new package named ``sync_async_node_example_cpp`` on a new works
         cd ~/ros2_ws/src
         ros2 pkg create --build-type ament_cmake --license Apache-2.0 --dependencies rclcpp std_msgs -- sync_async_node_example_cpp
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -265,17 +264,10 @@ Execute the publisher node
 
 You will need to export the following environment variables for the XML to be loaded:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
-      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -283,7 +275,17 @@ You will need to export the following environment variables for the XML to be lo
       export RMW_FASTRTPS_USE_QOS_FROM_XML=1
       export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
+      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -383,17 +385,10 @@ Execute the subscriber node
 
 With the publisher node running in one terminal, open another one and export the required environment variables for the XML to be loaded:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
-      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -401,7 +396,17 @@ With the publisher node running in one terminal, open another one and export the
       export RMW_FASTRTPS_USE_QOS_FROM_XML=1
       export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
+      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/SyncAsync.xml
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -759,17 +764,10 @@ Execute the nodes
 Open two terminals and source the setup files on each one.
 Then set the required environment variables for the XML to be loaded:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
-      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
-      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/ping.xml
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -777,7 +775,17 @@ Then set the required environment variables for the XML to be loaded:
       export RMW_FASTRTPS_USE_QOS_FROM_XML=1
       export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/ping.xml
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      export RMW_IMPLEMENTATION=rmw_fastrtps_cpp
+      export RMW_FASTRTPS_USE_QOS_FROM_XML=1
+      export FASTRTPS_DEFAULT_PROFILES_FILE=path/to/ping.xml
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

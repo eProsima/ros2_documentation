@@ -13,10 +13,6 @@ Using Xacro to clean up your code
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 By now, if you’re following all these steps at home with your own robot design, you might be sick of doing all sorts of math to get very simple robot descriptions to parse correctly.
 Fortunately, you can use the `xacro <https://index.ros.org/p/xacro>`_ package to make your life simpler.
 It does three things that are very helpful.

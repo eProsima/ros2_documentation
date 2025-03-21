@@ -13,10 +13,6 @@ Examining network traffic
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-  :depth: 2
-  :local:
-
 
 Overview
 --------

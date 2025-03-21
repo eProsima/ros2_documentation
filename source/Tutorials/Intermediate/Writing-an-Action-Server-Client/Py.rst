@@ -13,10 +13,6 @@ Writing an action server and client (Python)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -81,21 +77,24 @@ This is the method that will be called to execute a goal once it is accepted.
 
 Let's try running our action server:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      python3 fibonacci_action_server.py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       python3 fibonacci_action_server.py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: bash
+
+      python3 fibonacci_action_server.py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bash
 
@@ -197,21 +196,24 @@ Finally, we call ``main()`` in the entry point of our Python program.
 
 Let's test our action client by first running the action server built earlier:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      python3 fibonacci_action_server.py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       python3 fibonacci_action_server.py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: bash
+
+      python3 fibonacci_action_server.py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bash
 
@@ -219,21 +221,24 @@ Let's test our action client by first running the action server built earlier:
 
 In another terminal, run the action client:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      python3 fibonacci_action_client.py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       python3 fibonacci_action_client.py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: bash
+
+      python3 fibonacci_action_client.py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bash
 
@@ -297,21 +302,24 @@ In the callback, we log the result sequence and shutdown ROS 2 for a clean exit:
 
 With an action server running in a separate terminal, go ahead and try running our Fibonacci action client!
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      python3 fibonacci_action_client.py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       python3 fibonacci_action_client.py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: bash
+
+      python3 fibonacci_action_client.py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bash
 

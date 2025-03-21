@@ -13,10 +13,6 @@ Creating custom msg and srv files
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -140,21 +136,24 @@ Add the following lines within the ``<package>`` element of ``package.xml``:
 Now that all the parts of your custom interfaces package are in place, you can build the package.
 In the root of your workspace (``~/ros2_ws``), run the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      colcon build --packages-select tutorial_interfaces
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       colcon build --packages-select tutorial_interfaces
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      colcon build --packages-select tutorial_interfaces
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -167,21 +166,24 @@ Now the interfaces will be discoverable by other ROS 2 packages.
 
 In a new terminal, run the following command from within your workspace (``ros2_ws``) to source it:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       source install/setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -245,9 +247,10 @@ Since you'll be changing the standard string msg to a numerical one, the output 
 
 **Publisher**
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
@@ -290,7 +293,8 @@ Since you'll be changing the standard string msg to a numerical one, the output 
         return 0;
       }
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -334,9 +338,10 @@ Since you'll be changing the standard string msg to a numerical one, the output 
 
 **Subscriber**
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
@@ -373,7 +378,8 @@ Since you'll be changing the standard string msg to a numerical one, the output 
         return 0;
       }
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -443,15 +449,17 @@ Add the following lines (C++ only):
 
 Add the following line:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
       <depend>tutorial_interfaces</depend>
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -460,9 +468,10 @@ Add the following line:
 
 After making the above edits and saving all the changes, build the package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     On Linux/macOS:
 
@@ -476,7 +485,8 @@ After making the above edits and saving all the changes, build the package:
 
       colcon build --merge-install --packages-select cpp_pubsub
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     On Linux/macOS:
 
@@ -492,9 +502,10 @@ After making the above edits and saving all the changes, build the package:
 
 Then open two new terminals, source ``ros2_ws`` in each, and run:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: console
 
@@ -504,7 +515,8 @@ Then open two new terminals, source ``ros2_ws`` in each, and run:
 
           ros2 run cpp_pubsub listener
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
@@ -531,9 +543,10 @@ Since you'll be changing the original two integer request srv to a three integer
 
 **Service**
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
@@ -566,7 +579,8 @@ Since you'll be changing the original two integer request srv to a three integer
         rclcpp::shutdown();
       }
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -602,9 +616,10 @@ Since you'll be changing the original two integer request srv to a three integer
 
 **Client**
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
@@ -657,7 +672,8 @@ Since you'll be changing the original two integer request srv to a three integer
         return 0;
       }
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -743,15 +759,17 @@ Add the following lines (C++ only):
 
 Add the following line:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: c++
 
       <depend>tutorial_interfaces</depend>
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -760,9 +778,10 @@ Add the following line:
 
 After making the above edits and saving all the changes, build the package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     On Linux/macOS:
 
@@ -777,7 +796,8 @@ After making the above edits and saving all the changes, build the package:
       colcon build --merge-install --packages-select cpp_srvcli
 
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     On Linux/macOS:
 
@@ -793,9 +813,10 @@ After making the above edits and saving all the changes, build the package:
 
 Then open two new terminals, source ``ros2_ws`` in each, and run:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: console
 
@@ -805,7 +826,8 @@ Then open two new terminals, source ``ros2_ws`` in each, and run:
 
           ros2 run cpp_srvcli client 2 3 1
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

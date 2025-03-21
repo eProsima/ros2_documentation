@@ -13,10 +13,6 @@ Writing a simple service and client (C++)
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -309,40 +305,46 @@ After removing some unnecessary boilerplate from the automatically generated fil
 
 It's good practice to run ``rosdep`` in the root of your workspace (``ros2_ws``) to check for missing dependencies before building:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+      :sync: macOS
 
       rosdep only runs on Linux, so you can skip ahead to next step.
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+      :sync: Windows
 
       rosdep only runs on Linux, so you can skip ahead to next step.
 
 
 Navigate back to the root of your workspace, ``ros2_ws``, and build your new package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      colcon build --packages-select cpp_srvcli
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       colcon build --packages-select cpp_srvcli
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      colcon build --packages-select cpp_srvcli
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -350,21 +352,24 @@ Navigate back to the root of your workspace, ``ros2_ws``, and build your new pac
 
 Open a new terminal, navigate to ``ros2_ws``, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       source install/setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

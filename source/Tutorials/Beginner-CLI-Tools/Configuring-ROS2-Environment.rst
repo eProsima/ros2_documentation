@@ -13,10 +13,6 @@ Configuring environment
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -52,9 +48,10 @@ Tasks
 
 You will need to run this command on every new shell you open to have access to the ROS 2 commands, like so:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: bash
 
@@ -62,13 +59,15 @@ You will need to run this command on every new shell you open to have access to 
         # Possible values are: setup.bash, setup.sh, setup.zsh
         source /opt/ros/{DISTRO}/setup.bash
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         . ~/ros2_install/ros2-osx/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -83,9 +82,10 @@ You will need to run this command on every new shell you open to have access to 
 
 If you don't want to have to source the setup file every time you open a new shell (skipping task 1), then you can add the command to your shell startup script:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -93,7 +93,8 @@ If you don't want to have to source the setup file every time you open a new she
 
      To undo this, locate your system's shell startup script and remove the appended source command.
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -101,7 +102,8 @@ If you don't want to have to source the setup file every time you open a new she
 
       To undo this, locate your system's shell startup script and remove the appended source command.
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       Only for PowerShell users, create a folder in 'My Documents' called 'WindowsPowerShell'.
       Within 'WindowsPowerShell', create file 'Microsoft.PowerShell_profile.ps1'.
@@ -126,21 +128,24 @@ If you don't want to have to source the setup file every time you open a new she
 Sourcing ROS 2 setup files will set several environment variables necessary for operating ROS 2.
 If you ever have problems finding or using your ROS 2 packages, make sure that your environment is properly set up using the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        printenv | grep -i ROS
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         printenv | grep -i ROS
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        printenv | grep -i ROS
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -164,9 +169,10 @@ See the `domain ID <../../Concepts/Intermediate/About-Domain-ID>` article for de
 
 Once you have determined a unique integer for your group of ROS 2 nodes, you can set the environment variable with the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -178,7 +184,8 @@ Once you have determined a unique integer for your group of ROS 2 nodes, you can
 
         echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -190,7 +197,8 @@ Once you have determined a unique integer for your group of ROS 2 nodes, you can
 
         echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

@@ -7,10 +7,6 @@
 Developing a ROS 2 package
 ##########################
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This tutorial will teach you how to create your first ROS 2 application.
 It is intended for developers who want to learn how to create custom packages in ROS 2, not for people who want to use ROS 2 with its existing packages.
 
@@ -36,15 +32,17 @@ in your workspace (usually ``~/ros2_ws/src``).
 
 To create a package for a specific client library:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: bash
 
        ros2 pkg create  --build-type ament_cmake --license Apache-2.0 <pkg-name> --dependencies [deps]
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: bash
 
