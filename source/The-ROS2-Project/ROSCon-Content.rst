@@ -12,7 +12,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
 .. tab-set::
 
   .. tab-item:: 2024
-       :sync: 2024
+    :sync: 2024
 
     .. list-table::
        :header-rows: 1
@@ -134,7 +134,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `video <https://vimeo.com/1024971326>`__
 
   .. tab-item:: 2023
-       :sync: 2023
+    :sync: 2023
 
     .. list-table::
        :header-rows: 1
@@ -252,7 +252,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `video <https://vimeo.com/879000977/b6ddf83e60>`__
 
   .. tab-item:: 2022
-       :sync: 2022
+    :sync: 2022
 
     .. list-table::
        :header-rows: 1
@@ -315,7 +315,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `video <https://vimeo.com/showcase/9954564/video/767139709>`__
 
   .. tab-item:: 2021
-       :sync: 2021
+    :sync: 2021
 
     .. list-table::
        :header-rows: 1
@@ -378,7 +378,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `video <https://vimeo.com/649653566/9d02eac6cb>`__
 
   .. tab-item:: 2020
-       :sync: 2020
+    :sync: 2020
 
     .. list-table::
        :header-rows: 1
@@ -421,7 +421,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `video <https://vimeo.com/showcase/7812155/video/490004991>`__
 
   .. tab-item:: 2019
-       :sync: 2019
+    :sync: 2019
 
     .. list-table::
        :header-rows: 1
@@ -465,7 +465,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
 
 
   .. tab-item:: 2018
-       :sync: 2018
+    :sync: 2018
 
     .. list-table::
        :header-rows: 1
@@ -478,7 +478,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `slides <https://roscon.ros.org/2018/presentations/ROSCon2018_launch.pdf>`__ / `video <https://vimeo.com/292699162>`__
 
   .. tab-item:: 2017
-       :sync: 2017
+    :sync: 2017
 
     .. list-table::
        :header-rows: 1
@@ -489,7 +489,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `slides <https://roscon.ros.org/2017/presentations/ROSCon%202017%20ROS2%20Vision.pdf>`__ / `video <https://vimeo.com/236161417>`__
 
   .. tab-item:: 2016
-       :sync: 2016
+    :sync: 2016
 
     .. list-table::
        :header-rows: 1
@@ -502,7 +502,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `slides <https://roscon.ros.org/2016/presentations/rafal.kozik-ros2evaluation.pdf>`__ / `video <https://vimeo.com/187705229>`__
 
   .. tab-item:: 2015
-       :sync: 2015
+    :sync: 2015
 
     .. list-table::
        :header-rows: 1
@@ -517,7 +517,7 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `slides <https://roscon.ros.org/2015/presentations/RealtimeROS2.pdf>`__ / `video <https://vimeo.com/142621778>`__
 
   .. tab-item:: 2014
-       :sync: 2014
+    :sync: 2014
 
     .. list-table::
        :header-rows: 1
