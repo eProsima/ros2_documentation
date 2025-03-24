@@ -6,9 +6,6 @@
 Logging and logger configuration
 ================================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 
@@ -43,9 +40,10 @@ APIs
 
 These are the APIs that end users of the ROS 2 logging infrastructure should use, split up by client library.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     * ``RCLCPP_{DEBUG,INFO,WARN,ERROR,FATAL}`` - output the given printf-style message every time this line is hit
     * ``RCLCPP_{DEBUG,INFO,WARN,ERROR,FATAL}_ONCE`` - output the given printf-style message only the first time this line is hit
@@ -68,7 +66,8 @@ These are the APIs that end users of the ROS 2 logging infrastructure should use
     * ``rcutils_logging_set_logger_level`` - Set the logging level for a particular logger name to the given severity level
     * ``rcutils_logging_get_logger_effective_level`` - Given a logger name, return the logger level (which may be unset)
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     * ``logger.{debug,info,warning,error,fatal}`` - output the given Python string to the logging infrastructure.  The calls accept the following keyword args to control behavior:
 
@@ -199,14 +198,16 @@ If the severity level of the macro is greater than or equal to the node severity
 Logging usage
 -------------
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     * See the `rclcpp logging demo <https://github.com/ros2/demos/tree/{REPOS_FILE_BRANCH}/logging_demo>`_ for some simple examples.
     * See the :doc:`logging demo <../../Tutorials/Demos/Logging-and-logger-configuration>` for example usage.
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     * See the `rclpy examples <https://github.com/ros2/examples/blob/{REPOS_FILE_BRANCH}/rclpy/services/minimal_client/examples_rclpy_minimal_client/client.py>`__ for example usage of a node's logger.
     * See the `rclpy tests <https://github.com/ros2/rclpy/blob/{REPOS_FILE_BRANCH}/rclpy/test/test_logging.py>`__ for example usage of keyword arguments (e.g. ``skip_first``, ``once``).

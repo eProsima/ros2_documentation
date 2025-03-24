@@ -1,10 +1,6 @@
 Using ROS 2 launch to launch composable nodes
 =============================================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 In the :doc:`Composition tutorial <../Tutorials/Intermediate/Composition>`, you learned about composable nodes and how to use them from the command-line.
 In the :doc:`Launch tutorials <../Tutorials/Intermediate/Launch/Launch-Main>`, you learned about launch files and how to use them to manage multiple nodes.
 
@@ -27,9 +23,10 @@ The launch files all do the following:
 * Instantiate a cam2image composable node with remappings, custom parameters, and extra arguments
 * Instantiate a showimage composable node with remappings, custom parameters, and extra arguments
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -66,7 +63,8 @@ The launch files all do the following:
 
           return launch.LaunchDescription([container])
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -88,7 +86,8 @@ The launch files all do the following:
           </node_container>
       </launch>
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: yaml
 
@@ -143,9 +142,10 @@ In that case, you need to add your components to an existing container.
 For this, you may use ``LoadComposableNodes`` to load components into a given container.
 The below example launches the same nodes as above.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -185,7 +185,8 @@ The below example launches the same nodes as above.
 
           return LaunchDescription([container, load_composable_nodes])
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -209,7 +210,8 @@ The below example launches the same nodes as above.
           </load_composable_node>
       </launch>
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: yaml
 

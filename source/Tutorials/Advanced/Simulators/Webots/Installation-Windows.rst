@@ -7,10 +7,6 @@ Installation (Windows)
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -61,9 +57,10 @@ You can then either install ``webots_ros2`` from the official released package, 
 
 The following commands must be run inside the WSL environment.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Install ``webots_ros2`` distributed package
+    .. tab-item:: Install ``webots_ros2`` distributed package
+        :sync: Install ``webots_ros2`` distributed package
 
         Run the following command in a terminal.
 
@@ -71,7 +68,8 @@ The following commands must be run inside the WSL environment.
 
             sudo apt-get install ros-{DISTRO}-webots-ros2
 
-    .. group-tab:: Install ``webots_ros2`` from sources
+    .. tab-item:: Install ``webots_ros2`` from sources
+        :sync: Install ``webots_ros2`` from sources
 
         Create a ROS 2 workspace with its ``src`` directory.
 
@@ -167,8 +165,9 @@ The Tiago robot can be controlled using:
 
 With older WSL versions, RViz2 may not work directly, as no display is available. To use RViz, you can either upgrade WSL or enable X11 forwarding.
 
-.. tabs::
-    .. group-tab:: Upgrade WSL
+.. tab-set::
+    .. tab-item:: Upgrade WSL
+        :sync: Upgrade WSL
 
         In a Windows shell:
 
@@ -176,7 +175,8 @@ With older WSL versions, RViz2 may not work directly, as no display is available
 
             wsl --update
 
-    .. group-tab:: Enable X11 forwarding
+    .. tab-item:: Enable X11 forwarding
+        :sync: Enable X11 forwarding
 
         For older versions of WSL, the following steps can be followed:
 

@@ -13,10 +13,6 @@ Building a movable robot model
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 In this tutorial, we’re going to revise the R2D2 model we made in the :doc:`previous tutorial <./Building-a-Visual-Robot-Model-with-URDF-from-Scratch>` so that it has movable joints.
 In the previous model, all of the joints were fixed.
 Now we’ll explore three other important types of joints: continuous, revolute and prismatic.

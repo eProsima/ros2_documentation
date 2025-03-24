@@ -3,10 +3,6 @@
 Metrics
 =======
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 We measure aspects of the ROS community to understand and track the impact of our work and identify areas for improvement.
 We take inspiration from the MeeGo Project's metrics.

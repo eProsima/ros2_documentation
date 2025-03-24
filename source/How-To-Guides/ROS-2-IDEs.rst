@@ -7,10 +7,6 @@ Nonetheless Integrated Development Environments (IDEs) can be used to develop, r
 Below are listed some IDEs and instructions on how to use them with ROS 2.
 
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 
 General
 -------
@@ -49,9 +45,10 @@ So:
 #. In a terminal, source both ROS 2 and your install (if it was built already).
 #. Start VSCode from the same command line. The terminal will be blocked until the application is closed again.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: bash
 
@@ -60,7 +57,8 @@ So:
         source ./install/setup.bash
         /usr/bin/code ./src/my_node/
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -69,7 +67,8 @@ So:
         . ./install/setup.bash
         /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code ./src/my_node/
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

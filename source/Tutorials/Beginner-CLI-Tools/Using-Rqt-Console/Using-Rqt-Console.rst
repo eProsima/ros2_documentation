@@ -13,10 +13,6 @@ Using ``rqt_console`` to view logs
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

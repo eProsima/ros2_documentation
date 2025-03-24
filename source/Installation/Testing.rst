@@ -81,15 +81,17 @@ These packaging jobs produce archives with pre-built binaries that can be downlo
 
 5. To use the binary archive installation, source the ``setup.*`` file that can be found in the root of the archive.
 
-   .. tabs::
+   .. tab-set::
 
-     .. group-tab:: Ubuntu Linux and RHEL
+     .. tab-item:: Ubuntu Linux and RHEL
+       :sync: Ubuntu Linux and RHEL
 
        .. code-block:: sh
 
           source path/to/extracted/archive/setup.bash
 
-     .. group-tab:: Windows
+     .. tab-item:: Windows
+       :sync: Windows
 
        .. code-block:: sh
 

@@ -9,9 +9,10 @@ ROSCon Talks
 
 The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2 and provide information about the workings of ROS 2 and various demos:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: 2024
+   .. tab-item:: 2024
+       :sync: 2024
 
     .. list-table::
        :header-rows: 1
@@ -131,7 +132,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Navigation à la carte: choose navigation profile and strategy as you go
          - `video <https://vimeo.com/1024971326>`__
 
-   .. group-tab:: 2023
+   .. tab-item:: 2023
+       :sync: 2023
 
     .. list-table::
        :header-rows: 1
@@ -247,7 +249,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Developing on ROS while Scaling
          - `video <https://vimeo.com/879000977/b6ddf83e60>`__
 
-  .. group-tab:: 2022
+  .. tab-item:: 2022
+       :sync: 2022
 
     .. list-table::
        :header-rows: 1
@@ -309,7 +312,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - A Raspberry Pi image with ROS 2 + RT and a customizable image builder
          - `video <https://vimeo.com/showcase/9954564/video/767139709>`__
 
-  .. group-tab:: 2021
+  .. tab-item:: 2021
+       :sync: 2021
 
     .. list-table::
        :header-rows: 1
@@ -371,7 +375,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Panel: Simulation Tools for ROS
          - `video <https://vimeo.com/649653566/9d02eac6cb>`__
 
-  .. group-tab:: 2020
+  .. tab-item:: 2020
+       :sync: 2020
 
     .. list-table::
        :header-rows: 1
@@ -413,7 +418,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Lightning Talks and Sponsor Videos 4
          - `video <https://vimeo.com/showcase/7812155/video/490004991>`__
 
-  .. group-tab:: 2019
+  .. tab-item:: 2019
+       :sync: 2019
 
     .. list-table::
        :header-rows: 1
@@ -456,7 +462,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
          - `slides <https://roscon.ros.org/2019/talks/roscon2019_markupextensionsforros2launch.pdf>`__ / `video <https://vimeo.com/379127678>`__
 
 
-  .. group-tab:: 2018
+  .. tab-item:: 2018
+       :sync: 2018
 
     .. list-table::
        :header-rows: 1
@@ -468,7 +475,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Launch for ROS 2
          - `slides <https://roscon.ros.org/2018/presentations/ROSCon2018_launch.pdf>`__ / `video <https://vimeo.com/292699162>`__
 
-  .. group-tab:: 2017
+  .. tab-item:: 2017
+       :sync: 2017
 
     .. list-table::
        :header-rows: 1
@@ -478,7 +486,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - The ROS 2 vision for advancing the future of robotics development
          - `slides <https://roscon.ros.org/2017/presentations/ROSCon%202017%20ROS2%20Vision.pdf>`__ / `video <https://vimeo.com/236161417>`__
 
-  .. group-tab:: 2016
+  .. tab-item:: 2016
+       :sync: 2016
 
     .. list-table::
        :header-rows: 1
@@ -490,7 +499,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Evaluating the resilience of ROS2 communication layer
          - `slides <https://roscon.ros.org/2016/presentations/rafal.kozik-ros2evaluation.pdf>`__ / `video <https://vimeo.com/187705229>`__
 
-  .. group-tab:: 2015
+  .. tab-item:: 2015
+       :sync: 2015
 
     .. list-table::
        :header-rows: 1
@@ -504,7 +514,8 @@ The following `ROSCon <https://roscon.ros.org>`__ talks have been given on ROS 2
        * - Real-time control in ROS and ROS 2
          - `slides <https://roscon.ros.org/2015/presentations/RealtimeROS2.pdf>`__ / `video <https://vimeo.com/142621778>`__
 
-  .. group-tab:: 2014
+  .. tab-item:: 2014
+       :sync: 2014
 
     .. list-table::
        :header-rows: 1

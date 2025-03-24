@@ -3,9 +3,6 @@
 The ROS_DOMAIN_ID
 =================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 
@@ -40,23 +37,26 @@ This avoids possible conflicts between the ports used by the ROS 2 nodes and oth
 
 Here are some platform-specific notes about ephemeral ports.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+     :sync: Linux
 
      By default, the Linux kernel uses ports 32768-60999 for ephemeral ports.
      This means that domain IDs 0-101 and 215-232 can be safely used without colliding with ephemeral ports.
      The ephemeral port range is configurable in Linux by setting custom values in ``/proc/sys/net/ipv4/ip_local_port_range``.
      If a custom ephemeral port range is used, the above numbers may have to be adjusted accordingly.
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+     :sync: macOS
 
      By default, the ephemeral port range on macOS is 49152-65535.
      This means that domain IDs 0-166 can be safely used without colliding with ephemeral ports.
      The ephemeral port range is configurable in macOS by setting custom sysctl values for ``net.inet.ip.portrange.first`` and ``net.inet.ip.portrange.last``.
      If a custom ephemeral port range is used, the above numbers may have to be adjusted accordingly.
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+     :sync: Windows
 
      By default, the ephemeral port range on Windows is 49152-65535.
      This means that domain IDs 0-166 can be safely used without colliding with ephemeral ports.

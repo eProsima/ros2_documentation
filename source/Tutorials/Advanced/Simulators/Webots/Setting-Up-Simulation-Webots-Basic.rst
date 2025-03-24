@@ -12,10 +12,6 @@ Setting up a robot simulation (Basic)
 
 **Time:** 30 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -32,19 +28,22 @@ Prerequisites
 It is recommended to understand basic ROS principles covered in the beginner :doc:`../../../../Tutorials`.
 In particular, :doc:`../../../Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim`, :doc:`../../../Beginner-CLI-Tools/Understanding-ROS2-Topics/Understanding-ROS2-Topics`, :doc:`../../../Beginner-Client-Libraries/Creating-A-Workspace/Creating-A-Workspace`, :doc:`../../../Beginner-Client-Libraries/Creating-Your-First-ROS2-Package` and :doc:`../../../Intermediate/Launch/Creating-Launch-Files` are useful prerequisites.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
         The Linux and ROS commands of this tutorial can be run in a standard Linux terminal.
         The following page :doc:`./Installation-Ubuntu` explains how to install the ``webots_ros2`` package on Linux.
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+        :sync: Windows
 
         The Linux and ROS commands of this tutorial must be run in a WSL (Windows Subsystem for Linux) environment.
         The following page :doc:`./Installation-Windows` explains how to install the ``webots_ros2`` package on Windows.
 
-    .. group-tab:: macOS
+    .. tab-item:: macOS
+        :sync: macOS
 
         The Linux and ROS commands of this tutorial must be run in a pre-configured Linux Virtual Machine (VM).
         The following page :doc:`./Installation-MacOS` explains how to install the ``webots_ros2`` package on macOS.
@@ -61,9 +60,10 @@ Let's organize the code in a custom ROS 2 package.
 Create a new package named ``my_package`` from the ``src`` folder of your ROS 2 workspace.
 Change the current directory of your terminal to ``ros2_ws/src`` and run:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: console
 
@@ -101,7 +101,8 @@ Change the current directory of your terminal to ``ros2_ws/src`` and run:
                 ├── setup.cfg
                 └── setup.py
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: console
 
@@ -174,9 +175,10 @@ You can use it to access the `Webots robot API  <https://cyberbotics.com/doc/ref
     This other sub-package creates an interface with the ``ros2_control`` package that facilitates the control of a differential wheeled robot.
 
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         Open ``my_package/my_package/my_robot_driver.py`` in your favorite editor and replace its contents with the following:
 
@@ -218,7 +220,8 @@ You can use it to access the `Webots robot API  <https://cyberbotics.com/doc/ref
             :dedent: 4
             :lines: 29-39
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         Open ``my_package/include/my_package/MyRobotDriver.hpp`` in your favorite editor and replace its contents with the following:
 
@@ -283,9 +286,10 @@ This will allow the ``webots_ros2_driver`` ROS node to launch the plugin and con
 
 In the ``my_package/resource`` folder create a text file named ``my_robot.urdf`` with this content:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+            :sync: Python
 
         .. literalinclude:: Code/my_robot_python.urdf
             :language: xml
@@ -293,7 +297,8 @@ In the ``my_package/resource`` folder create a text file named ``my_robot.urdf``
         The ``type`` attribute specifies the path to the class given by the hierarchical structure of files.
         ``webots_ros2_driver`` is responsible for loading the class based on the specified package and modules.
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+            :sync: C++
 
         .. literalinclude:: Code/my_robot_cpp.urdf
             :language: xml
@@ -310,9 +315,10 @@ In the ``my_package/resource`` folder create a text file named ``my_robot.urdf``
 
     Here the plugin does not take any input parameter, but this can be achieved with a tag containing the parameter name.
 
-    .. tabs::
+    .. tab-set::
 
-        .. group-tab:: Python
+        .. tab-item:: Python
+            :sync: Python
 
             .. code-block:: xml
 
@@ -320,7 +326,8 @@ In the ``my_package/resource`` folder create a text file named ``my_robot.urdf``
                     <parameterName>someValue</parameterName>
                 </plugin>
 
-        .. group-tab:: C++
+        .. tab-item:: C++
+            :sync: C++
 
             .. code-block:: xml
 
@@ -351,17 +358,20 @@ You have to specify in the constructor which world file the simulator will open.
 Then, the ROS node interacting with the simulated robot is created.
 This node, named ``WebotsController``, is located in the ``webots_ros2_driver`` package.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
         The node will be able to communicate with the simulated robot by using a custom protocol based on IPC and shared memory.
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+        :sync: Windows
 
         The node (in WSL) will be able to communicate with the simulated robot (in Webots on native Windows) through a TCP connection.
 
-    .. group-tab:: macOS
+    .. tab-item:: macOS
+        :sync: macOS
 
         The node (in the docker container) will be able to communicate with the simulated robot (in Webots on native macOS) through a TCP connection.
 
@@ -398,9 +408,10 @@ Finally, an optional part is added in order to shutdown all the nodes once Webot
 6 Edit additional files
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         Before you can start the launch file, you have to modify the ``setup.py`` file to include the extra files you added.
         Open ``my_package/setup.py`` and replace its contents with:
@@ -410,7 +421,8 @@ Finally, an optional part is added in order to shutdown all the nodes once Webot
 
         This sets-up the package and adds in the ``data_files`` variable the newly added files: ``my_world.wbt``, ``my_robot.urdf`` and ``robot_launch.py``.
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         Before you can start the launch file, you have to modify ``CMakeLists.txt`` and ``my_robot_driver.xml`` files:
 
@@ -436,9 +448,10 @@ Finally, an optional part is added in order to shutdown all the nodes once Webot
 7 Test the code
 ^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
         From a terminal in your ROS 2 workspace run:
 
@@ -451,7 +464,8 @@ Finally, an optional part is added in order to shutdown all the nodes once Webot
         This will launch the simulation.
         Webots will be automatically installed on the first run in case it was not already installed.
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+        :sync: Windows
 
         From a terminal in your WSL ROS 2 workspace run:
 
@@ -467,7 +481,8 @@ Finally, an optional part is added in order to shutdown all the nodes once Webot
         This will launch the simulation.
         Webots will be automatically installed on the first run in case it was not already installed.
 
-    .. group-tab:: macOS
+    .. tab-item:: macOS
+        :sync: macOS
 
         On macOS, a local server must be started on the host to start Webots from the VM.
         The local server can be downloaded `on the webots-server repository <https://github.com/cyberbotics/webots-server/blob/main/local_simulation_server.py>`_.

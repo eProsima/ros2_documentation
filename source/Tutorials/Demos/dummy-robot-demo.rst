@@ -15,9 +15,10 @@ We assume your ROS 2 installation dir as ``~/ros2_ws``. Please change the direct
 
 To start the demo, we execute the demo bringup launch file, which we are going to explain in more details in the next section.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Source Build
+  .. tab-item:: Source Build
+    :sync: Source Build
 
     mkdir -p ~/ros2_ws/src
     cd ~/ros2_ws/src
@@ -26,7 +27,8 @@ To start the demo, we execute the demo bringup launch file, which we are going t
     source ~/ros2_ws/install/setup.bash
     ros2 launch dummy_robot_bringup dummy_robot_bringup_launch.py
 
-  .. group-tab:: deb Package
+  .. tab-item:: deb Package
+    :sync: deb Package
 
     sudo apt install ros-${ROS_DISTRO}-dummy-robot-bringup
     ros2 launch dummy_robot_bringup dummy_robot_bringup_launch.py

@@ -6,10 +6,6 @@
 Composing multiple nodes in a single process
 ============================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 **Goal:** Compose multiple nodes into a single process.
 
 **Tutorial level:** Intermediate
@@ -161,21 +157,24 @@ Run-time composition using dlopen
 This demo presents an alternative to run-time composition by creating a generic container process and explicitly passing the libraries to load without using ROS interfaces.
 The process will open each library and create one instance of each "rclcpp::Node" class in the library (`source code <https://github.com/ros2/demos/blob/{REPOS_FILE_BRANCH}/composition/src/dlopen_composition.cpp>`__).
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
        ros2 run composition dlopen_composition `ros2 pkg prefix composition`/lib/libtalker_component.so `ros2 pkg prefix composition`/lib/liblistener_component.so
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: bash
 
        ros2 run composition dlopen_composition `ros2 pkg prefix composition`/lib/libtalker_component.dylib `ros2 pkg prefix composition`/lib/liblistener_component.dylib
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bash
 

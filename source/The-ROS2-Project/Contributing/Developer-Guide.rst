@@ -6,10 +6,6 @@
 ROS 2 developer guide
 =====================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page defines the practices and policies we employ when developing ROS 2.
 
 General Principles
