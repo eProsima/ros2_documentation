@@ -14,10 +14,6 @@ Implementing custom interfaces
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -286,23 +282,26 @@ This CMake code is only required when you want to use interfaces in the same pac
 
 Return to the root of the workspace to build the package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ cd ~/ros2_ws
-      $ colcon build --packages-up-to more_interfaces
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ cd ~/ros2_ws
       $ colcon build --packages-up-to more_interfaces
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ cd ~/ros2_ws
+      $ colcon build --packages-up-to more_interfaces
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -311,23 +310,26 @@ Return to the root of the workspace to build the package:
 
 Then source the workspace and run the publisher:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/local_setup.bash
       $ ros2 run more_interfaces publish_address_book
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ . install/local_setup.bash
       $ ros2 run more_interfaces publish_address_book
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -345,23 +347,26 @@ You should see the publisher relaying the msg you defined, including the values 
 
 To confirm the message is being published on the ``address_book`` topic, open another terminal, source the workspace, and call ``topic echo``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/setup.bash
       $ ros2 topic echo /address_book
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ . install/setup.bash
       $ ros2 topic echo /address_book
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

@@ -13,10 +13,6 @@ Creating an action
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -41,9 +37,10 @@ Tasks
 1 Creating an interface package
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -51,7 +48,8 @@ Tasks
       $ cd ~/ros2_ws/src
       $ ros2 pkg create --license Apache-2.0 custom_action_interfaces
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
@@ -59,7 +57,8 @@ Tasks
       $ cd ~/ros2_ws/src
       $ ros2 pkg create --license Apache-2.0 custom_action_interfaces
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -93,23 +92,26 @@ Say we want to define a new action "Fibonacci" for computing the `Fibonacci sequ
 
 Create an ``action`` directory in our ROS 2 package ``custom_action_interfaces``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ cd custom_action_interfaces
-      $ mkdir action
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ cd custom_action_interfaces
       $ mkdir action
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ cd custom_action_interfaces
+      $ mkdir action
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -166,21 +168,24 @@ So when we want to refer to our new action, it will have the full name ``custom_
 We can check that our action built successfully with the command line tool.
 First source our workspace:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/local_setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ source install/local_setup.console
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

@@ -1,11 +1,7 @@
 Migrating your package.xml to format 2
 ======================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
-ROS 2 requires ``package.xml`` files to use at least `format 2 <https://reps.openrobotics.org/rep-0140/>`__.
+ROS 2 requires ``package.xml`` files to use at least `format 2 <https://ros.org/reps/rep-0140.html>`__.
 This guide shows how to migrate a ``package.xml`` from format 1 to format 2.
 
 If the ``<package>`` tag at the start of your ``package.xml`` looks like either of the following, then it is using format 1 and you must migrate it.

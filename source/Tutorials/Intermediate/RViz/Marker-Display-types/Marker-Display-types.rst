@@ -7,10 +7,6 @@ Marker: Display types
 
 **Time:** 15 Minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 Background
 ----------
