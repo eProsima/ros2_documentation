@@ -9,10 +9,6 @@
 Migrating Launch Files
 ======================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 While launch files in ROS 1 are always specified using `XML <https://wiki.ros.org/roslaunch/XML>`__ files, ROS 2 supports both XML and YAML files.
 ROS 2 also supports Python launch scripts to enable more flexibility (see `launch package <https://github.com/ros2/launch/tree/{REPOS_FILE_BRANCH}/launch>`__).
 However, for typical use cases, XML and YAML should be preferred over Python.

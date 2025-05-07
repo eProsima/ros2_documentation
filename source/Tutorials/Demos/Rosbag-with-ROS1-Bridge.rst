@@ -19,16 +19,18 @@ In this example, we'll be using the ``cam2image`` demo program that comes with R
 
 First we'll run a ROS 1 ``roscore`` in a new shell:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
          $ . /opt/ros/kinetic/setup.bash
          $ roscore
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -42,9 +44,10 @@ Then we'll run the ROS 1 <=> ROS 2 ``dynamic_bridge`` with the ``--bridge-all-to
    If you installed rosbridge from source, adapt the path to the setup file accordingly:
    ``. <workspace-with-bridge>/install/setup.bash``.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -53,7 +56,8 @@ Then we'll run the ROS 1 <=> ROS 2 ``dynamic_bridge`` with the ``--bridge-all-to
         $ export ROS_MASTER_URI=http://localhost:11311
         $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -136,9 +140,10 @@ You can run this python script in a new ROS 2 shell:
 
 Now that all the data sources and the dynamic bridge are running, we can look at the available topics in a new ROS 1 shell:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -150,7 +155,8 @@ Now that all the data sources and the dynamic bridge are running, we can look at
        /rosout
        /rosout_agg
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -188,16 +194,18 @@ First close out all the shells you opened for the previous tutorial, stopping an
 
 Then in a new shell start the ``roscore``:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
        $ . /opt/ros/kinetic/setup.bash
        $ roscore
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -206,9 +214,10 @@ Then in a new shell start the ``roscore``:
 
 Then run the ``dynamic_bridge`` in another shell:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -217,7 +226,8 @@ Then run the ``dynamic_bridge`` in another shell:
        $ export ROS_MASTER_URI=http://localhost:11311
        $ ros2 run ros1_bridge dynamic_bridge --bridge-all-topics
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -228,16 +238,18 @@ Then run the ``dynamic_bridge`` in another shell:
 
 Then play the bag data back with ``rosbag play`` in another new shell, using the ``--loop`` option so that we don't have to keep restarting it for short bags:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ . /opt/ros/kinetic/setup.bash
         $ rosbag play --loop path/to/bag_file
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 

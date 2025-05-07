@@ -1,10 +1,6 @@
 Migrating your package.xml to format 2
 ======================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 ROS 2 requires ``package.xml`` files to use at least `format 2 <https://ros.org/reps/rep-0140.html>`__.
 This guide shows how to migrate a ``package.xml`` from format 1 to format 2.
 

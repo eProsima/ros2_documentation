@@ -5,10 +5,6 @@
 Beta 3 (``r2b3``)
 =================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Supported Platforms
 -------------------
 

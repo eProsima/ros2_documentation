@@ -7,10 +7,6 @@
 Project Governance
 ==================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 The Open Source Robotics Alliance (OSRA)
 ----------------------------------------
 

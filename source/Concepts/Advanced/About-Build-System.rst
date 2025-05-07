@@ -5,9 +5,6 @@
 The build system
 ================
 
-.. contents:: Table of Contents
-   :local:
-
 .. include:: ../../../global_substitutions.txt
 
 The build system is what allows developers to build their ROS 2 code as needed.

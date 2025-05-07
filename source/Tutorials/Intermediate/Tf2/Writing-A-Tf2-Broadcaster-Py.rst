@@ -11,10 +11,6 @@ Writing a broadcaster (Python)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -39,21 +35,24 @@ Let's first create the source files.
 Go to the ``learning_tf2_py`` package we created in the previous tutorial.
 Inside the ``src/learning_tf2_py/learning_tf2_py`` directory download the example broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
-
-        .. code-block:: console
-
-            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_broadcaster.py
-
-    .. group-tab:: macOS
+    .. tab-item:: Linux
+        :sync: Linux
 
         .. code-block:: console
 
             $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_broadcaster.py
 
-    .. group-tab:: Windows
+    .. tab-item:: macOS
+        :sync: macOS
+
+        .. code-block:: console
+
+            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_broadcaster.py
+
+    .. tab-item:: Windows
+        :sync: Windows
 
         In a Windows command line prompt:
 
@@ -320,39 +319,45 @@ You can learn more about creating launch files in :doc:`this tutorial <../Launch
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -360,21 +365,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line prompt:
 

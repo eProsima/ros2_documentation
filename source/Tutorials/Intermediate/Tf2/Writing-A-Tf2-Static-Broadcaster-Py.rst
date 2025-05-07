@@ -11,10 +11,6 @@ Writing a static broadcaster (Python)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -58,21 +54,24 @@ Your terminal will return a message verifying the creation of your package ``lea
 Let's first create the source files.
 Inside the ``src/learning_tf2_py/learning_tf2_py`` directory download the example static broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
-
-        .. code-block:: console
-
-            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/static_turtle_tf2_broadcaster.py
-
-    .. group-tab:: macOS
+    .. tab-item:: Linux
+        :sync: Linux
 
         .. code-block:: console
 
             $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/static_turtle_tf2_broadcaster.py
 
-    .. group-tab:: Windows
+    .. tab-item:: macOS
+        :sync: macOS
+
+        .. code-block:: console
+
+            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/static_turtle_tf2_broadcaster.py
+
+    .. tab-item:: Windows
+        :sync: Windows
 
         In a Windows command line prompt:
 
@@ -303,39 +302,45 @@ Add the following line between the ``'console_scripts':`` brackets:
 
 It's good practice to run ``rosdep`` in the root of your workspace to check for missing dependencies before building:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your new package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -343,21 +348,24 @@ Still in the root of your workspace, build your new package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line prompt:
 
@@ -431,19 +439,22 @@ The following command publishes a static coordinate transform to tf2 using an x/
 ``static_transform_publisher`` is designed both as a command-line tool for manual use, as well as for use within ``launch`` files for setting static transforms.
 For example:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+         :sync: XML
 
       .. literalinclude:: launch/static_transform_publisher_launch.xml
          :language: xml
 
-   .. group-tab:: YAML
+   .. tab-item:: YAML
+         :sync: YAML
 
       .. literalinclude:: launch/static_transform_publisher_launch.yaml
          :language: yaml
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+         :sync: Python
 
       .. literalinclude:: launch/static_transform_publisher_launch.py
          :language: python

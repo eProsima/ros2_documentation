@@ -3,10 +3,6 @@ Subsequent Releases
 
 This guide explains how to release new versions of ROS packages that have already been released before.
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 Be part of the release team
 ---------------------------
 

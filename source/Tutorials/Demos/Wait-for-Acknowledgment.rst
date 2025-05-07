@@ -7,10 +7,6 @@ Wait for acknowledgment
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 Overview
 --------
 

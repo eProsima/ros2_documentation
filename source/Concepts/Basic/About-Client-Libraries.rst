@@ -10,9 +10,6 @@
 Client libraries
 ================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

@@ -5,10 +5,6 @@
 Bouncy Bolson (``bouncy``)
 ==========================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Bouncy Bolson* is the second release of ROS 2.
 
 Supported Platforms
