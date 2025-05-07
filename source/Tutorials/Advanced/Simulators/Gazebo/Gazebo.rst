@@ -13,10 +13,6 @@ Setting up a robot simulation (Gazebo)
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 .. note::
 

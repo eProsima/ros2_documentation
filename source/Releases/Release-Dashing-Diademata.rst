@@ -1,10 +1,6 @@
 Dashing Diademata (``dashing``)
 ===============================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Dashing Diademata* is the fourth release of ROS 2.
 
 Supported Platforms

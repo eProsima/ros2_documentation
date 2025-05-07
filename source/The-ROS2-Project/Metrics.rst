@@ -3,10 +3,6 @@
 Metrics
 =======
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 While we do not track ROS users, we do measure various aspects of the ROS community to understand and track the impact of our work and identify areas for improvement.
 

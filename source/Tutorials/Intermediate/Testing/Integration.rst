@@ -7,10 +7,6 @@ Writing Basic Integration Tests with launch_testing
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Prerequisites
 -------------
 

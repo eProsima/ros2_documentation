@@ -12,9 +12,6 @@ Enabling topic statistics (C++)
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :local:
-
 Background
 ----------
 
@@ -46,21 +43,24 @@ Tasks
 Navigate into the ``ros2_ws/src/cpp_pubsub/src`` folder, created in the :doc:`previous tutorial <../../Beginner-Client-Libraries/Writing-A-Simple-Cpp-Publisher-And-Subscriber>`, and
 download the example talker code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-            $ wget -O member_function_with_topic_statistics.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/member_function_with_topic_statistics.cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
             $ wget -O member_function_with_topic_statistics.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/member_function_with_topic_statistics.cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+            $ wget -O member_function_with_topic_statistics.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/member_function_with_topic_statistics.cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       Right click this link and select Save As ``publisher_member_function.cpp``:
 

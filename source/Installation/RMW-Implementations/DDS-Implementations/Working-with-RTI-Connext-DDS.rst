@@ -30,15 +30,17 @@ RTI Connext Pro is available through a variety of channels:
 **ROS 2 apt repositories**
   ROS 2 users can install a non-commercial-use version of the RTI Connext DDS libraries for x86_64 Linux from the ROS apt repository using the following command:
 
-  .. tabs::
+  .. tab-set::
 
-     .. group-tab:: v7.3.0
+     .. tab-item:: v7.3.0
+        :sync: v7.3.0
 
         .. code-block:: console
 
            $ sudo apt update && sudo apt install -q -y rti-connext-dds-7.3.0-ros
 
-     .. group-tab:: v6.0.1
+     .. tab-item:: v6.0.1
+        :sync: v6.0.1
 
         .. code-block:: console
 

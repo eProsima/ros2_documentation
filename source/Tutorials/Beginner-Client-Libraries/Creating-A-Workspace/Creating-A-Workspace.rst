@@ -13,10 +13,6 @@ Creating a workspace
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -52,21 +48,24 @@ Your main ROS 2 installation will be your underlay for this tutorial.
 
 Depending on how you installed ROS 2 (from source or binaries), and which platform you're on, your exact source command will vary:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ source /opt/ros/{DISTRO}/setup.bash
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         $ . ~/ros2_install/ros2-osx/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       Remember to use a ``x64 Native Tools Command Prompt for VS 2019`` for executing the following commands, as we are going to build a workspace.
 
@@ -85,23 +84,26 @@ Best practice is to create a new directory for every new workspace.
 The name doesn't matter, but it is helpful to have it indicate the purpose of the workspace.
 Let's choose the directory name ``ros2_ws``, for "development workspace":
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ mkdir -p ~/ros2_ws/src
-        $ cd ~/ros2_ws/src
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ mkdir -p ~/ros2_ws/src
         $ cd ~/ros2_ws/src
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ mkdir -p ~/ros2_ws/src
+        $ cd ~/ros2_ws/src
+
+   .. tab-item:: Windows
+     :sync: Windows
 
      .. code-block:: console
 
@@ -149,9 +151,10 @@ You wouldn't want a build to fail after a long wait only to realize that you hav
 
 From the root of your workspace (``ros2_ws``), run the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       If you're still in the ``src`` directory with the ``ros_tutorials`` clone, make sure to run ``cd ..`` to move back up to the workspace (``ros2_ws``).
 
@@ -160,11 +163,13 @@ From the root of your workspace (``ros2_ws``), run the following command:
         $ cd ..
         $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       rosdep only runs on Linux, so you can skip ahead to section "5 Build the workspace with colcon".
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       rosdep only runs on Linux, so you can skip ahead to section "5 Build the workspace with colcon".
 
@@ -186,20 +191,10 @@ You can learn more about ``rosdep`` in another tutorial (coming soon).
 
 From the root of your workspace (``ros2_ws``), you can now build your packages using the command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon build
-      Starting >>> turtlesim
-      Finished <<< turtlesim [5.49s]
-
-      Summary: 1 package finished [5.58s]
-
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -210,7 +205,20 @@ From the root of your workspace (``ros2_ws``), you can now build your packages u
       Summary: 1 package finished [5.58s]
 
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon build
+      Starting >>> turtlesim
+      Finished <<< turtlesim [5.49s]
+
+      Summary: 1 package finished [5.58s]
+
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -234,23 +242,26 @@ From the root of your workspace (``ros2_ws``), you can now build your packages u
 Once the build is finished, enter the command in the workspace root (``~/ros2_ws``).
 You will see that colcon has created new directories:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ ls
-        build  install  log  src
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ ls
         build  install  log  src
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ ls
+        build  install  log  src
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -268,21 +279,24 @@ Sourcing an overlay in the same terminal where you built, or likewise building w
 
 In the new terminal, source your main ROS 2 environment as the "underlay", so you can build the overlay "on top of" it:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ source /opt/ros/{DISTRO}/setup.bash
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         $ . ~/ros2_install/ros2-osx/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       In this case you can use a normal command prompt, as we are not going to build any workspace in this terminal.
 
@@ -292,21 +306,24 @@ In the new terminal, source your main ROS 2 environment as the "underlay", so yo
 
 Go into the root of your workspace:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ cd ~/ros2_ws
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ cd ~/ros2_ws
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ cd ~/ros2_ws
+
+   .. tab-item:: Windows
+     :sync: Windows
 
      .. code-block:: console
 
@@ -314,21 +331,24 @@ Go into the root of your workspace:
 
 In the root, source your overlay:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/local_setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ . install/local_setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

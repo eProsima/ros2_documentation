@@ -11,10 +11,6 @@ Adding a frame (C++)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Background
 ----------
 
@@ -51,21 +47,24 @@ Let's first create the source files.
 Go to the ``learning_tf2_cpp`` package we created in the previous tutorials.
 Inside the ``src`` directory download the fixed frame broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/fixed_frame_tf2_broadcaster.cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/fixed_frame_tf2_broadcaster.cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/fixed_frame_tf2_broadcaster.cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -230,39 +229,45 @@ The last part of the code will add our fixed ``carrot1`` frame to the turtlesim 
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ colcon build --packages-select learning_tf2_cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ colcon build --packages-select learning_tf2_cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ colcon build --packages-select learning_tf2_cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -270,21 +275,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ . install/setup.bash
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ . install/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ . install/setup.bash
+
+   .. tab-item:: Windows
+        :sync: Windows
 
         In a Windows command line prompt:
 
@@ -346,21 +354,24 @@ Let's change our ``carrot1`` frame so that it changes relative to ``turtle1`` fr
 Go to the ``learning_tf2_cpp`` package we created in the previous tutorial.
 Inside the ``src`` directory download the dynamic frame broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/dynamic_frame_tf2_broadcaster.cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/dynamic_frame_tf2_broadcaster.cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/dynamic_frame_tf2_broadcaster.cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -497,39 +508,45 @@ To test this code, create a new launch file ``turtle_tf2_dynamic_frame_demo_laun
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ colcon build --packages-select learning_tf2_cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ colcon build --packages-select learning_tf2_cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ colcon build --packages-select learning_tf2_cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -537,21 +554,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ . install/setup.bash
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ . install/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ . install/setup.bash
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 

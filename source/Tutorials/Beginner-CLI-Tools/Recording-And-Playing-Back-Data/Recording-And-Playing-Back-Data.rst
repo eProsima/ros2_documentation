@@ -13,10 +13,6 @@ Recording and playing back data
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -61,23 +57,26 @@ Open another terminal and run:
 
 Let's also make a new directory to store our saved recordings, just as good practice:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
-
-        .. code-block:: console
-
-            $ mkdir bag_files
-            $ cd bag_files
-
-    .. group-tab:: macOS
+    .. tab-item:: Linux
+        :sync: Linux
 
         .. code-block:: console
 
             $ mkdir bag_files
             $ cd bag_files
 
-    .. group-tab:: Windows
+    .. tab-item:: macOS
+        :sync: macOS
+
+        .. code-block:: console
+
+            $ mkdir bag_files
+            $ cd bag_files
+
+    .. tab-item:: Windows
+        :sync: Windows
 
         .. code-block:: console
 

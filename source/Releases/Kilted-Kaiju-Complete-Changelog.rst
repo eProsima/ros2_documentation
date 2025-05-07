@@ -3,9 +3,6 @@ ROS 2 Kilted Kaiju Complete Changelog
 
 This page is a list of the complete changes in all ROS 2 core packages since the previous release.
 
-.. contents:: Table of Contents
-   :local:
-
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `action_msgs <https://github.com/ros2/rcl_interfaces/tree/kilted/action_msgs/CHANGELOG.rst>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

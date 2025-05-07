@@ -7,10 +7,6 @@
 Code style and language versions
 ================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 In order to achieve a consistent looking product we will all follow externally (if possible) defined style guidelines for each language.
 For other things like package layout or documentation layout we will need to come up with our own guidelines, drawing on current, popular styles in use now.
 

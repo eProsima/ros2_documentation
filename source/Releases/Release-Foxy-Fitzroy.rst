@@ -1,10 +1,6 @@
 Foxy Fitzroy (``foxy``)
 =======================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Foxy Fitzroy* is the sixth release of ROS 2.
 
 Supported Platforms
@@ -176,9 +172,10 @@ The ``SetEnvironmentVariable`` action is now scoped to any ``GroupAction`` it is
 
 For example, consider the following launch files,
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: python
 
@@ -197,7 +194,8 @@ For example, consider the following launch files,
                  ]),
              ])
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+      :sync: XML
 
       .. code-block:: xml
 

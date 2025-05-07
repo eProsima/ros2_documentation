@@ -15,10 +15,6 @@ See the :doc:`ament_cmake user documentation <Ament-CMake-Documentation>` for mo
    ``ament_cmake_python`` should only be used in cases where that is not possible, like when mixing C/C++ and Python code.
 
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Basics
 ------
 

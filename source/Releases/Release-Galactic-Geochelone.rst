@@ -8,10 +8,6 @@ Galactic Geochelone (``galactic``)
 
    Galactic-Geochelone-Complete-Changelog
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Galactic Geochelone* is the seventh release of ROS 2.
 What follows is highlights of the important changes and features in Galactic Geochelone since the last release.
 For a list of all of the changes since Foxy, see the `long form changelog <Galactic-Geochelone-Complete-Changelog>`.

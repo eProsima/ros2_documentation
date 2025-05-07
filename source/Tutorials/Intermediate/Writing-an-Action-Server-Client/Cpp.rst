@@ -13,10 +13,6 @@ Writing an action server and client (C++)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -44,23 +40,26 @@ As we saw in the :doc:`../../Beginner-Client-Libraries/Creating-Your-First-ROS2-
 Go into the action workspace you created in the :doc:`previous tutorial <../Creating-an-Action>` (remember to source the workspace), and create a new package for the C++ action server:
 
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ cd ~/ros2_ws/src
-      $ ros2 pkg create --dependencies custom_action_interfaces rclcpp rclcpp_action rclcpp_components --license Apache-2.0 -- custom_action_cpp
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ cd ~/ros2_ws/src
       $ ros2 pkg create --dependencies custom_action_interfaces rclcpp rclcpp_action rclcpp_components --license Apache-2.0 -- custom_action_cpp
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ cd ~/ros2_ws/src
+      $ ros2 pkg create --dependencies custom_action_interfaces rclcpp rclcpp_action rclcpp_components --license Apache-2.0 -- custom_action_cpp
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
