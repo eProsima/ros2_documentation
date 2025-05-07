@@ -6,10 +6,6 @@
 Using Eclipse Oxygen with ``rviz2`` [community-contributed]
 ===========================================================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 Setup
 -----
 

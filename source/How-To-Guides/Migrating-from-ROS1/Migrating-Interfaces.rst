@@ -1,10 +1,6 @@
 Migrating Interfaces
 ====================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Messages, services, and actions are collectively called ``interfaces`` in ROS 2.
 
 Interface definitions

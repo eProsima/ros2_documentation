@@ -2,10 +2,6 @@ Setup ROS 2 with VSCode and Docker [community-contributed]
 ==========================================================
 
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 
 Install VS Code and Docker
 --------------------------

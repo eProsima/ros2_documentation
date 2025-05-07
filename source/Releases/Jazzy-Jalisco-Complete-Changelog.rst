@@ -3,9 +3,6 @@ Jazzy Jalisco changelog
 
 This page is a list of the complete changes in all ROS 2 core packages since the previous release.
 
-.. contents:: Table of Contents
-   :local:
-
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `action_tutorials_cpp <https://github.com/ros2/demos/tree/jazzy/action_tutorials/action_tutorials_cpp/CHANGELOG.rst>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

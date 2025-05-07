@@ -8,10 +8,6 @@
 Using ``colcon`` to build packages
 ==================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 **Goal:** Build a ROS 2 workspace with ``colcon``.
 
 **Tutorial level:** Beginner
@@ -35,21 +31,24 @@ Prerequisites
 Install colcon
 ^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ sudo apt install python3-colcon-common-extensions
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
         $ python3 -m pip install colcon-common-extensions
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -89,23 +88,26 @@ Create a workspace
 
 First, create a directory (``ros2_ws``) to contain our workspace:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ mkdir -p ~/ros2_ws/src
-       $ cd ~/ros2_ws
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ mkdir -p ~/ros2_ws/src
        $ cd ~/ros2_ws
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ mkdir -p ~/ros2_ws/src
+       $ cd ~/ros2_ws
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -166,21 +168,24 @@ In the root of the workspace, run ``colcon build``.
 Since build types such as ``ament_cmake`` do not support the concept of the ``devel`` space and require the package to be installed, colcon supports the option ``--symlink-install``.
 This allows the installed files to be changed by changing the files in the ``source`` space (e.g. Python files or other non-compiled resources) for faster iteration.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon build --symlink-install
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ colcon build --symlink-install
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon build --symlink-install
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -212,21 +217,24 @@ Run tests
 
 To run tests for the packages we just built, run the following:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon test
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ colcon test
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon test
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     Remember to use a ``x64 Native Tools Command Prompt for VS 2019`` for executing the following command, as we are going to build a workspace.
 
@@ -246,21 +254,24 @@ Before you can use any of the installed executables or libraries, you will need 
 colcon will have generated bash/bat files in the ``install`` directory to help set up the environment.
 These files will add all of the required elements to your path and library paths as well as provide any bash or shell commands exported by packages.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ source install/setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
        $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line interface:
 
@@ -317,23 +328,26 @@ The command ``colcon_cd`` allows you to quickly change the current working direc
 As an example ``colcon_cd some_ros_package`` would quickly bring you to the directory ``~/ros2_ws/src/some_ros_package``.
 To set up ``colcon_cd`` you need to run the following commands to modify your shell startup script:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
         $ echo "export _colcon_cd_root=/opt/ros/{DISTRO}/" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         $ echo "source /usr/local/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
         $ echo "export _colcon_cd_root=~/ros2_install" >> ~/.bashrc
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       Not yet available
 

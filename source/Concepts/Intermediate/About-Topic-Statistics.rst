@@ -6,9 +6,6 @@
 Topic statistics
 ================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

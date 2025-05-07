@@ -3,10 +3,6 @@
 Topics vs Services vs Actions
 =============================
 
-.. contents:: Contents
-   :depth: 1
-   :local:
-
 When designing a system there are three primary styles of interfaces.
 The specifications for the content is in the :doc:`Interfaces Overview <../Concepts/Basic/About-Interfaces>`.
 This is written to provide the reader with guidelines about when to use each type of interface.

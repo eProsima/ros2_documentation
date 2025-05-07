@@ -6,10 +6,6 @@
 Logging
 =======
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 See `the logging page <../../Concepts/Intermediate/About-Logging>` for details on available functionality.
 
 Using log statements in code
@@ -20,9 +16,10 @@ Basic logging
 
 The following code will output a log message from a ROS 2 node at ``DEBUG`` severity:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: C++
 
@@ -32,7 +29,8 @@ The following code will output a log message from a ROS 2 node at ``DEBUG`` seve
             // C++ stream style
             RCLCPP_DEBUG_STREAM(node->get_logger(), "My log message " << 4);
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: python
 
@@ -45,9 +43,10 @@ Logging only the first time
 
 The following code will output a log message from a ROS 2 node at ``INFO`` severity, but only the first time it is hit:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: C++
 
@@ -57,7 +56,8 @@ The following code will output a log message from a ROS 2 node at ``INFO`` sever
             // C++ stream style
             RCLCPP_INFO_STREAM_ONCE(node->get_logger(), "My log message " << 4);
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: python
 
@@ -69,9 +69,10 @@ Logging all but the first time
 
 The following code will output a log message from a ROS 2 node at ``WARN`` severity, but not the very first time it is hit:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: C++
 
@@ -81,7 +82,8 @@ The following code will output a log message from a ROS 2 node at ``WARN`` sever
             // C++ stream style
             RCLCPP_WARN_STREAM_SKIPFIRST(node->get_logger(), "My log message " << 4);
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: python
 
@@ -95,9 +97,10 @@ The following code will output a log message from a ROS 2 node at ``ERROR`` seve
 
 The interval parameter specifying milliseconds between messages should have an integer data type so it can be converted to a ``rcutils_duration_value_t`` (an ``int64_t``):
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: C++
 
@@ -110,7 +113,8 @@ The interval parameter specifying milliseconds between messages should have an i
             // For now, use the nanoseconds() method to use an existing rclcpp::Duration value, see https://github.com/ros2/rclcpp/issues/1929
             RCLCPP_ERROR_STREAM_THROTTLE(node->get_logger(), *node->get_clock(), msg_interval.nanoseconds()/1000000, "My log message " << 4);
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: python
 
@@ -122,9 +126,10 @@ Logging throttled all but the first time
 
 The following code will output a log message from a ROS 2 node at ``DEBUG`` severity, no more than once per second, skipping the very first time it is hit:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         .. code-block:: C++
 
@@ -133,7 +138,8 @@ The following code will output a log message from a ROS 2 node at ``DEBUG`` seve
 
             RCLCPP_DEBUG_SKIPFIRST_THROTTLE(node->get_logger(), *node->get_clock(), 1000, "My log message " << 4);
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         .. code-block:: python
 
@@ -166,23 +172,26 @@ The logic is as follows:
 
 For example, to set the logging directory to ``~/my_logs``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export ROS_LOG_DIR=~/my_logs
-      $ ros2 run logging_demo logging_demo_main
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export ROS_LOG_DIR=~/my_logs
       $ ros2 run logging_demo logging_demo_main
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export ROS_LOG_DIR=~/my_logs
+      $ ros2 run logging_demo logging_demo_main
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -196,23 +205,26 @@ Alternatively, you can set ``ROS_HOME`` and the logging directory will be relati
 Note that ``ROS_LOG_DIR`` has to be either unset or empty.
 For example, with ``ROS_HOME`` set to ``~/my_ros_home``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export ROS_HOME=~/my_ros_home
-      $ ros2 run logging_demo logging_demo_main
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export ROS_HOME=~/my_ros_home
       $ ros2 run logging_demo logging_demo_main
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export ROS_HOME=~/my_ros_home
+      $ ros2 run logging_demo logging_demo_main
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -236,16 +248,18 @@ ROS 2 nodes have services available to configure the logging level externally at
 These services are disabled by default.
 The following code shows how to enable the logger service while creating the node.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: C++
 
         // Create a node with logger service enabled
         auto node = std::make_shared<rclcpp::Node>("NodeWithLoggerService", rclcpp::NodeOptions().enable_logger_service(true))
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -380,23 +394,26 @@ Console output formatting
 If you would like more or less verbose formatting, you can use the ``RCUTILS_CONSOLE_OUTPUT_FORMAT`` environment variable.
 For example, to additionally get the timestamp and location of the log calls, stop the demo and restart it with the environment variable set:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})"
-      $ ros2 run logging_demo logging_demo_main
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})"
       $ ros2 run logging_demo logging_demo_main
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export RCUTILS_CONSOLE_OUTPUT_FORMAT="[{severity} {time}] [{name}]: {message} ({function_name}() at {file_name}:{line_number})"
+      $ ros2 run logging_demo logging_demo_main
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -414,23 +431,26 @@ By default, the output is colorized when it's targeting a terminal.
 If you would like to force enabling or disabling it, you can use the ``RCUTILS_COLORIZED_OUTPUT`` environment variable.
 For example:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export RCUTILS_COLORIZED_OUTPUT=0  # 1 for forcing it
-      $ ros2 run logging_demo logging_demo_main
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export RCUTILS_COLORIZED_OUTPUT=0  # 1 for forcing it
       $ ros2 run logging_demo logging_demo_main
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export RCUTILS_COLORIZED_OUTPUT=0  # 1 for forcing it
+      $ ros2 run logging_demo logging_demo_main
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -458,21 +478,24 @@ In Foxy and later, the output from all debug levels goes to stderr by default.
 It is possible to force all output to go to stdout by setting the ``RCUTILS_LOGGING_USE_STDOUT`` environment variable to ``1``.
 For example:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export RCUTILS_LOGGING_USE_STDOUT=1
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export RCUTILS_LOGGING_USE_STDOUT=1
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export RCUTILS_LOGGING_USE_STDOUT=1
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -487,21 +510,24 @@ By default, all logging output is unbuffered.
 You can force it to be buffered by setting the ``RCUTILS_LOGGING_BUFFERED_STREAM`` environment variable to 1.
 For example:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export RCUTILS_LOGGING_BUFFERED_STREAM=1
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ export RCUTILS_LOGGING_BUFFERED_STREAM=1
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ export RCUTILS_LOGGING_BUFFERED_STREAM=1
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

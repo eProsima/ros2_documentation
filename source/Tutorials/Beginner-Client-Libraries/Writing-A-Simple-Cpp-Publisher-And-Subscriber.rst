@@ -13,10 +13,6 @@ Writing a simple publisher and subscriber (C++)
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -59,21 +55,24 @@ Recall that this is the directory in any CMake package where the source files co
 
 Download the example talker code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-            $ wget -O publisher_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_publisher/lambda.cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
             $ wget -O publisher_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_publisher/lambda.cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+            $ wget -O publisher_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_publisher/lambda.cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -300,21 +299,24 @@ You could build your package now, source the local setup files, and run it, but 
 Return to ``ros2_ws/src/cpp_pubsub/src`` to create the next node.
 Enter the following code in your terminal:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-            $ wget -O subscriber_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/lambda.cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
             $ wget -O subscriber_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/lambda.cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+            $ wget -O subscriber_lambda_function.cpp https://raw.githubusercontent.com/ros2/examples/{REPOS_FILE_BRANCH}/rclcpp/topics/minimal_subscriber/lambda.cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -431,40 +433,46 @@ Make sure to save the file, and then your pub/sub system should be ready.
 You likely already have the ``rclcpp`` and ``std_msgs`` packages installed as part of your ROS 2 system.
 It's good practice to run ``rosdep`` in the root of your workspace (``ros2_ws``) to check for missing dependencies before building:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
             $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       rosdep only runs on Linux, so you can skip ahead to next step.
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       rosdep only runs on Linux, so you can skip ahead to next step.
 
 
 Still in the root of your workspace, ``ros2_ws``, build your new package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon build --packages-select cpp_pubsub
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ colcon build --packages-select cpp_pubsub
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon build --packages-select cpp_pubsub
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -472,21 +480,24 @@ Still in the root of your workspace, ``ros2_ws``, build your new package:
 
 Open a new terminal, navigate to ``ros2_ws``, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

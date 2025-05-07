@@ -5,9 +5,6 @@
 ROS 2 middleware implementations
 ================================
 
-.. contents:: Table of Contents
-   :local:
-
 .. include:: ../../../global_substitutions.txt
 
 ROS middleware implementations are sets of |packages| that provide the underlying communication framework for ROS 2.

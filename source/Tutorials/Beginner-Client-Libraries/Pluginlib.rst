@@ -11,10 +11,6 @@ Creating and using plugins (C++)
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Background
 ----------
 
@@ -321,21 +317,24 @@ Navigate back to the root of your workspace, ``ros2_ws``, and build your new pac
 
 From ``ros2_ws``, be sure to source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

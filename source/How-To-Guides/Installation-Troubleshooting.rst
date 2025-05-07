@@ -8,10 +8,6 @@ Installation troubleshooting
 
 Troubleshooting techniques for installation are sorted by the platforms they apply to.
 
-.. contents:: Platforms
-   :depth: 1
-   :local:
-
 General
 -------
 

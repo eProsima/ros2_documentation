@@ -13,10 +13,6 @@ Creating a package
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -35,16 +31,18 @@ You can create a package using either CMake or Python, which are officially supp
 
 ROS 2 Python and CMake packages each have their own minimum required contents:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       * ``CMakeLists.txt`` file that describes how to build the code within the package
       * ``include/<package_name>`` directory containing the public headers for the package
       * ``package.xml`` file containing meta information about the package
       * ``src`` directory containing the source code for the package
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       * ``package.xml`` file containing meta information about the package
       * ``resource/<package_name>`` marker file for the package
@@ -54,9 +52,10 @@ ROS 2 Python and CMake packages each have their own minimum required contents:
 
 The simplest possible package may have a file structure that looks like:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
@@ -66,7 +65,8 @@ The simplest possible package may have a file structure that looks like:
              package.xml
              src/
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -133,21 +133,24 @@ Let's use the workspace you created in the :ref:`previous tutorial <new-director
 
 Make sure you are in the ``src`` folder before running the package creation command.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ cd ~/ros2_ws/src
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+     :sync: macOS
 
      .. code-block:: console
 
        $ cd ~/ros2_ws/src
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+     :sync: Windows
 
      .. code-block:: console
 
@@ -155,15 +158,17 @@ Make sure you are in the ``src`` folder before running the package creation comm
 
 The command syntax for creating a new package in ROS 2 is:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
         $ ros2 pkg create --build-type ament_cmake --license Apache-2.0 <package_name>
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -174,15 +179,17 @@ For this tutorial, you will use the optional arguments ``--node-name`` and ``--l
 
 Enter the following command in your terminal:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
         $ ros2 pkg create --build-type ament_cmake --license Apache-2.0 --node-name my_node my_package
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -192,9 +199,10 @@ You will now have a new folder within your workspace's ``src`` directory called 
 
 After running the command, your terminal will return the message:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
@@ -217,7 +225,8 @@ After running the command, your terminal will return the message:
         creating ./my_package/CMakeLists.txt
         creating ./my_package/src/my_node.cpp
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -257,21 +266,24 @@ Otherwise, you would have to build each package individually.
 
 Return to the root of your workspace:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ cd ~/ros2_ws
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ cd ~/ros2_ws
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ cd ~/ros2_ws
+
+   .. tab-item:: Windows
+     :sync: Windows
 
      .. code-block:: console
 
@@ -279,21 +291,24 @@ Return to the root of your workspace:
 
 Now you can build your packages:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon build
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ colcon build
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon build
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -318,21 +333,24 @@ To use your new package and executable, first open a new terminal and source you
 
 Then, from inside the ``ros2_ws`` directory, run the following command to source your workspace:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/local_setup.bash
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ . install/local_setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -351,15 +369,17 @@ To run the executable you created using the ``--node-name`` argument during pack
 
 Which will return a message to your terminal:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
         hello world my_package package
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -370,9 +390,10 @@ Which will return a message to your terminal:
 
 Inside ``ros2_ws/src/my_package``, you will see the files and folders that ``ros2 pkg create`` automatically generated:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       .. code-block:: console
 
@@ -381,7 +402,8 @@ Inside ``ros2_ws/src/my_package``, you will see the files and folders that ``ros
       ``my_node.cpp`` is inside the ``src`` directory.
       This is where all your custom C++ nodes will go in the future.
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
@@ -399,9 +421,10 @@ The ``maintainer`` field may also need to be filled in.
 
 From ``ros2_ws/src/my_package``, open ``package.xml`` using your preferred text editor:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+    :sync: CMake
 
     .. code-block:: xml
 
@@ -426,7 +449,8 @@ From ``ros2_ws/src/my_package``, open ``package.xml`` using your preferred text 
       </export>
      </package>
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: xml
 
@@ -473,13 +497,15 @@ Below the license tag, you will see some tag names ending with ``_depend``.
 This is where your ``package.xml`` would list its dependencies on other packages, for colcon to search for.
 ``my_package`` is simple and doesn't have any dependencies, but you will see this space being utilized in upcoming tutorials.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: CMake
+   .. tab-item:: CMake
+      :sync: CMake
 
       You're all done for now!
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       The ``setup.py`` file contains the same description, maintainer and license fields as ``package.xml``, so you need to set those as well.
       They need to match exactly in both files.

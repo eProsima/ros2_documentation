@@ -1,10 +1,6 @@
 Windows (binary)
 ================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page explains how to install ROS 2 on Windows from a pre-built binary package.
 
 .. note::

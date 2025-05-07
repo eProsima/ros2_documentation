@@ -16,9 +16,10 @@ Please change the directories according to your platform.
 
 To start the demo, we execute the demo bringup launch file, which we are going to explain in more details in the next section.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Source Build
+  .. tab-item:: Source Build
+    :sync: Source Build
 
     .. code-block:: console
 
@@ -39,7 +40,8 @@ To start the demo, we execute the demo bringup launch file, which we are going t
        [robot_state_publisher-2] [INFO] [1714837459.652977937] [robot_state_publisher]: Robot initialized
 
 
-  .. group-tab:: deb Package
+  .. tab-item:: deb Package
+    :sync: deb Package
 
     .. code-block:: console
 
