@@ -2,10 +2,6 @@ Using Custom Rosdistro Version
 ==============================
 
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 
 Overview
 --------

@@ -5,10 +5,6 @@
 Managing Dependencies with rosdep
 =================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 **Goal:** Manage external dependencies using ``rosdep``.
 
 **Tutorial level:** Intermediate

@@ -7,10 +7,6 @@
 Migrating Parameters
 ====================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 In ROS 1, parameters are associated with a central server that allowed retrieving parameters at runtime through the use of the network APIs.
 In ROS 2, parameters are associated per node and are configurable at runtime with ROS services.
 

@@ -29,15 +29,17 @@ RTI Connext Pro is available through a variety of channels:
 **ROS 2 apt repositories**
   ROS 2 users can install a non-commercial-use version of the RTI Connext DDS libraries for x86_64 Linux from the ROS apt repository using the following command:
 
-  .. tabs::
+  .. tab-set::
 
-     .. group-tab:: v7.3.0
+     .. tab-item:: v7.3.0
+        :sync: v7.3.0
 
         .. code-block:: console
 
            $ sudo apt update && sudo apt install -q -y rti-connext-dds-7.3.0-ros
 
-     .. group-tab:: v6.0.1
+     .. tab-item:: v6.0.1
+        :sync: v6.0.1
 
         .. code-block:: console
 
@@ -47,17 +49,9 @@ RTI Connext Pro is available through a variety of channels:
   Note that these Connext libraries are automatically installed when installing ``rmw_connextdds`` using apt.
 
 **Other Installation Options**
-<<<<<<< HEAD
 RTI Connext DDS is a proprietary DDS implementation with a number of advanced features and commercial support options.
 RTI provides both a `non-commercial / research license <https://www.rti.com/free-trial/university-program>`__ for students and researchers and a `time-limited free trial license <https://www.rti.com/free-trial>`__ for commercial users.
 Detailed instructions for building and tuning the RMW and ROS 2 applications for a variety of platforms, and enabling DDS Security and safety-cert options are available on the `RTI ROS Community <https://community.rti.com/ros>`__ pages.
-=======
-The `Connext Robotics Toolkit <https://www.rti.com/developers/connext-robotics-toolkit>`__ includes the full suite of Connext tools and infrastructure services.
-It provides a single step installation of ROS and Connext using apt.
-It is free for prototype development, research, non-commercial and academic use.
-
-Detailed instructions for building and tuning the RMW and ROS 2 applications for a variety of platforms, and enabling DDS Security are available on the `RTI ROS Community <https://community.rti.com/ros>`__ pages.
->>>>>>> e3eca81 (Update Connext RMW documentation (#6441))
 
 
 Install rmw_connextdds binary packages

@@ -1,9 +1,6 @@
 Launch
 ======
 
-.. contents:: Table of Contents
-   :local:
-
 A ROS 2 system typically consists of many nodes running across many different processes (and even different machines).
 While it is possible to manually start each of these nodes, it gets cumbersome quite quickly.
 

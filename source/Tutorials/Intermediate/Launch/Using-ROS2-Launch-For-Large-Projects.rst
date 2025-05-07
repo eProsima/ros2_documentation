@@ -14,10 +14,6 @@ Managing large projects
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Background
 ----------
 

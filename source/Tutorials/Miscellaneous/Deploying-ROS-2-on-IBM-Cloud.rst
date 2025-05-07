@@ -7,10 +7,6 @@ Deploying on IBM Cloud Kubernetes [community-contributed]
 =========================================================
 
 
-.. contents:: Table of Contents
-   :depth: 3
-   :local:
-
 About
 -----
 

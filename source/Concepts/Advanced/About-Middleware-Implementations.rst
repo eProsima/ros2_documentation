@@ -5,9 +5,6 @@
 ROS 2 middleware implementations
 ================================
 
-.. contents:: Table of Contents
-   :local:
-
 .. include:: ../../../global_substitutions.txt
 
 ROS middleware implementations are sets of |packages| that implement some of the internal ROS interfaces, e.g. the ``rmw``, ``rcl``, and ``rosidl`` |APIs|.

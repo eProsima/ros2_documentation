@@ -7,10 +7,6 @@ Ament Lint CLI Utilities
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

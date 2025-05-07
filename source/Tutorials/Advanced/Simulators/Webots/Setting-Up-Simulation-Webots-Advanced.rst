@@ -7,10 +7,6 @@ Setting up a robot simulation (Advanced)
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -40,14 +36,16 @@ For available devices that are not configured in the URDF file, the interface wi
 
 In ``my_robot.urdf`` replace the whole contents with:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+            :sync: Python
 
         .. literalinclude:: Code/my_robot_with_sensors_python.urdf
             :language: xml
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+            :sync: C++
 
         .. literalinclude:: Code/my_robot_with_sensors_cpp.urdf
             :language: xml
@@ -58,9 +56,10 @@ In addition to your custom plugin, the ``webots_ros2_driver`` will parse the ``<
 2 Creating a ROS node to avoid obstacles
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         The robot will use a standard ROS node to detect the wall and send motor commands to avoid it.
         In the ``my_package/my_package/`` folder, create a file named ``obstacle_avoider.py`` with this code:
@@ -91,7 +90,8 @@ In addition to your custom plugin, the ``webots_ros2_driver`` will parse the ``<
             :dedent: 4
             :lines: 22-32
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         The robot will use a standard ROS node to detect the wall and send motor commands to avoid it.
         In the ``my_package/include/my_package`` folder, create a header file named ``ObstacleAvoider.hpp`` with this code:
@@ -130,9 +130,10 @@ In addition to your custom plugin, the ``webots_ros2_driver`` will parse the ``<
 
 You have to modify these two other files to launch your new node.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Python
+    .. tab-item:: Python
+        :sync: Python
 
         Edit ``setup.py`` and replace ``'console_scripts'`` with:
 
@@ -143,7 +144,8 @@ You have to modify these two other files to launch your new node.
 
         This will add an entry point for the ``obstacle_avoider`` node.
 
-    .. group-tab:: C++
+    .. tab-item:: C++
+        :sync: C++
 
         Edit ``CMakeLists.txt`` and add the compilation and installation of the ``obstacle_avoider``:
 
@@ -163,9 +165,10 @@ This will create an ``obstacle_avoider`` node that will be included in the ``Lau
 
 Launch the simulation from a terminal in your ROS 2 workspace:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
         From a terminal in your ROS 2 workspace run:
 
@@ -175,7 +178,8 @@ Launch the simulation from a terminal in your ROS 2 workspace:
             $ source install/local_setup.bash
             $ ros2 launch my_package robot_launch.py
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+        :sync: Windows
 
         From a terminal in your WSL ROS 2 workspace run:
 
@@ -188,7 +192,8 @@ Launch the simulation from a terminal in your ROS 2 workspace:
 
         Be sure to use the ``/mnt`` prefix in front of your path to the Webots installation folder to access the Windows file system from WSL.
 
-    .. group-tab:: macOS
+    .. tab-item:: macOS
+        :sync: macOS
 
         In a terminal of the host machine (not in the VM), if not done already, specify the Webots installation folder (e.g. ``/Applications/Webots.app``) and start the server using the following commands:
 

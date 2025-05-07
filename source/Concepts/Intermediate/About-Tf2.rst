@@ -5,9 +5,6 @@
 Tf2
 ===
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

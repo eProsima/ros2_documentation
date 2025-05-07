@@ -12,10 +12,6 @@ Synchronous vs. asynchronous service clients
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 Introduction
 ------------

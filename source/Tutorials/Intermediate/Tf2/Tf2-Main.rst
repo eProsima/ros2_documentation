@@ -11,10 +11,6 @@ Many of the tf2 tutorials are available for both C++ and Python.
 The tutorials are streamlined to complete either the C++ track or the Python track.
 If you want to learn both C++ and Python, you should go through the tutorials once for C++ and once for Python.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 .. toctree::
    :hidden:
 

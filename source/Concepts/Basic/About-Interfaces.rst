@@ -6,9 +6,6 @@
 Interfaces
 ==========
 
-.. contents:: Table of Contents
-   :local:
-
 Background
 ----------
 
