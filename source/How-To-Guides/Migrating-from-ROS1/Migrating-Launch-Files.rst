@@ -22,7 +22,7 @@ This guide describes how to write ROS 2 XML launch files for an easy migration f
 Background
 ----------
 
-A description of the ROS 2 launch system can be found in :doc:`Launch System tutorial <../../../Tutorials/Intermediate/Launch/Launch-system>`.
+A description of the ROS 2 launch system can be found in :doc:`Launch System tutorial <../../Tutorials/Intermediate/Launch/Launch-system>`.
 
 
 Migrating tags
