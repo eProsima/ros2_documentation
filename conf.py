@@ -87,6 +87,7 @@ extensions = [
     'sphinx_rtd_theme',
     'sphinx_sitemap_ros',
     'sphinxcontrib.mermaid',
+    'sphinx_design',
 ]
 
 # Intersphinx mapping
