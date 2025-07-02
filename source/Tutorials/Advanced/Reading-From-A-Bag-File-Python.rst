@@ -7,10 +7,6 @@ Reading from a bag file (Python)
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -193,21 +189,24 @@ Open the ``setup.py`` file in the ``bag_reader_node_py`` package and add an entr
 
 Navigate back to the root of your workspace, ``ros2_ws``, and build your new package.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ colcon build --packages-select bag_reader_node_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ colcon build --packages-select bag_reader_node_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ colcon build --packages-select bag_reader_node_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -215,21 +214,24 @@ Navigate back to the root of your workspace, ``ros2_ws``, and build your new pac
 
 Open a new terminal, navigate to ``ros2_ws``, and source the setup files.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ source install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ source install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

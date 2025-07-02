@@ -386,21 +386,24 @@ Navigate back to the root of your workspace, ``ros2_ws``, and rebuild your updat
 
 Then source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
