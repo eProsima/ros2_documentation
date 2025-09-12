@@ -36,15 +36,17 @@ Prerequisites
 
 This tutorial expects you to have ``turtle_tf2_py`` package installed.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ sudo apt install ros-{DISTRO}-turtle-tf2-py
 
-  .. group-tab:: From Source
+  .. tab-item:: From Source
+    :sync: From Source
 
     .. code-block:: console
 

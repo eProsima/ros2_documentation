@@ -188,21 +188,24 @@ This command uses the ``create_enclave`` feature which is covered in more detail
 
 If the selected RMW implementation is Zenoh, then the Zenoh router also requires its own keys and certificates:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      ros2 security create_enclave demo_keystore /zenohd
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       ros2 security create_enclave demo_keystore /zenohd
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: bash
+
+      ros2 security create_enclave demo_keystore /zenohd
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bat
 
@@ -280,23 +283,26 @@ The environment variables in this terminal must be properly set as described in 
 
 If the RMW implementation is ``rmw_zenoh_cpp``, in another terminal:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       export ZENOH_ROUTER_CONFIG_URI=~/sros2_demo/zenohd
       ros2 run rmw_zenoh_cpp zenohd
 
-  .. group-tab:: MacOS
+  .. tab-item:: MacOS
+    :sync: MacOS
 
     .. code-block:: bash
 
       export ZENOH_ROUTER_CONFIG_URI=<path to route config with keys and certificates>
       ros2 run rmw_zenoh_cpp zenohd
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bat
 
