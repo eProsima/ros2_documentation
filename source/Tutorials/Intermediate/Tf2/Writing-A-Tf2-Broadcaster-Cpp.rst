@@ -247,19 +247,22 @@ Now create a launch file for this demo.
 Create a ``launch`` folder in the ``src/learning_tf2_cpp`` directory.
 With your text editor, create a new file called ``turtle_tf2_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``launch`` folder, and add the following lines:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.yaml
         :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.py
         :language: python
@@ -270,9 +273,10 @@ With your text editor, create a new file called ``turtle_tf2_demo_launch`` with 
 Let's examine the launch file structure.
 Each format has its own way of setting up the launch file:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     XML launch files start with an XML declaration and a root ``<launch>`` element.
 
@@ -280,7 +284,8 @@ Each format has its own way of setting up the launch file:
         :language: xml
         :lines: 1-2
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     YAML launch files start with a YAML version declaration and a ``launch:`` key.
 
@@ -288,7 +293,8 @@ Each format has its own way of setting up the launch file:
         :language: yaml
         :lines: 1-3
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     In Python launch files, we first import required modules from the ``launch`` and ``launch_ros`` packages.
     It should be noted that ``launch`` is a generic launching framework (not ROS 2 specific) and ``launch_ros`` has ROS 2 specific things, like nodes that we import here.
@@ -299,21 +305,24 @@ Each format has its own way of setting up the launch file:
 
 Now we run our nodes that start the turtlesim simulation and broadcast ``turtle1`` state to the tf2 using our ``turtle_tf2_broadcaster`` node.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.xml
         :language: xml
         :lines: 3-6
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.yaml
         :language: yaml
         :lines: 4-9
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.py
         :language: python
@@ -435,21 +444,24 @@ Open a new terminal, navigate to the root of your workspace, and source the setu
 
 Now run the launch file that will start the turtlesim simulation node and ``turtle_tf2_broadcaster`` node:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
