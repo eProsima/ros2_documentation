@@ -280,19 +280,22 @@ Finally, add the ``install(TARGETS…)`` section so ``ros2 run`` can find your e
 Open the launch file called ``turtle_tf2_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``src/learning_tf2_cpp/launch`` directory with your text editor, add two new nodes to the launch description, add a launch argument, and add the imports.
 The resulting file should look like:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/listener_cpp_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/listener_cpp_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/listener_cpp_launch.yaml
         :language: yaml
@@ -386,21 +389,24 @@ Open a new terminal, navigate to the root of your workspace, and source the setu
 
 Now you're ready to start your full turtle demo:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
