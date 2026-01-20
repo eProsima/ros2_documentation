@@ -36,15 +36,17 @@ Prerequisites
 
 This tutorial expects you to have ``turtle_tf2_py`` package installed.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ sudo apt install ros-{DISTRO}-turtle-tf2-py
 
-  .. group-tab:: From Source
+  .. tab-item:: From Source
+    :sync: From Source
 
     .. code-block:: console
 
@@ -235,19 +237,22 @@ Then we fill up the ``PointStamped`` messages of ``turtle3`` with incoming ``Pos
 
 In order to run this demo, we need to create a launch file ``turtle_tf2_sensor_message_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``launch`` subdirectory of package ``learning_tf2_py``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.yaml
         :language: yaml
@@ -695,21 +700,24 @@ Open a new terminal, navigate to the root of your workspace, and source the setu
 
 First we need to run several nodes (including the broadcaster node of PointStamped messages) by launching the launch file ``turtle_tf2_sensor_message_launch``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_py turtle_tf2_sensor_message_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_py turtle_tf2_sensor_message_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

@@ -5,10 +5,6 @@
 Lyrical Luth (codename 'lyrical'; May, 2026)
 ============================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Lyrical Luth* is the twelfth release of ROS 2.
 What follows is highlights of the important changes and features in Lyrical Luth since the last release.
 

@@ -65,23 +65,26 @@ To do this, let's create a ``launch_turtlesim_launch`` file in the ``/launch`` f
   Earlier launch system versions may not support ``let`` inside ``include`` statements and require ``arg`` instead.
   The syntax is the same: ``name`` and ``value`` attributes remain unchanged (e.g., ``<arg name="target_frame" value="carrot1" />``).
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/launch_turtlesim_launch.xml`` file:
 
     .. literalinclude:: launch/launch_turtlesim_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/launch_turtlesim_launch.yaml`` file:
 
     .. literalinclude:: launch/launch_turtlesim_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/launch_turtlesim_launch.py`` file:
 
@@ -108,23 +111,26 @@ However, there are cases when some nodes or launch files have to be launched sep
 We will begin by writing a launch file that will start our first turtlesim simulation.
 First, create a new file called ``turtlesim_world_1_launch``.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_1_launch.xml`` file:
 
     .. literalinclude:: launch/turtlesim_world_1_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_1_launch.yaml`` file:
 
     .. literalinclude:: launch/turtlesim_world_1_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/turtlesim_world_1_launch.py`` file:
 
@@ -139,23 +145,26 @@ This launch file starts the ``turtlesim_node`` node, which starts the turtlesim 
 In the second launch, we will start a second turtlesim simulation with a different configuration.
 Now create a ``turtlesim_world_2_launch`` file.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_2_launch.xml`` file:
 
     .. literalinclude:: launch/turtlesim_world_2_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_2_launch.yaml`` file:
 
     .. literalinclude:: launch/turtlesim_world_2_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/turtlesim_world_2_launch.py`` file:
 
@@ -190,9 +199,10 @@ A solution is to use wildcard characters, which act as substitutions for unknown
 
 Now let's create a new ``turtlesim_world_3_launch`` file similar to ``turtlesim_world_2_launch`` to include one more ``turtlesim_node`` node in a new namespace ``turtlesim3``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_3_launch.xml`` file:
 
@@ -200,7 +210,8 @@ Now let's create a new ``turtlesim_world_3_launch`` file similar to ``turtlesim_
       :language: xml
       :emphasize-lines: 3
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/turtlesim_world_3_launch.yaml`` file:
 
@@ -208,7 +219,8 @@ Now let's create a new ``turtlesim_world_3_launch`` file similar to ``turtlesim_
       :language: yaml
       :emphasize-lines: 7
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/turtlesim_world_3_launch.py`` file:
 
@@ -261,9 +273,10 @@ Every nested node will inherit that namespace automatically.
 To do that, firstly, we need to remove the ``namespace='turtlesim2'`` line from the ``turtlesim_world_2_launch`` file.
 Afterwards, we need to update the ``launch_turtlesim_launch`` to change the include statement to the following:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -272,7 +285,8 @@ Afterwards, we need to update the ``launch_turtlesim_launch`` to change the incl
          <include file="$(find-pkg-share launch_tutorial)/launch/turtlesim_world_2_launch.xml" />
        </group>
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: yaml
 
@@ -282,7 +296,8 @@ Afterwards, we need to update the ``launch_turtlesim_launch`` to change the incl
            - include:
                file: "$(find-pkg-share launch_tutorial)/launch/turtlesim_world_2_launch.yaml"
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -304,23 +319,26 @@ As a result, each node in the ``turtlesim_world_2_launch`` launch description wi
 
 Now create a ``broadcaster_listener_launch`` file.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/broadcaster_listener_launch.xml`` file:
 
     .. literalinclude:: launch/broadcaster_listener_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/broadcaster_listener_launch.yaml`` file:
 
     .. literalinclude:: launch/broadcaster_listener_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/broadcaster_listener_launch.py`` file:
 
@@ -341,21 +359,24 @@ We also start a ``turtle_tf2_listener`` node and set its ``target_frame`` parame
 Recall that we called the ``broadcaster_listener_launch`` file in our top-level launch file.
 In addition to that, we have passed it ``target_frame`` launch argument as shown below:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+      :sync: XML
 
     .. literalinclude:: launch/launch_turtlesim_launch.xml
       :language: xml
       :lines: 5-7
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+      :sync: YAML
 
     .. literalinclude:: launch/launch_turtlesim_launch.yaml
       :language: yaml
       :lines: 8-12
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+      :sync: Python
 
     .. literalinclude:: launch/launch_turtlesim_launch.py
       :language: python
@@ -370,23 +391,26 @@ This will assign ``target_frame`` its default value, which is ``turtle1``.
 
 Now create a ``mimic_launch`` file.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/mimic_launch.xml`` file:
 
     .. literalinclude:: launch/mimic_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/mimic_launch.yaml`` file:
 
     .. literalinclude:: launch/mimic_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/mimic_launch.py`` file:
 
@@ -404,23 +428,26 @@ This way ``turtle1`` in our ``turtlesim2`` simulation world will follow ``turtle
 
 Let's now create a file called ``turtlesim_rviz_launch``.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/turtlesim_rviz_launch.xml`` file:
 
     .. literalinclude:: launch/turtlesim_rviz_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/turtlesim_rviz_launch.yaml`` file:
 
     .. literalinclude:: launch/turtlesim_rviz_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/turtlesim_rviz_launch.py`` file:
 
@@ -435,23 +462,26 @@ This RViz configuration will set the world frame, enable TF visualization, and s
 
 Let's now create the last launch file called ``fixed_broadcaster_launch`` in our package.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/fixed_broadcaster_launch.xml`` file:
 
     .. literalinclude:: launch/fixed_broadcaster_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/fixed_broadcaster_launch.yaml`` file:
 
     .. literalinclude:: launch/fixed_broadcaster_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/fixed_broadcaster_launch.py`` file:
 
@@ -494,21 +524,24 @@ The ``data_files`` field should now look like this:
 
 To finally see the result of our code, build the package and launch the top-level launch file using the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
        $ ros2 launch launch_tutorial launch_turtlesim_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
        $ ros2 launch launch_tutorial launch_turtlesim_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

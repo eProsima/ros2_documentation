@@ -161,20 +161,23 @@ Add the following line between the ``'console_scripts':`` brackets:
 Now let's create a launch file for this example.
 With your text editor, create a new file called ``turtle_tf2_fixed_frame_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``src/learning_tf2_py/launch`` directory, and add the following lines:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.py
         :name: turtle_tf2_fixed_frame_demo_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.yaml
         :language: yaml
@@ -183,21 +186,24 @@ This launch file imports the required packages and then creates a ``demo_nodes``
 
 The last part of the code will add our fixed ``carrot1`` frame to the turtlesim world using our ``fixed_frame_tf2_broadcaster`` node.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.py
         :language: python
         :lines: 14-18
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.xml
         :language: xml
         :lines: 3-4
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.yaml
         :language: yaml
@@ -443,19 +449,22 @@ Add the following line between the ``'console_scripts':`` brackets:
 
 To test this code, create a new launch file ``turtle_tf2_dynamic_frame_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``src/learning_tf2_py/launch`` directory and paste the following code:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.py
         :name: turtle_tf2_dynamic_frame_demo_launch.py
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.yaml
         :language: yaml
