@@ -490,15 +490,17 @@ To support more participants, increase ``mutation_tries`` by applying the follow
 
 Save this file (e.g. as ``large_scale_configuration.xml``) and set the environment variable before launching your nodes:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
         .. code-block:: console
 
             $ export FASTDDS_DEFAULT_PROFILES_FILE=large_scale_configuration.xml
 
-    .. group-tab:: Windows
+    .. tab-item:: Windows
+        :sync: Windows
 
         .. code-block:: console
 

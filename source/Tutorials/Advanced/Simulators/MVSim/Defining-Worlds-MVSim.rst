@@ -7,10 +7,6 @@ Defining worlds, robots, and sensors
 
 **Time:** 30 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

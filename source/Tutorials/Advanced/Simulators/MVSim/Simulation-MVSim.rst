@@ -9,10 +9,6 @@ sensor simulation (2D/3D LiDARs, cameras, IMUs, GPS), and native ROS 2 integrati
 MVSim is particularly well-suited for testing navigation, SLAM, and multi-robot coordination scenarios
 with low computational overhead and fast iteration times.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 .. toctree::
    :maxdepth: 1
 
