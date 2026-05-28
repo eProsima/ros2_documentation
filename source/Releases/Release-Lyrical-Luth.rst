@@ -5,6 +5,13 @@
 Lyrical Luth (codename 'lyrical'; May, 2026)
 ============================================
 
+.. toctree::
+   :hidden:
+
+   Lyrical-Luth-Complete-Changelog
+   lyrical/release-timeline.rst
+   lyrical/supported-platforms.rst
+
 *Lyrical Luth* is the twelfth release of ROS 2.
 It is a Long Term Support (LTS) release, and it is supported until May 2031.
 
@@ -17,10 +24,6 @@ New Features in Lyrical
 
 This section highlights some of the new features in ROS Lyrical.
 For all changes, see the :doc:`full ROS Lyrical changelog <Lyrical-Luth-Complete-Changelog>`.
-
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
 
 Callback Group Events executor (``rclcpp``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -7,10 +7,6 @@ Getting started with MVSim
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

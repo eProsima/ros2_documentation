@@ -8,10 +8,6 @@ This article introduces the main areas of the ecosystem and outlines their inten
 
 **Area: ROS-framework, ROS-tools, ROS-capabilities | Content-type: about | Experience: beginner**
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

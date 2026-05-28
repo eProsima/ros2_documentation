@@ -69,15 +69,17 @@ Beyond the :doc:`standard colcon testing commands <CLI>` you can also specify ar
 For example, you can specify the name of the function to run with
 
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux/macOS
+  .. tab-item:: Linux/macOS
+      :sync: Linux/macOS
 
       .. code-block:: console
 
          $ colcon test --packages-select <name-of-pkg> --pytest-args -k name_of_the_test_function
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

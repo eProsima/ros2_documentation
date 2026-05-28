@@ -12,10 +12,6 @@ You can use the example to understand and experiment with managing nodes in this
 
 **Area: ROS-framework | Content-type: example | Experience: expert**
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 
