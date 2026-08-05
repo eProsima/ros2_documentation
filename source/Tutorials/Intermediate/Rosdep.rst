@@ -153,15 +153,17 @@ If you are using ``rosdep`` with ROS, it is conveniently packaged along with the
 This is the recommended way to get ``rosdep``.
 You can install it with:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Ubuntu
+  .. tab-item:: Ubuntu
+    :sync: Ubuntu
 
     .. code-block:: console
 
         $ sudo apt install python3-rosdep
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+    :sync: RHEL
 
     .. code-block:: console
 
