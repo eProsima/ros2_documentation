@@ -493,16 +493,18 @@ They can be used anywhere a substitution is allowed, including the ``if`` and ``
 
 The ``if`` predicate from the previous section can also be expressed using boolean substitutions instead of a Python expression:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
       <executable cmd="ros2 param set /turtlesim background_r $(var new_background_r)"
                   if="$(and $(equals $(var new_background_r) 200) $(var use_provided_red))"/>
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: yaml
 
@@ -510,7 +512,8 @@ The ``if`` predicate from the previous section can also be expressed using boole
           cmd: ros2 param set /turtlesim background_r $(var new_background_r)
           if: $(and $(equals $(var new_background_r) 200) $(var use_provided_red))
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
