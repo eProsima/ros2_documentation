@@ -92,6 +92,7 @@ extensions = [
     'sphinxcontrib.googleanalytics',
     'sphinxcontrib.mermaid',
     'sphinxext.opengraph',
+    'sphinx_design',
 ]
 
 # Intersphinx mapping
