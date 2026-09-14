@@ -3,10 +3,6 @@
 Maintain source checkout
 ========================
 
-.. contents::
-   :depth: 2
-   :local:
-
 If you have installed ROS 2 from source, there may have been changes made to the source code since the time that you checked it out.
 To keep your source checkout up to date, you will have to periodically update your ``ros2.repos`` file, download the latest sources, and rebuild your workspace.
 
@@ -21,17 +17,10 @@ Latest ROS 2 {DISTRO_TITLE} branches
 
 If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get the relevant repository list by running:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ cd ~/ros2_{DISTRO}
-       $ mv -i ros2.repos ros2.repos.old
-       $ wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -39,7 +28,17 @@ If you wish to checkout the latest code for ROS 2 {DISTRO_TITLE}, you can get th
        $ mv -i ros2.repos ros2.repos.old
        $ wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ cd ~/ros2_{DISTRO}
+       $ mv -i ros2.repos ros2.repos.old
+       $ wget https://raw.githubusercontent.com/ros2/ros2/{REPOS_FILE_BRANCH}/ros2.repos
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     Use a Windows command line interface:
 
@@ -72,23 +71,26 @@ Download the new source code
 
 You should now be able to download the sources associated with the new repository list with:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ vcs import src < ros2.repos
-       $ vcs pull src
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ vcs import src < ros2.repos
        $ vcs pull src
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ vcs import src < ros2.repos
+       $ vcs pull src
+
+  .. tab-item:: Windows
+   :sync: Windows
 
    In a Windows command line interface:
 
@@ -119,23 +121,26 @@ Inspect your source checkout
 During your development you may have deviated from the original state of your workspace from when you imported the repository list.
 If you wish to know the versions of the set of repositories in your workspace, you can export the information using the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ cd ~/ros2_{DISTRO}
-       $ vcs export src > my_ros2.repos
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ cd ~/ros2_{DISTRO}
        $ vcs export src > my_ros2.repos
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ cd ~/ros2_{DISTRO}
+       $ vcs export src > my_ros2.repos
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

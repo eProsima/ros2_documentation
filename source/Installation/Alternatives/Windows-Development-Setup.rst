@@ -5,10 +5,6 @@
 Windows (source)
 ================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page explains how to setup a development environment for ROS 2 on Windows.
 
 System requirements

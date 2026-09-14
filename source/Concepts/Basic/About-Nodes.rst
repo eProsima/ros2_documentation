@@ -1,9 +1,6 @@
 Nodes
 =====
 
-.. contents:: Table of Contents
-   :local:
-
 A node is a participant in the ROS 2 graph, which uses a :doc:`client library <About-Client-Libraries>` to communicate with other nodes.
 Nodes can communicate with other nodes within the same process, in a different process, or on a different machine.
 Nodes are typically the unit of computation in a ROS graph; each node should do one logical thing.

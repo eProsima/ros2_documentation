@@ -12,10 +12,6 @@ Implementing a custom memory allocator
 
 **Time:** 20 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This tutorial will teach you how to integrate a custom allocator for publishers and subscribers so that the default heap allocator is never called while your ROS nodes are executing.
 The code for this tutorial is available `here <https://github.com/ros2/demos/blob/{REPOS_FILE_BRANCH}/demo_nodes_cpp/src/topics/allocator_tutorial_pmr.cpp>`__.
 

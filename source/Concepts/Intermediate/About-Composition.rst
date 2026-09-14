@@ -5,9 +5,6 @@
 Composition
 ===========
 
-.. contents:: Table of Contents
-   :local:
-
 ROS 1 - Nodes vs. Nodelets
 --------------------------
 

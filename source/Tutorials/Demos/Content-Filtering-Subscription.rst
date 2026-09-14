@@ -13,10 +13,6 @@ Creating a content filtering subscription
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 Overview
 --------
 

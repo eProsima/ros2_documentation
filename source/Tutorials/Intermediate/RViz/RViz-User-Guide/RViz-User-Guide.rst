@@ -7,10 +7,6 @@ RViz User Guide
 
 **Time:** 25 Minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 Background
 ----------

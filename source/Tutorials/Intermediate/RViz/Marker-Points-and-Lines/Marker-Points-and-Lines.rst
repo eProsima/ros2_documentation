@@ -7,10 +7,6 @@ Marker: Points and Lines (C++)
 
 **Time:** 15 Minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 .. note::
 
    This tutorial assumes that you have completed :doc:`Marker: Sending Basic Shapes <../Marker-Sending-Basic-Shapes/Marker-Sending-Basic-Shapes>`.

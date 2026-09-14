@@ -7,10 +7,6 @@ Setting up a Reset Handler
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

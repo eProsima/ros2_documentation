@@ -7,10 +7,6 @@ With this information, you'll be able to submit focused changes in a pull reques
 
 **Area: contributing, community | Content-type: how-to | Experience: beginner, intermediate, expert**
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

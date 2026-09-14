@@ -7,10 +7,6 @@ Publishing messages using YAML files
 
 **Time:** 5 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 

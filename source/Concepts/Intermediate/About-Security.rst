@@ -5,9 +5,6 @@
 ROS 2 Security
 ==============
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

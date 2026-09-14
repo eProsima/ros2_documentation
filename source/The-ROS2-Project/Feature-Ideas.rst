@@ -7,10 +7,6 @@
 Feature Ideas
 =============
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 The following are feature ideas in no specific order.
 This list contains features that we think are important and can make for good contributions to ROS 2.
 :doc:`Please get in touch with us <../Contact>` before digging into a new feature.

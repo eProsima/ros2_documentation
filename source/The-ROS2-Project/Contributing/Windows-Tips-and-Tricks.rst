@@ -5,10 +5,6 @@
 Windows Tips and Tricks
 =======================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 ROS 2 supports Windows 10 as a Tier 1 platform, which means that all code that goes into the ROS 2 core must support Windows.
 For those used to traditional development on Linux or other Unix-like systems, developing on Windows can be a bit of a challenge.
 This document aims to lay out some of those differences.

@@ -7,10 +7,6 @@
 Contributing
 ============
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 A few things to remember before you start contributing to the ROS 2 project.
 
 Tenets

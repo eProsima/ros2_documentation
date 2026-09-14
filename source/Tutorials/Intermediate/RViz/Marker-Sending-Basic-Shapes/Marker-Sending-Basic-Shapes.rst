@@ -7,10 +7,6 @@ Marker: Sending Basic Shapes (C++)
 
 **Time:** 15 Minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 .. note::
 
    This tutorial assumes you are already comfortable with writing ROS 2 C++ nodes and building packages with ``colcon``.

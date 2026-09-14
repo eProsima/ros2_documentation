@@ -25,10 +25,6 @@ New Features in Lyrical
 This section highlights some of the new features in ROS Lyrical.
 For all changes, see the :doc:`full ROS Lyrical changelog <Lyrical-Luth-Complete-Changelog>`.
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 Callback Group Events executor (``rclcpp``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

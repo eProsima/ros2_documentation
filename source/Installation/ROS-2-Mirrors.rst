@@ -2,9 +2,6 @@
 Mirrors
 =======
 
-.. contents:: Table of Contents
-   :depth: 3
-
 Docs Mirrors
 ------------
 

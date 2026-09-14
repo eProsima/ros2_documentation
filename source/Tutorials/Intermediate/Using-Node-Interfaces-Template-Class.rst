@@ -7,10 +7,6 @@ Using the Node Interfaces Template Class (C++)
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 Overview
 --------

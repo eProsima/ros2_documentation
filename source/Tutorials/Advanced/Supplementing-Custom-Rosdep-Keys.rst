@@ -1,10 +1,6 @@
 Supplementing custom rosdep keys
 ================================
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 Overview and motivation
 -----------------------
 

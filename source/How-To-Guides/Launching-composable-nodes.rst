@@ -1,10 +1,6 @@
 Using ROS 2 launch to launch composable nodes
 =============================================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 In the :doc:`Composition tutorial <../Tutorials/Intermediate/Composition>`, you learned about composable nodes and how to use them from the command-line.
 In the :doc:`Launch tutorials <../Tutorials/Intermediate/Launch/Launch-Main>`, you learned about launch files and how to use them to manage multiple nodes.
 
@@ -27,19 +23,22 @@ The launch files all do the following:
 * Instantiate a cam2image composable node with remappings, custom parameters, and extra arguments
 * Instantiate a showimage composable node with remappings, custom parameters, and extra arguments
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+      :sync: XML
 
     .. literalinclude:: launch/composition_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+      :sync: YAML
 
     .. literalinclude:: launch/composition_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+      :sync: Python
 
     .. literalinclude:: launch/composition_launch.py
       :language: python
@@ -53,19 +52,22 @@ In that case, you need to add your components to an existing container.
 For this, you may use ``LoadComposableNodes`` to load components into a given container.
 The below example launches the same nodes as above.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+      :sync: XML
 
     .. literalinclude:: launch/composition_load_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+      :sync: YAML
 
     .. literalinclude:: launch/composition_load_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+      :sync: Python
 
     .. literalinclude:: launch/composition_load_launch.py
       :language: python

@@ -9,10 +9,6 @@ Working through these will give you the essential knowledge needed to start deve
 
 **Area: ROS-framework | Content-type: learning-path | Experience: beginner**
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 Summary
 -------
 

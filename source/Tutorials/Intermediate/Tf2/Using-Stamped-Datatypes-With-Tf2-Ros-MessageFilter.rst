@@ -13,10 +13,6 @@ Using stamped datatypes with ``tf2_ros::MessageFilter``
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Background
 ----------
 
@@ -40,21 +36,24 @@ Prerequisites
 
 This tutorial expects you to have ``turtle_tf2_py`` package installed.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Ubuntu
+  .. tab-item:: Ubuntu
+    :sync: Ubuntu
 
     .. code-block:: console
 
         $ sudo apt install ros-{DISTRO}-turtle-tf2-py
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+    :sync: RHEL
 
     .. code-block:: console
 
         $ sudo dnf install ros-{DISTRO}-turtle-tf2-py
 
-  .. group-tab:: From Source
+  .. tab-item:: From Source
+    :sync: From Source
 
     .. code-block:: console
 
@@ -76,21 +75,24 @@ First, let's create the source file.
 Go to the ``learning_tf2_py`` :doc:`package <./Writing-A-Tf2-Static-Broadcaster-Py>` we created in the previous tutorial.
 Inside the ``src/learning_tf2_py/learning_tf2_py`` directory download the example sensor message broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_message_broadcaster.py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_message_broadcaster.py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/turtle_tf2_message_broadcaster.py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line prompt:
 
@@ -241,19 +243,22 @@ Then we fill up the ``PointStamped`` messages of ``turtle3`` with incoming ``Pos
 
 In order to run this demo, we need to create a launch file ``turtle_tf2_sensor_message_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``launch`` subdirectory of package ``learning_tf2_py``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_sensor_message_launch.yaml
         :language: yaml
@@ -298,39 +303,45 @@ Add the following line between the ``'data_files':`` brackets:
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim_msgs`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim_msgs`` dependencies yourself
 
 And then we can build the package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -345,21 +356,24 @@ Now, to get the streaming ``PointStamped`` data of ``turtle3`` in the frame of `
 Go to the ``learning_tf2_cpp`` :doc:`package <./Writing-A-Tf2-Static-Broadcaster-Cpp>` we created in the previous tutorial.
 Inside the ``src/learning_tf2_cpp/src`` directory download file ``turtle_tf2_message_filter.cpp`` by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_message_filter.cpp
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_message_filter.cpp
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_message_filter.cpp
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line prompt:
 
@@ -620,39 +634,45 @@ Finally, add the ``install(TARGETS…)`` section (below other existing nodes) so
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim_msgs`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim_msgs`` dependencies yourself
 
 Now open a new terminal, navigate to the root of your workspace, and rebuild the package with command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_cpp
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_cpp
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_cpp
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -660,21 +680,24 @@ Now open a new terminal, navigate to the root of your workspace, and rebuild the
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ . install/setup.bash
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ . install/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ . install/setup.bash
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a windows command line prompt:
 
@@ -693,21 +716,24 @@ Open a new terminal, navigate to the root of your workspace, and source the setu
 
 First we need to run several nodes (including the broadcaster node of PointStamped messages) by launching the launch file ``turtle_tf2_sensor_message_launch``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_py turtle_tf2_sensor_message_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_py turtle_tf2_sensor_message_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

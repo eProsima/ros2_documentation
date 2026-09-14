@@ -5,11 +5,6 @@ Topic Keys Subscription Filtering Tutorial
 
 This tutorial aims to demonstrate how to receive data only from certain topic instances by combining the use of topic keys and topic content filtering.
 
-.. contents::
-    :depth: 2
-    :local:
-    :backlinks: none
-
 Background
 ----------
 
@@ -71,9 +66,10 @@ For this, there are two possible options:
 
 Source the following file to setup the ROS 2 environment:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -82,13 +78,15 @@ Source the following file to setup the ROS 2 environment:
       Replace ``.bash`` with your shell if you're not using bash.
       Possible values are: ``setup.bash``, ``setup.sh``, ``setup.zsh``.
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         $ . ~/ros2_install/ros2-osx/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -100,29 +98,10 @@ Retrieving the sources
 
 Create a new workspace and download the demo package sources as indicated below:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        # Create directory structure
-        $ mkdir -p ~/tutorial_ws/src/demo_keys_filtering_cpp
-        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/msg
-        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/src
-        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/launch
-        $ cd ~/tutorial_ws/src/demo_keys_filtering_cpp
-
-        # Download demo package source code
-        $ wget -O CMakeLists.txt https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/CMakeLists.txt
-        $ wget -O package.xml https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/package.xml
-        $ wget -O README.md https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/README.md
-        $ wget -O msg/KeyedSensorDataMsg.msg https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/msg/KeyedSensorDataMsg.msg
-        $ wget -O src/filtered_keyed_sensor.cpp https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/src/filtered_keyed_sensor.cpp
-        $ wget -O src/filtered_keyed_controller.cpp https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/src/filtered_keyed_controller.cpp
-        $ wget -O launch/keyed_sensors_launch.py https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/launch/keyed_sensors_launch.py
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -142,7 +121,29 @@ Create a new workspace and download the demo package sources as indicated below:
         $ wget -O src/filtered_keyed_controller.cpp https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/src/filtered_keyed_controller.cpp
         $ wget -O launch/keyed_sensors_launch.py https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/launch/keyed_sensors_launch.py
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        # Create directory structure
+        $ mkdir -p ~/tutorial_ws/src/demo_keys_filtering_cpp
+        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/msg
+        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/src
+        $ mkdir ~/tutorial_ws/src/demo_keys_filtering_cpp/launch
+        $ cd ~/tutorial_ws/src/demo_keys_filtering_cpp
+
+        # Download demo package source code
+        $ wget -O CMakeLists.txt https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/CMakeLists.txt
+        $ wget -O package.xml https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/package.xml
+        $ wget -O README.md https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/README.md
+        $ wget -O msg/KeyedSensorDataMsg.msg https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/msg/KeyedSensorDataMsg.msg
+        $ wget -O src/filtered_keyed_sensor.cpp https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/src/filtered_keyed_sensor.cpp
+        $ wget -O src/filtered_keyed_controller.cpp https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/src/filtered_keyed_controller.cpp
+        $ wget -O launch/keyed_sensors_launch.py https://raw.githubusercontent.com/ros2/ros2_documentation/{DISTRO}/source/Tutorials/Advanced/Topic-Keys/resources/Filtered/launch/keyed_sensors_launch.py
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -227,17 +228,10 @@ Generating the IDL files
 
 Generate the corresponding IDL definition from the provided ``KeyedSensorDataMsg.msg`` file, using the ``msg2idl.py`` script from the ``rosidl_adapter`` package.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ cd ~/tutorial_ws/src/demo_keys_filtering_cpp/msg
-        $ ros2 run rosidl_adapter msg2idl.py KeyedSensorDataMsg.msg
-        $ rm KeyedSensorDataMsg.msg
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -245,7 +239,17 @@ Generate the corresponding IDL definition from the provided ``KeyedSensorDataMsg
         $ ros2 run rosidl_adapter msg2idl.py KeyedSensorDataMsg.msg
         $ rm KeyedSensorDataMsg.msg
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ cd ~/tutorial_ws/src/demo_keys_filtering_cpp/msg
+        $ ros2 run rosidl_adapter msg2idl.py KeyedSensorDataMsg.msg
+        $ rm KeyedSensorDataMsg.msg
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -275,23 +279,26 @@ Building the demo package
 Once the environment has been setup and the demo package sources are available, the demo package can be built.
 Get into the root of the workspace and build it with the following commands:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ cd ~/tutorial_ws
-        $ colcon build
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ cd ~/tutorial_ws
         $ colcon build
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ cd ~/tutorial_ws
+        $ colcon build
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -315,56 +322,59 @@ Run the demo by executing the following commands in separate terminals:
     If a docker deployment was preferred, it would be necessary to attach the other two terminals to the running docker container before executing the above commands.
     This can be done by running ``docker exec -it <container_name> /bin/bash``.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
+    .. tab-item:: Linux
+        :sync: Linux
 
-        .. tabs::
+        .. tab-set::
 
-            .. tab:: Shell 1 (Sensors)
-
-                .. code-block:: console
-
-                    $ source ~/tutorial_ws/install/setup.bash
-                    $ ros2 launch demo_keys_filtering_cpp keyed_sensors_launch.py
-
-            .. tab:: Shell 2 (Controller)
-
-                .. code-block:: console
-
-                    $ source ~/tutorial_ws/install/setup.bash
-                    $ ros2 run demo_keys_filtering_cpp filtered_keyed_controller
-
-    .. group-tab:: macOS
-
-        .. tabs::
-
-            .. tab:: Shell 1 (Sensors)
+            .. tab-item:: Shell 1 (Sensors)
 
                 .. code-block:: console
 
                     $ source ~/tutorial_ws/install/setup.bash
                     $ ros2 launch demo_keys_filtering_cpp keyed_sensors_launch.py
 
-            .. tab:: Shell 2 (Controller)
+            .. tab-item:: Shell 2 (Controller)
 
                 .. code-block:: console
 
                     $ source ~/tutorial_ws/install/setup.bash
                     $ ros2 run demo_keys_filtering_cpp filtered_keyed_controller
 
-    .. group-tab:: Windows
+    .. tab-item:: macOS
+        :sync: macOS
 
-        .. tabs::
+        .. tab-set::
 
-            .. tab:: Shell 1 (Sensors)
+            .. tab-item:: Shell 1 (Sensors)
+
+                .. code-block:: console
+
+                    $ source ~/tutorial_ws/install/setup.bash
+                    $ ros2 launch demo_keys_filtering_cpp keyed_sensors_launch.py
+
+            .. tab-item:: Shell 2 (Controller)
+
+                .. code-block:: console
+
+                    $ source ~/tutorial_ws/install/setup.bash
+                    $ ros2 run demo_keys_filtering_cpp filtered_keyed_controller
+
+    .. tab-item:: Windows
+        :sync: Windows
+
+        .. tab-set::
+
+            .. tab-item:: Shell 1 (Sensors)
 
                 .. code-block:: console
 
                     $ call C:\tutorial_ws\install\setup.bat
                     $ ros2 launch demo_keys_filtering_cpp keyed_sensors_launch.py
 
-            .. tab:: Shell 2 (Controller)
+            .. tab-item:: Shell 2 (Controller)
 
                 .. code-block:: console
 

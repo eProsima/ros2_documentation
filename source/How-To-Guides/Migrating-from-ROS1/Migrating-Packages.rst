@@ -1,10 +1,6 @@
 Migrating Packages
 ==================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 There are two different kinds of package migrations:
 
 * Migrating the source code of an existing package from ROS 1 to ROS 2 with the intent that a significant part of the source code will stay the same or at least similar.

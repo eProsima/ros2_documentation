@@ -7,9 +7,6 @@ This page is meant as a guide on how to use callback groups efficiently.
 It is assumed that the reader has a basic understanding
 about the concept of :doc:`executors <../Concepts/Intermediate/About-Executors>`.
 
-.. contents:: Table of Contents
-   :local:
-
 Basics of callback groups
 -------------------------
 
@@ -46,9 +43,10 @@ The callback group can then be passed as argument/option when creating a subscri
 A reference to the callback group should be retained, otherwise the callback
 associated with the callback group will not be called by the executor.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: cpp
 
@@ -60,7 +58,8 @@ associated with the callback group will not be called by the executor.
       my_subscription = create_subscription<Int32>("/topic", rclcpp::SensorDataQoS(),
                                                     callback, options);
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -193,9 +192,10 @@ Demo code
 
 We have two nodes - one providing a simple service:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       .. code-block:: cpp
 
@@ -247,7 +247,8 @@ We have two nodes - one providing a simple service:
             return 0;
         }
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: python
 
@@ -278,9 +279,10 @@ We have two nodes - one providing a simple service:
 and another containing a client to the service along with a timer for making
 service calls:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     *Note:* The API of service client in rclcpp does not offer a
     synchronous call method similar to the one in rclpy, so we
@@ -345,7 +347,8 @@ service calls:
           return 0;
       }
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -398,9 +401,10 @@ the client always gets a response and prints ``Received response``.
 If we try running the server and client nodes
 in terminals, we get the following outputs.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Client
+  .. tab-item:: Client
+    :sync: Client
 
     .. code-block:: console
 
@@ -408,7 +412,8 @@ in terminals, we get the following outputs.
       [INFO] [1653034372.755865649] [client_node]: Sending request
       ^C[INFO] [1653034398.161674869] [client_node]: Keyboard interrupt, shutting down.
 
-  .. group-tab:: Server
+  .. tab-item:: Server
+    :sync: Server
 
     .. code-block:: console
 
@@ -442,16 +447,18 @@ to different callback groups.
 Thus, let us change the first two lines of the client node's constructor
 to be as follows (everything else shall stay the same):
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: cpp
 
       client_cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
       timer_cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -461,9 +468,10 @@ to be as follows (everything else shall stay the same):
 Now we get the expected result, i.e. the timer fires repeatedly and
 each service call gets the result as it should:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Client
+  .. tab-item:: Client
+    :sync: Client
 
     .. code-block:: console
 
@@ -478,7 +486,8 @@ each service call gets the result as it should:
       [INFO] [1653067527.432848369] [client_node]: Received response
       ^C[INFO] [1653067528.400052749] [client_node]: Keyboard interrupt, shutting down.
 
-  .. group-tab:: Server
+  .. tab-item:: Server
+    :sync: Server
 
     .. code-block:: console
 
@@ -496,16 +505,18 @@ different Mutually Exclusive group changes nothing.
 Thus, the following configuration also leads to the previously
 discovered deadlock.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: cpp
 
       client_cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::MutuallyExclusive);
       timer_cb_group_ = client_cb_group_;
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 
@@ -519,9 +530,10 @@ Hence, all of the following configurations (and some others as well)
 produce the desired outcome where the timer fires
 repeatedly and service calls are completed.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     .. code-block:: cpp
 
@@ -549,7 +561,8 @@ repeatedly and service calls are completed.
       client_cb_group_ = this->create_callback_group(rclcpp::CallbackGroupType::Reentrant);
       timer_cb_group_ = nullptr;
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 

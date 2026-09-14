@@ -10,10 +10,6 @@ Using Python Packages with ROS 2
 
 **Goal:** Explain how to interoperate with other Python packages from the ROS 2 ecosystem.
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 .. note::
 
     A cautionary note, if you intended to use pre-packaged binaries (either ``deb`` files, or the binary archive distributions), the Python interpreter must match what was used to build the original binaries.

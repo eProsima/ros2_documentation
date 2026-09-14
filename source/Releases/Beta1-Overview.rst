@@ -5,10 +5,6 @@
 Beta 1 (``Asphalt``)
 ====================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Supported Platforms
 -------------------
 

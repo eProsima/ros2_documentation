@@ -5,10 +5,6 @@
 Beta 2 (``r2b2``)
 =================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Supported Platforms
 -------------------
 

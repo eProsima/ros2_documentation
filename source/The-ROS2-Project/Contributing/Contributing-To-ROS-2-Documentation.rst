@@ -5,10 +5,6 @@
 Contributing to ROS 2 Documentation
 ===================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Contributions to this site are most welcome.
 This page explains how to contribute to ROS 2 Documentation.
 Please be sure to read the below sections carefully before contributing.
@@ -42,21 +38,24 @@ Start by creating `venv <https://docs.python.org/3/library/venv.html>`__ to buil
 
 And install requirements located in the ``requirements.txt`` file:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ pip install -r requirements.txt -c constraints.txt
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ pip install -r requirements.txt -c constraints.txt
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ pip install -r requirements.txt -c constraints.txt
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -64,21 +63,24 @@ And install requirements located in the ``requirements.txt`` file:
 
 In order for Sphinx to be able to generate diagrams, the ``dot`` command must be available.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ sudo apt update ; sudo apt install graphviz
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     .. code-block:: console
 
       $ brew install graphviz
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+      :sync: Windows
 
       Download an installer from `the Graphviz Download page <https://graphviz.gitlab.io/_pages/Download/Download_windows.html>`__ and install it.
       Make sure to allow the installer to add it to the Windows ``%PATH%``, otherwise Sphinx will not be able to find it.

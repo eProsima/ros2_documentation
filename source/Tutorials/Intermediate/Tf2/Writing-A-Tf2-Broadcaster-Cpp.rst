@@ -11,10 +11,6 @@ Writing a broadcaster (C++)
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -39,21 +35,24 @@ Let's first create the source files.
 Go to the ``learning_tf2_cpp`` package we created in the previous tutorial.
 Inside the ``src`` directory download the example broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Linux
-
-        .. code-block:: console
-
-            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_broadcaster.cpp
-
-    .. group-tab:: macOS
+    .. tab-item:: Linux
+        :sync: Linux
 
         .. code-block:: console
 
             $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_broadcaster.cpp
 
-    .. group-tab:: Windows
+    .. tab-item:: macOS
+        :sync: macOS
+
+        .. code-block:: console
+
+            $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_cpp/src/turtle_tf2_broadcaster.cpp
+
+    .. tab-item:: Windows
+        :sync: Windows
 
         In a Windows command line prompt:
 
@@ -251,19 +250,22 @@ Now create a launch file for this demo.
 Create a ``launch`` folder in the ``src/learning_tf2_cpp`` directory.
 With your text editor, create a new file called ``turtle_tf2_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``launch`` folder, and add the following lines:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.yaml
         :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.py
         :language: python
@@ -274,9 +276,10 @@ With your text editor, create a new file called ``turtle_tf2_demo_launch`` with 
 Let's examine the launch file structure.
 Each format has its own way of setting up the launch file:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     XML launch files start with an XML declaration and a root ``<launch>`` element.
 
@@ -284,7 +287,8 @@ Each format has its own way of setting up the launch file:
         :language: xml
         :lines: 1-2
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     YAML launch files start with a YAML version declaration and a ``launch:`` key.
 
@@ -292,7 +296,8 @@ Each format has its own way of setting up the launch file:
         :language: yaml
         :lines: 1-3
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     In Python launch files, we first import required modules from the ``launch`` and ``launch_ros`` packages.
     It should be noted that ``launch`` is a generic launching framework (not ROS 2 specific) and ``launch_ros`` has ROS 2 specific things, like nodes that we import here.
@@ -303,21 +308,24 @@ Each format has its own way of setting up the launch file:
 
 Now we run our nodes that start the turtlesim simulation and broadcast ``turtle1`` state to the tf2 using our ``turtle_tf2_broadcaster`` node.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.xml
         :language: xml
         :lines: 3-6
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.yaml
         :language: yaml
         :lines: 4-9
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/turtle_tf2_demo_launch.py
         :language: python
@@ -357,39 +365,45 @@ You can learn more about creating launch files in :doc:`this tutorial <../Launch
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ colcon build --packages-select learning_tf2_cpp
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ colcon build --packages-select learning_tf2_cpp
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ colcon build --packages-select learning_tf2_cpp
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -397,21 +411,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ . install/setup.bash
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ . install/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ . install/setup.bash
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -430,21 +447,24 @@ Open a new terminal, navigate to the root of your workspace, and source the setu
 
 Now run the launch file that will start the turtlesim simulation node and ``turtle_tf2_broadcaster`` node:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

@@ -5,9 +5,6 @@
 Executors
 =========
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 
@@ -117,9 +114,10 @@ In rclpy, the same is done by calling the constructor of the specific callback g
 The callback group must be stored throughout execution of the node (e.g. as a class member), or otherwise the executor won't be able to trigger the callbacks.
 Then, this callback group can be specified when creating a subscription, timer, etc. - for example by the subscription options:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       .. code-block:: cpp
 
@@ -130,7 +128,8 @@ Then, this callback group can be specified when creating a subscription, timer, 
 
         my_subscription = create_subscription<Int32>("/topic", rclcpp::SensorDataQoS(),
                                                      callback, options);
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: python
 

@@ -8,9 +8,6 @@
 Quality of Service settings
 ===========================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

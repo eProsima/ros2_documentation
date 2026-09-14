@@ -3,10 +3,6 @@
 Platform EOL Policy
 ===================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 :doc:`ROS distributions <../Releases>` do not support end-of-life (EOL) platforms, even if the ROS distribution is still active.
 This page explains:
 

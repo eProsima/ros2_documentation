@@ -1,9 +1,6 @@
 Services
 ========
 
-.. contents:: Table of Contents
-   :local:
-
 In ROS 2, a service refers to a remote procedure call.
 In other words, a node can make a remote procedure call to another node which will do a computation and return a result.
 

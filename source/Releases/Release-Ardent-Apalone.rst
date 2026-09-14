@@ -5,10 +5,6 @@
 Ardent Apalone (``ardent``)
 ===========================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Welcome to the first non-beta release of ROS 2 software named *Ardent Apalone*!
 
 Supported Platforms

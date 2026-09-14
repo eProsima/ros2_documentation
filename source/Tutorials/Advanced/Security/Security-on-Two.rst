@@ -13,10 +13,6 @@ Ensuring security across machines
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-  :depth: 2
-  :local:
-
 
 Background
 ----------
@@ -35,17 +31,10 @@ Create the second keystore
 
 Begin by creating an empty keystore on ``Bob``; the keystore is actually just an empty directory:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ ssh Bob
-      $ mkdir ~/sros2_demo
-      $ exit
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -53,7 +42,17 @@ Begin by creating an empty keystore on ``Bob``; the keystore is actually just an
       $ mkdir ~/sros2_demo
       $ exit
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ ssh Bob
+      $ mkdir ~/sros2_demo
+      $ exit
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -68,23 +67,26 @@ Copy files
 Next copy the keys and certificates for the ``talker`` program from ``Alice`` to ``Bob``.
 Since the keys are just text files, we can use ``scp`` to copy them.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ cd ~/sros2_demo/demo_keystore
-      $ scp -r talker USERNAME@Bob:~/sros2_demo/demo_keystore
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ cd ~/sros2_demo/demo_keystore
       $ scp -r talker USERNAME@Bob:~/sros2_demo/demo_keystore
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ cd ~/sros2_demo/demo_keystore
+      $ scp -r talker USERNAME@Bob:~/sros2_demo/demo_keystore
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

@@ -5,9 +5,6 @@
 Cross-compilation
 =================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

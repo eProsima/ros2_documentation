@@ -1,10 +1,6 @@
 Rolling Ridley (``rolling``)
 ============================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 *Rolling Ridley* is a rolling development release of ROS 2.
 
 .. warning::

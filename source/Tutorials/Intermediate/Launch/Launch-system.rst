@@ -13,10 +13,6 @@ Integrating launch files into ROS 2 packages
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Prerequisites
 -------------
 
@@ -38,38 +34,43 @@ Tasks
 
 Create a workspace for the package to live in:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ mkdir -p launch_ws/src
-      $ cd launch_ws/src
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ mkdir -p launch_ws/src
       $ cd launch_ws/src
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ mkdir -p launch_ws/src
+      $ cd launch_ws/src
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
       $ md launch_ws\src
       $ cd launch_ws\src
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python package
+  .. tab-item:: Python package
+    :sync: Python package
 
     .. code-block:: console
 
       $ ros2 pkg create --build-type ament_python --license Apache-2.0 py_launch_example
 
-  .. group-tab:: C++ package
+  .. tab-item:: C++ package
+    :sync: C++ package
 
     .. code-block:: console
 
@@ -81,9 +82,10 @@ Create a workspace for the package to live in:
 By convention, all launch files for a package are stored in the ``launch`` directory inside of the package.
 Make sure to create a ``launch`` directory at the top-level of the package you created above.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python package
+  .. tab-item:: Python package
+    :sync: Python package
 
     For Python packages, the directory containing your package should look like this:
 
@@ -119,7 +121,8 @@ Make sure to create a ``launch`` directory at the top-level of the package you c
           ]
       )
 
-  .. group-tab:: C++ package
+  .. tab-item:: C++ package
+    :sync: C++ package
 
     For C++ packages, we will only be adjusting the ``CMakeLists.txt`` file by adding:
 
@@ -137,9 +140,10 @@ Make sure to create a ``launch`` directory at the top-level of the package you c
 3 Writing the launch file
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML launch file
+  .. tab-item:: XML launch file
+    :sync: XML launch file
 
     Inside your ``launch`` directory, create a new launch file called ``my_script_launch.xml``.
     ``_launch.xml`` is recommended, but not required, as the file suffix for XML launch files.
@@ -147,7 +151,8 @@ Make sure to create a ``launch`` directory at the top-level of the package you c
     .. literalinclude:: launch/my_script_launch.xml
       :language: xml
 
-  .. group-tab:: YAML launch file
+  .. tab-item:: YAML launch file
+    :sync: YAML launch file
 
     Inside your ``launch`` directory, create a new launch file called ``my_script_launch.yaml``.
     ``_launch.yaml`` is recommended, but not required, as the file suffix for YAML launch files.
@@ -155,7 +160,8 @@ Make sure to create a ``launch`` directory at the top-level of the package you c
     .. literalinclude:: launch/my_script_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python launch file
+  .. tab-item:: Python launch file
+    :sync: Python launch file
 
     Inside your ``launch`` directory, create a new launch file called ``my_script_launch.py``.
     ``_launch.py`` is recommended, but not required, as the file suffix for Python launch files.
@@ -178,47 +184,55 @@ Go to the top-level of the workspace, and build it:
 
 After the ``colcon build`` has been successful and you've sourced the workspace, you should be able to run the launch file as follows:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python package
+  .. tab-item:: Python package
+    :sync: Python package
 
-    .. tabs::
+    .. tab-set::
 
-      .. group-tab:: XML launch file
+      .. tab-item:: XML launch file
+        :sync: XML launch file
 
         .. code-block:: console
 
           $ ros2 launch py_launch_example my_script_launch.xml
 
-      .. group-tab:: YAML launch file
+      .. tab-item:: YAML launch file
+        :sync: YAML launch file
 
         .. code-block:: console
 
           $ ros2 launch py_launch_example my_script_launch.yaml
 
-      .. group-tab:: Python launch file
+      .. tab-item:: Python launch file
+        :sync: Python launch file
 
         .. code-block:: console
 
           $ ros2 launch py_launch_example my_script_launch.py
 
-  .. group-tab:: C++ package
+  .. tab-item:: C++ package
+    :sync: C++ package
 
-    .. tabs::
+    .. tab-set::
 
-      .. group-tab:: XML launch file
+      .. tab-item:: XML launch file
+        :sync: XML launch file
 
         .. code-block:: console
 
           $ ros2 launch cpp_launch_example my_script_launch.xml
 
-      .. group-tab:: YAML launch file
+      .. tab-item:: YAML launch file
+        :sync: YAML launch file
 
         .. code-block:: console
 
           $ ros2 launch cpp_launch_example my_script_launch.yaml
 
-      .. group-tab:: Python launch file
+      .. tab-item:: Python launch file
+        :sync: Python launch file
 
         .. code-block:: console
 

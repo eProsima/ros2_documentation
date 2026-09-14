@@ -1,10 +1,6 @@
 Using ``ros1_bridge`` with upstream ROS on Ubuntu 22.04
 =======================================================
 
-.. contents:: Table of Contents
-   :depth: 1
-   :local:
-
 The release of ROS 2 Humble (and Rolling) on Ubuntu 22.04 Jammy Jellyfish marks the first ROS 2 release on a platform with no official ROS 1 release.
 While ROS 1 Noetic will continue to be supported through the duration of its `long term support window <https://reps.openrobotics.org/rep-0003/#noetic-ninjemys-may-2020---may-2025>`__, it will only target Ubuntu 20.04.
 Alternatively, there are `upstream variants of ROS 1 packages <https://packages.ubuntu.com/jammy/ros-desktop>`__ in Debian and Ubuntu that are not maintained as an official distribution by the ROS maintainers.

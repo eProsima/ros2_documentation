@@ -7,10 +7,6 @@
 RHEL (source)
 =============
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 System requirements
 -------------------
@@ -31,9 +27,10 @@ Set locale
 Enable required repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+    :sync: RHEL
 
     The rosdep database contains packages from the EPEL and PowerTools repositories, which are not enabled by default.
     They can be enabled by running:
@@ -46,7 +43,8 @@ Enable required repositories
     .. note:: This step may be slightly different depending on the distribution you are using.
               `Check the EPEL documentation <https://docs.fedoraproject.org/en-US/epel/#_quickstart>`_
 
-  .. group-tab:: Fedora
+  .. tab-item:: Fedora
+    :sync: Fedora
 
     No additional setup required.
 

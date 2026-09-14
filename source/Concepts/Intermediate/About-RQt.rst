@@ -7,9 +7,6 @@
 Overview and usage of RQt
 =========================
 
-.. contents:: Table of Contents
-   :local:
-
 Overview
 --------
 

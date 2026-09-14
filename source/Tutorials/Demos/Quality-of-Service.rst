@@ -6,10 +6,6 @@
 Using quality-of-service settings for lossy networks
 ====================================================
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -25,15 +21,17 @@ This tutorial assumes you have a :doc:`working ROS 2 installation <../../Install
 See the `OpenCV documentation <http://docs.opencv.org/doc/tutorials/introduction/table_of_content_introduction/table_of_content_introduction.html#table-of-content-introduction>`__ for its installation instructions.
 You will also need the ROS package ``image_tools``.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux Binaries
+   .. tab-item:: Linux Binaries
+      :sync: Linux Binaries
 
       .. code-block:: console
 
         $ sudo apt-get install ros-{DISTRO}-image-tools
 
-   .. group-tab:: From Source
+   .. tab-item:: From Source
+      :sync: From Source
 
       Clone and build the demos repo using the branch that matches your installation.
 
@@ -49,21 +47,24 @@ Before running the demo, make sure you have a working webcam connected to your c
 
 Once you've installed ROS 2, source your setup file:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       $ . <path to ROS 2 install space>/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        $ . <path to ROS 2 install space>/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       $ . <path to ROS 2 install space>/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
