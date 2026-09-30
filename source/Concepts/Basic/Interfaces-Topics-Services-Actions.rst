@@ -78,7 +78,7 @@ This gives you a clear view of timing patterns, delays, and irregularities, maki
    The default interval is 1 second.
    The default statistics topic is ``/statistics``.
 
-:doc:`Learn how to enable topic statistics </Tutorials/Advanced/Topic-Statistics-Tutorial/Topic-Statistics-Tutorial>`
+:doc:`Learn how to enable topic statistics <../../Tutorials/Advanced/Topic-Statistics-Tutorial/Topic-Statistics-Tutorial>`
 
 Services
 --------

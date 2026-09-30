@@ -18,7 +18,7 @@ Summary
 Making a pull request allows you to collaborate with other ROS contributors, providing a space to discuss and review your code changes before a ROS maintainer merges them.
 Pull requests are welcome for any of `the ROS repositories <https://github.com/ros2>`__.
 
-For more information about contribution etiquette, see :doc:`Contributing </The-ROS2-Project/Contributing>`.
+For more information about contribution etiquette, see :doc:`Contributing <..>`.
 
 Prerequisites
 -------------
@@ -29,13 +29,13 @@ Prerequisites
 
    * If your pull request is for a code change:
 
-     * Make sure you've followed the guidance in the :doc:`Developer guide </The-ROS2-Project/Contributing/Developer-Guide>`.
-     * Check that your code complies with the relevant section of the :doc:`Code style guide </The-ROS2-Project/Contributing/Code-Style-Language-Versions>`.
+     * Make sure you've followed the guidance in the :doc:`Developer guide <../Developer-Guide>`.
+     * Check that your code complies with the relevant section of the :doc:`Code style guide <../Code-Style-Language-Versions>`.
      * Make sure you've :ref:`run the tests <colcon-run-the-tests>` and the appropriate linter for your code changes.
 
    * If your pull request is for a documentation change:
 
-     * Make sure you've followed the guidance in :doc:`/The-ROS2-Project/Contributing/Contributing-To-ROS-2-Documentation`.
+     * Make sure you've followed the guidance in :doc:`../Contributing-To-ROS-2-Documentation`.
 
 Steps
 -----
@@ -101,7 +101,7 @@ Aim to reply back to review comments within one week, so that you and the review
 4 Merging the pull request
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-After you've actioned any feedback, your pull request must be approved by a :doc:`Committer for the target ROS repository </The-ROS2-Project/Governance>` before it can be merged.
+After you've actioned any feedback, your pull request must be approved by a :doc:`Committer for the target ROS repository <../../Governance>` before it can be merged.
 
 When the Committer approves your pull request, they will merge it to the target branch (usually **rolling**), and you will receive a notification from GitHub.
 

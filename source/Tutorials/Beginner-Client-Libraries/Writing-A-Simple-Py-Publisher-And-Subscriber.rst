@@ -164,7 +164,7 @@ Following is the definition of the class's constructor.
 ``super().__init__`` calls the `Node <{package_link(rclpy)}api/node.html>`__ class's constructor and gives it your node name, in this case ``minimal_publisher``.
 
 `create_publisher <{package_link(rclpy)}api/node.html#rclpy.node.Node.create_publisher>`__ declares that the node publishes messages of type {interface(std_msgs/msg/String)} (imported from the ``std_msgs.msg`` module), over a topic named ``topic``, and that the "queue size" is 10.
-Queue size is a required :doc:`Quality of Service </Concepts/Intermediate/About-Quality-of-Service-Settings>` (QoS) setting that limits the amount of queued messages if a subscriber is not receiving them fast enough.
+Queue size is a required :doc:`Quality of Service <../../Concepts/Intermediate/About-Quality-of-Service-Settings>` (QoS) setting that limits the amount of queued messages if a subscriber is not receiving them fast enough.
 
 Next, `create_timer <{package_link(rclpy)}api/node.html#rclpy.node.Node.create_timer>`__ is used to create a callback that executes every 0.5 seconds.
 ``self.i`` is a counter used in the callback.
@@ -415,7 +415,7 @@ Make sure to save the file, and then your pub/sub system should be ready.
 4 Build and run
 ^^^^^^^^^^^^^^^
 You likely already have the {package(rclpy)} and {package(std_msgs)} packages installed as part of your ROS 2 system.
-It's good practice to run `rosdep <https://docs.ros.org/en/independent/api/rosdep/html/>`__ (check the :doc:`rosdep tutorial </Tutorials/Intermediate/Rosdep>`) in the root of your workspace (``ros2_ws``) to check for missing dependencies before building:
+It's good practice to run `rosdep <https://docs.ros.org/en/independent/api/rosdep/html/>`__ (check the :doc:`rosdep tutorial <../Intermediate/Rosdep>`) in the root of your workspace (``ros2_ws``) to check for missing dependencies before building:
 
 .. tabs::
 

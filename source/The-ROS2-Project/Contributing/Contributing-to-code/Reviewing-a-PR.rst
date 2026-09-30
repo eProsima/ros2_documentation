@@ -17,12 +17,12 @@ Summary
 Reviewing a pull request (PR) from a contributor allows you to check that their changes meet the appropriate guidelines and standards.
 Anyone is welcome to review and approve a pull request.
 Changes are ready to merge after they have been approved.
-Only a :doc:`Committer </The-ROS2-Project/Governance>` for the target repository can merge a pull request into that repository, and they will not do so until it has been approved.
+Only a :doc:`Committer <../../Governance>` for the target repository can merge a pull request into that repository, and they will not do so until it has been approved.
 
 Prerequisites
 -------------
 
-A code or documentation contributor has :doc:`made a pull request </The-ROS2-Project/Contributing/Contributing-to-code/Making-a-PR>` to merge their changes into one of `the ROS repositories <https://github.com/ros2>`__.
+A code or documentation contributor has :doc:`made a pull request <Making-a-PR>` to merge their changes into one of `the ROS repositories <https://github.com/ros2>`__.
 
 Steps
 -----
@@ -57,7 +57,7 @@ Steps
      * Follow the :doc:`Code style guide <../Code-Style-Language-Versions>`.
      * Include tests for the new feature or bug fix.
 
-   * For documentation changes, ensure the changes follow the :doc:`documentation guidance </The-ROS2-Project/Contributing/Contributing-To-ROS-2-Documentation>`.
+   * For documentation changes, ensure the changes follow the :doc:`documentation guidance <../Contributing-To-ROS-2-Documentation>`.
    * Confirm that the Continuous Integration (CI) run for the pull request passes cleanly.
 
 #. Provide your review comments.
@@ -117,7 +117,7 @@ When you are satisfied with the changes and they are ready to be merged, approve
 * A pull request must have at least one approval, and in most cases, two approvals, from a developer (other than the author) before it can be merged to the target branch.
 * Only a Committer for the target repository can merge an approved pull request.
 
-  * See the :doc:`current ROS Committers </The-ROS2-Project/Governance>` for the list of people with merge permissions for the target repository.
+  * See the :doc:`current ROS Committers <../../Governance>` for the list of people with merge permissions for the target repository.
 
 * If the pull request has any dependencies, ensure that dependent pull requests are merged in the correct order.
 
