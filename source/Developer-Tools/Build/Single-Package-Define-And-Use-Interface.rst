@@ -39,7 +39,7 @@ ROS offers three main interface types:
 * Services (``.srv`` files)
 * Actions (``.action`` files)
 
-:doc:`Learn more about interfaces </ROS-Framework/Interfaces-Topics-Services-Actions>`
+:doc:`Learn more about interfaces <../../ROS-Framework/Interfaces-Topics-Services-Actions>`
 
 Before creating a custom interface, do the following:
 

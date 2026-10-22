@@ -19,13 +19,6 @@ Maintaining source checkout - how-to
    In this article, you will learn how to update your repository list, fetch new source code, rebuild your workspace, and export the current checkout state.
    After you follow these steps, your source workspace will match the selected ROS repository versions.
 
-.. ifconfig:: smv_current_version != '' and smv_current_version != 'rolling'
-
-  .. note::
-
-     For instructions on maintaining a source checkout of the **latest development version** of ROS 2, refer to
-     `Maintaining a source checkout of ROS 2 Rolling <../../rolling/Installation/Maintaining-a-Source-Checkout.html>`__
-
 .. showmeta::
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
