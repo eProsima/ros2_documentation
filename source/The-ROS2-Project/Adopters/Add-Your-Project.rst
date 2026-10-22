@@ -16,10 +16,6 @@ Add Your Project
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Use the form below to generate the YAML entry for your organization or project.
 Once generated, you can copy the YAML snippet and submit a pull request to the
 `adopters.yaml <https://github.com/ros2/ros2_documentation/blob/rolling/source/The-ROS2-Project/Adopters/adopters.yaml>`__

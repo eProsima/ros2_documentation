@@ -30,10 +30,6 @@ Using time (C++) — tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -125,21 +121,24 @@ It will block for up to that duration waiting for it to timeout.
 
 You can now build the package and run the launch file.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp turtle_tf2_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

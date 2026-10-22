@@ -21,10 +21,6 @@ Debugging with IDEs [community-contributed] - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 Summary
 -------
 
@@ -83,9 +79,10 @@ So:
 #. Start VSCode from the same command line.
    The terminal will be blocked until the application is closed again.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -94,7 +91,8 @@ So:
         $ source ./install/setup.bash
         $ /usr/bin/code ./src/my_node/
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -103,7 +101,8 @@ So:
         $ . ./install/setup.bash
         $ /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code ./src/my_node/
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line interface:
 

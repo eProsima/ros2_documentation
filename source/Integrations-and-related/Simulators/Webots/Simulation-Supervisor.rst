@@ -27,10 +27,6 @@ Extending the interface with the Ros2Supervisor node - tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

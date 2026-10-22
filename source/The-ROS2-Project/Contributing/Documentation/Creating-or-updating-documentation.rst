@@ -19,10 +19,6 @@ Creating or updating documentation — how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 
@@ -69,21 +65,24 @@ Set up the following prerequisites to build the docs site locally:
 
 #. Install the requirements located in the ``requirements.txt`` file:
 
-   .. tabs::
+   .. tab-set::
 
-      .. group-tab:: Linux
-
-         .. code-block:: console
-
-            $ pip install -r requirements.txt -c constraints.txt
-
-      .. group-tab:: macOS
+      .. tab-item:: Linux
+         :sync: Linux
 
          .. code-block:: console
 
             $ pip install -r requirements.txt -c constraints.txt
 
-      .. group-tab:: Windows
+      .. tab-item:: macOS
+         :sync: macOS
+
+         .. code-block:: console
+
+            $ pip install -r requirements.txt -c constraints.txt
+
+      .. tab-item:: Windows
+         :sync: Windows
 
          .. code-block:: console
 
@@ -91,21 +90,24 @@ Set up the following prerequisites to build the docs site locally:
 
 #. Sphinx generates diagrams using the ``graphviz`` library, so make sure that it is installed and available:
 
-   .. tabs::
+   .. tab-set::
 
-      .. group-tab:: Linux
+      .. tab-item:: Linux
+         :sync: Linux
 
          .. code-block:: console
 
             $ sudo apt update ; sudo apt install graphviz
 
-      .. group-tab:: macOS
+      .. tab-item:: macOS
+         :sync: macOS
 
          .. code-block:: console
 
             $ brew install graphviz
 
-      .. group-tab:: Windows
+      .. tab-item:: Windows
+         :sync: Windows
 
          Download an installer from the `Graphviz Download page <https://graphviz.gitlab.io/_pages/Download/Download_windows.html>`__ and install it.
          Make sure to allow the installer to add it to the Windows ``%PATH%``, otherwise Sphinx will not be able to find it.

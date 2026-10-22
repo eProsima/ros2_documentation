@@ -22,10 +22,6 @@ How ROS works
 
 Coming Soon
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

@@ -27,10 +27,6 @@ Using RViz - tutorial
 
 **Time:** 25 Minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 RViz is a 3D visualizer for the Robot Operating System (ROS) framework.

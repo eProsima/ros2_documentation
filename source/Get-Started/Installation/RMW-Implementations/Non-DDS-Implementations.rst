@@ -20,10 +20,6 @@ Non-DDS-Implementations
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 * :doc:`Working with Zenoh <Non-DDS-Implementations/Working-with-Zenoh>` explains how to utilize Zenoh.
 
 .. toctree::

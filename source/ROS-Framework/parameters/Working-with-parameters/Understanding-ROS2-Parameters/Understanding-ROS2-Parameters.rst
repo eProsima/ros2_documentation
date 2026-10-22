@@ -31,10 +31,6 @@ A hands-on exercise with Turtlesim shows how parameters control node behaviour a
 
 **Area: Framework | Content-type: tutorial | Experience: beginner**
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

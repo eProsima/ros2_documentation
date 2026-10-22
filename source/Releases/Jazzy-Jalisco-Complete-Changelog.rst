@@ -18,10 +18,6 @@ This page is a list of the complete changes in all ROS 2 core packages since the
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 `action_tutorials_cpp <https://github.com/ros2/demos/tree/jazzy/action_tutorials/action_tutorials_cpp/CHANGELOG.rst>`__
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

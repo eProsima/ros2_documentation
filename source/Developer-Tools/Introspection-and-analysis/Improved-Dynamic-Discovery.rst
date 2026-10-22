@@ -29,10 +29,6 @@ Using Improved Dynamic Discovery - tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 
@@ -245,9 +241,10 @@ Examples
 
 For example, the following commands will limit the ROS 2 communication only with localhost and specific peers:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -261,7 +258,8 @@ For example, the following commands will limit the ROS 2 communication only with
         $ echo "export ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST" >> ~/.bashrc
         $ echo "export ROS_STATIC_PEERS='192.168.0.1;remote.com'" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -275,7 +273,8 @@ For example, the following commands will limit the ROS 2 communication only with
         $ echo "export ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST" >> ~/.bash_profile
         $ echo "export ROS_STATIC_PEERS='192.168.0.1;remote.com'" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

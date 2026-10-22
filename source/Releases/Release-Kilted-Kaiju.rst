@@ -23,10 +23,6 @@ Kilted Kaiju (codename 'kilted'; May, 2025)
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 *Kilted Kaiju* is the eleventh release of ROS 2.
 What follows is highlights of the important changes and features in Kilted Kaiju since the last release.
 For a list of all of the changes since Jazzy, see the :doc:`long form changelog <Kilted-Kaiju-Complete-Changelog>`

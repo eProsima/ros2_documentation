@@ -21,9 +21,6 @@ ROS 2 middleware implementations
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :local:
-
 .. include:: ../../../global_substitutions.txt
 
 ROS middleware implementations are sets of |packages| that provide the underlying communication framework for ROS 2.

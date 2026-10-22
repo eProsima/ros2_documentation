@@ -23,10 +23,6 @@ ROS (Robot Operating System) is an open-source ecosystem that provides framework
 This page presents a set of articles and hands-on activities to introduce the main concepts behind the ROS framework.
 Working through these will give you the essential knowledge needed to start developing applications with ROS.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

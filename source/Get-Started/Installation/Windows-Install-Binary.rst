@@ -16,10 +16,6 @@ Installing on Windows (binary) - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 This page explains how to install ROS 2 on Windows from a pre-built binary package.
 
 .. note::

@@ -22,10 +22,6 @@ ROS build farms
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 The ROS build farms are an important infrastructure to support the ROS ecosystem, provided and
 maintained by `Open Robotics`_.
 They provide building of source and binary packages, continuous integration, testing, and analysis for ROS 1 and ROS 2 packages.

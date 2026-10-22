@@ -23,10 +23,6 @@ Testing Your Code with the ROS Build Farm - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 The `ROS 2 Build Farm <https://build.ros2.org/>`_ is incredibly powerful.
 In addition to creating binaries, it will also test pull requests by compiling and running all the tests for your ROS packages before the PR is merged.
 

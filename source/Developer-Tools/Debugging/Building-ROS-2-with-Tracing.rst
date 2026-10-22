@@ -22,10 +22,6 @@ Building ROS 2 with tracing - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 
@@ -75,16 +71,18 @@ Building without tracepoints
 This step depends on whether you are :doc:`building ROS 2 from source <../../Get-Started/Installation/Alternatives/Ubuntu-Development-Setup>` or using ROS 2 binaries (:doc:`deb packages <../../Get-Started/Installation/Ubuntu-Install-Debs>` or :doc:`binary archive <../../Get-Started/Installation/Alternatives/Ubuntu-Install-Binary>`).
 To remove the tracepoints, (re)build ``tracetools`` and set the ``TRACETOOLS_TRACEPOINTS_EXCLUDED`` CMake option to ``ON``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Source installation
+  .. tab-item:: Source installation
+    :sync: Source installation
 
     .. code-block:: console
 
        $ cd ~/ros2_{DISTRO}
        $ colcon build --packages-select tracetools --cmake-clean-cache --cmake-args -DTRACETOOLS_TRACEPOINTS_EXCLUDED=ON
 
-  .. group-tab:: Binary installation
+  .. tab-item:: Binary installation
+    :sync: Binary installation
 
     Clone the ``ros2_tracing`` repository into your workspace and build:
 
@@ -117,15 +115,17 @@ Validate that tracing is disabled:
 
 It should print out:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Without tracepoints
+  .. tab-item:: Without tracepoints
+    :sync: Without tracepoints
 
     .. code-block:: bash
 
        Tracing disabled
 
-  .. group-tab:: Without instrumentation
+  .. tab-item:: Without instrumentation
+    :sync: Without instrumentation
 
     .. code-block:: bash
 

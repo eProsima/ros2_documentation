@@ -29,10 +29,6 @@ This article shows you how to run an existing launch file with ``ros2 launch``.
 
 **Area: Framework | Content-type: how-to | Experience: beginner**
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

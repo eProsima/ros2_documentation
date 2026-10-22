@@ -30,10 +30,6 @@ Using URDF with ``robot_state_publisher`` (C++) — tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -73,21 +69,24 @@ Next you will make several changes to it.
 
 Create the directory where we will store some assets:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ mkdir -p urdf
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ mkdir -p urdf
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ mkdir -p urdf
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -290,21 +289,24 @@ Return to your workspace root and build:
 
 Source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ source install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ source install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ source install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 

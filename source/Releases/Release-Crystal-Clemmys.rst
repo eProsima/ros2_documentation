@@ -17,10 +17,6 @@ Crystal Clemmys (``crystal``)
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 *Crystal Clemmys* is the third release of ROS 2.
 
 Supported Platforms

@@ -23,10 +23,6 @@ Building a custom deb package - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Many Ubuntu users install ROS 2 on their system by installing :doc:`deb packages <../../Get-Started/Installation/Ubuntu-Install-Debs>`.
 This guide gives a short set of instructions to build local, custom deb packages.
 

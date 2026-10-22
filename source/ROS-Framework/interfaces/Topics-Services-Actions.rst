@@ -16,10 +16,6 @@ Topics vs Services vs Actions
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 1
-   :local:
-
 When designing a system there are three primary styles of interfaces.
 The specifications for the content is in the :doc:`Interfaces Overview <About-Interfaces>`.
 This is written to provide the reader with guidelines about when to use each type of interface.

@@ -29,10 +29,6 @@ A short exercise provides you with basic experience with these tools.
 
 **Area: Framework | Content-type: how-to | Experience: beginner**
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Summary
 -------
 
@@ -64,26 +60,30 @@ It lets you practice core ROS concepts without the need for any real hardware.
 
 Install the Turtlesim package for your ROS distribution:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Ubuntu
+  .. tab-item:: Ubuntu
+      :sync: Ubuntu
 
       .. code-block:: console
 
         $ sudo apt update
         $ sudo apt install ros-{DISTRO}-turtlesim
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+      :sync: RHEL
 
       .. code-block:: console
 
         $ sudo dnf install ros-{DISTRO}-turtlesim
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+      :sync: macOS
 
       As long as the archive you installed ROS from contains the ``ros_tutorials`` repository, you should already have Turtlesim installed.
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+      :sync: Windows
 
       As long as the archive you installed ROS from contains the ``ros_tutorials`` repository, you should already have Turtlesim installed.
 
@@ -167,26 +167,30 @@ For more information about rqt, see :doc:`../../Developer-Tools/Visualization/Ab
 
 In a new terminal, install ``rqt`` and the common plugins:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Ubuntu
+  .. tab-item:: Ubuntu
+    :sync: Ubuntu
 
     .. code-block:: console
 
       $ sudo apt update
       $ sudo apt install ros-{DISTRO}-rqt ros-{DISTRO}-rqt-common-plugins
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+    :sync: RHEL
 
     .. code-block:: console
 
       $ sudo dnf install 'ros-{DISTRO}-rqt*'
 
-  .. group-tab:: macOS
+  .. tab-item:: macOS
+    :sync: macOS
 
     The standard archive for installing ROS on macOS contains ``rqt`` and its plugins, so you should already have ``rqt`` installed.
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     The standard archive for installing ROS on Windows contains ``rqt`` and its plugins, so you should already have ``rqt`` installed.
 

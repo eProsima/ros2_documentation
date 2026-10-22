@@ -18,10 +18,6 @@ Platform EOL policy
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 :doc:`ROS distributions <../Releases>` do not support end-of-life (EOL) platforms, even if the ROS distribution is still active.
 This page explains:
 

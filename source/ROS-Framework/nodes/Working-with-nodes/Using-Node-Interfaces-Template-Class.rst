@@ -28,10 +28,6 @@ Using the Node Interfaces Template Class (C++) — tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 =======
 

@@ -40,10 +40,6 @@ For all changes, see the :doc:`full ROS Lyrical changelog <Lyrical-Luth-Complete
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Callback Group Events executor (``rclcpp``)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

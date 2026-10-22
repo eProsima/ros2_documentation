@@ -12,10 +12,6 @@ Working with interfaces
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Coming Soon
 
 .. toctree::

@@ -19,10 +19,6 @@ Writing Basic Tests with C++ with GTest - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Starting point: we'll assume you have a :ref:`basic ament_cmake package<CreatePkg>` set up already and you want to add some tests to it.
 
 In this tutorial, we'll be using `gtest <https://google.github.io/googletest/primer.html>`__.

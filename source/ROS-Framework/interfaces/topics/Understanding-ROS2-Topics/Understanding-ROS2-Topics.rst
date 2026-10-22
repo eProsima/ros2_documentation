@@ -30,10 +30,6 @@ Topics are one of the main communication types used for moving data around a ROS
 This article walks you through using ``rqt_graph`` and other command-line tools to examine how nodes connect over topics.
 A hands-on exercise with Turtlesim helps you understand how data moves around the ROS graph.
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Summary
 -------
 

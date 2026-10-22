@@ -22,10 +22,6 @@ Source control best practices
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Introduction
 ------------
 This page highlights source control considerations commonly encountered when contributing to ROS 2 projects.

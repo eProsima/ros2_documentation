@@ -21,10 +21,6 @@ Building a Custom RViz Panel - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This tutorial is for people who would like to work within the RViz environment to either display or interact with some data in a two-dimensional environment.
 
 In this tutorial you will learn how to do three things within RViz:

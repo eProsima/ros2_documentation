@@ -30,9 +30,6 @@ Nodes
    nodes/About-Composition
    nodes/Working-with-nodes
 
-.. contents:: Table of Contents
-   :local:
-
 Overview of nodes
 -----------------
 

@@ -20,10 +20,6 @@ DDS implementations
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 These are the available DDS implementations:
 
 * :doc:`Working with Eclipse Cyclone DDS <DDS-Implementations/Working-with-Eclipse-CycloneDDS>` explains how to utilize Cyclone DDS.

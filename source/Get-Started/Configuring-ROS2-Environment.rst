@@ -29,10 +29,6 @@ This article describes how to access ROS commands and packages by sourcing setup
 
 **Area: ROS-installation | Content-type: how-to | Experience: beginner, Intermediate, intermediate**
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 
@@ -68,9 +64,10 @@ Steps
 Use the ``source`` command to import the environment variables which enable your shell to access the ROS commands.
 You need to run this on every new shell you open:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -79,13 +76,15 @@ You need to run this on every new shell you open:
 
       If you're not using bash, replace ``.bash`` with one of the possible values: ``setup.bash``, ``setup.sh``, or ``setup.zsh``.
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
         $ . ~/ros2_install/ros2-osx/setup.bash
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -100,9 +99,10 @@ You need to run this on every new shell you open:
 
 If you don't want to source the setup file every time you open a new shell, you can add the following command to your shell startup script:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -110,7 +110,8 @@ If you don't want to source the setup file every time you open a new shell, you 
 
       To undo this, locate your system's shell startup script and remove the ``source`` command.
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -118,7 +119,8 @@ If you don't want to source the setup file every time you open a new shell, you 
 
       To undo this, locate your system's shell startup script and remove the appended ``source`` command.
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       If you use PowerShell, create a folder in **My Documents** named **WindowsPowerShell**.
       Inside **WindowsPowerShell**, create the file **Microsoft.PowerShell_profile.ps1**.
@@ -145,21 +147,24 @@ This confirms which distribution is active and whether the ``source`` command su
 
 To list ROS-related environment variables, run:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ printenv | grep -i ROS
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ printenv | grep -i ROS
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ printenv | grep -i ROS
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -191,9 +196,10 @@ If you are working alone or on an isolated network, any value in that range is f
 
 To set the ``ROS_DOMAIN_ID`` variable, run:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -205,7 +211,8 @@ To set the ``ROS_DOMAIN_ID`` variable, run:
 
         $ echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -217,7 +224,8 @@ To set the ``ROS_DOMAIN_ID`` variable, run:
 
         $ echo "export ROS_DOMAIN_ID=<your_domain_id>" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -238,9 +246,10 @@ This is helpful in settings such as classrooms, where multiple robots may publis
 
 To limit discovery to the local machine, set the variable to ``LOCALHOST``:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -252,7 +261,8 @@ To limit discovery to the local machine, set the variable to ``LOCALHOST``:
 
         $ echo "export ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -264,7 +274,8 @@ To limit discovery to the local machine, set the variable to ``LOCALHOST``:
 
         $ echo "export ROS_AUTOMATIC_DISCOVERY_RANGE=LOCALHOST" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -298,21 +309,24 @@ If usage text appears, your shell picked up the ROS command paths from the setup
 
 If you set optional ``ROS_DOMAIN_ID`` or ``ROS_AUTOMATIC_DISCOVERY_RANGE`` values earlier in this guide, run the environment check again in this terminal session to confirm you see the values you expect:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ printenv | grep -i ROS
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ printenv | grep -i ROS
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+        $ printenv | grep -i ROS
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

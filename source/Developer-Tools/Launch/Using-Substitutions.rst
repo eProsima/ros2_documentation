@@ -29,10 +29,6 @@ Using substitutions - tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -59,9 +55,10 @@ Using substitutions
 
 First, create a new package with the name ``launch_tutorial``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python package
+  .. tab-item:: Python package
+    :sync: Python package
 
     Create a new package of build_type ``ament_python``:
 
@@ -69,7 +66,8 @@ First, create a new package with the name ``launch_tutorial``:
 
       $ ros2 pkg create --build-type ament_python --license Apache-2.0 launch_tutorial
 
-  .. group-tab:: C++ package
+  .. tab-item:: C++ package
+    :sync: C++ package
 
     Create a new package of build_type ``ament_cmake``:
 
@@ -79,21 +77,24 @@ First, create a new package with the name ``launch_tutorial``:
 
 Inside of that package, create a directory called ``launch``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ mkdir launch_tutorial/launch
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ mkdir launch_tutorial/launch
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+      $ mkdir launch_tutorial/launch
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -101,9 +102,10 @@ Inside of that package, create a directory called ``launch``:
 
 Finally, make sure to install the launch files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python package
+  .. tab-item:: Python package
+    :sync: Python package
 
     Add in following changes to the ``setup.py`` of the package:
 
@@ -124,7 +126,8 @@ Finally, make sure to install the launch files:
           ]
       )
 
-  .. group-tab:: C++ package
+  .. tab-item:: C++ package
+    :sync: C++ package
 
     Append following code to the ``CMakeLists.txt`` just before ``ament_package()``:
 
@@ -145,9 +148,10 @@ This launch file can either be in YAML, XML, or in Python.
 
 To do this, create following file in the ``launch`` folder of the ``launch_tutorial`` package.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/example_main_launch.xml`` file:
 
@@ -168,7 +172,8 @@ To do this, create following file in the ``launch`` folder of the ``launch_tutor
       :language: xml
       :lines: 5-7
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/example_main_launch.yaml`` file:
 
@@ -190,7 +195,8 @@ To do this, create following file in the ``launch`` folder of the ``launch_tutor
       :lines: 9-15
 
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/example_main_launch.py`` file:
 
@@ -236,9 +242,10 @@ To do this, create following file in the ``launch`` folder of the ``launch_tutor
 
 Now create the substitution launch file in the same folder:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Create the file ``launch/example_substitutions_launch.xml`` and insert the following code:
 
@@ -278,7 +285,8 @@ Now create the substitution launch file in the same folder:
       :language: xml
       :lines: 9-13
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Create the file ``launch/example_substitutions_launch.yaml`` and insert the following code:
 
@@ -318,7 +326,8 @@ Now create the substitution launch file in the same folder:
       :language: yaml
       :lines: 21-28
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Create the file ``launch/example_substitutions_launch.py`` and insert the following code:
 
@@ -373,21 +382,24 @@ Launching example
 
 Now you can launch using the ``ros2 launch`` command.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch launch_tutorial example_main_launch.yaml
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch launch_tutorial example_main_launch.xml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
@@ -403,9 +415,10 @@ This will do the following:
 Modifying launch arguments
 --------------------------
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     If you want to change the provided launch arguments, you can either update the ``background_r`` variable in the ``example_main_launch.yaml`` or launch the ``example_substitutions_launch.yaml`` with preferred arguments.
     To see arguments that may be given to the launch file, run the following command:
@@ -414,7 +427,8 @@ Modifying launch arguments
 
         $ ros2 launch launch_tutorial example_substitutions_launch.yaml --show-args
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     If you want to change the provided launch arguments, you can either update the ``background_r`` variable in the ``example_main_launch.xml`` or launch the ``example_substitutions_launch.xml`` with preferred arguments.
     To see arguments that may be given to the launch file, run the following command:
@@ -423,7 +437,8 @@ Modifying launch arguments
 
         $ ros2 launch launch_tutorial example_substitutions_launch.xml --show-args
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     If you want to change the provided launch arguments, you can either update them in ``launch_arguments`` dictionary in the ``example_main_launch.py`` or launch the ``example_substitutions_launch.py`` with preferred arguments.
     To see arguments that may be given to the launch file, run the following command:
@@ -452,21 +467,24 @@ This will show the arguments that may be given to the launch file and their defa
 
 Now you can pass the desired arguments to the launch file as follows:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch launch_tutorial example_substitutions_launch.yaml turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch launch_tutorial example_substitutions_launch.xml turtlesim_ns:='turtlesim3' use_provided_red:='True' new_background_r:=200
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
@@ -512,16 +530,18 @@ They can be used anywhere a substitution is allowed, including the ``if`` and ``
 
 The ``if`` predicate from the previous section can also be expressed using boolean substitutions instead of a Python expression:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
       <executable cmd="ros2 param set /turtlesim background_r $(var new_background_r)"
                   if="$(and $(equals $(var new_background_r) 200) $(var use_provided_red))"/>
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: yaml
 
@@ -529,7 +549,8 @@ The ``if`` predicate from the previous section can also be expressed using boole
           cmd: ros2 param set /turtlesim background_r $(var new_background_r)
           if: $(and $(equals $(var new_background_r) 200) $(var use_provided_red))
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: python
 

@@ -22,10 +22,6 @@ Configure Zero Copy Loaned Messages — how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 
@@ -209,9 +205,10 @@ By default, *Loaned Messages* will try to borrow the memory from underlying midd
 The ``ROS_DISABLE_LOANED_MESSAGES`` environment variable can be used to disable *Loaned Messages*, and fallback to normal publisher behavior, without any code changes or middleware configuration.
 You can set the environment variable with the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -223,7 +220,8 @@ You can set the environment variable with the following command:
 
         $ echo "export ROS_DISABLE_LOANED_MESSAGES=1" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -235,7 +233,8 @@ You can set the environment variable with the following command:
 
         $ echo "export ROS_DISABLE_LOANED_MESSAGES=1" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -255,9 +254,10 @@ Currently using *Loaned Messages* is not safe on subscription, see more details 
 Because of this, by default *Loaned Messages* is ``disabled`` on subscription with `Set disable loan to on by default <https://github.com/ros2/rcl/pull/1110>`_ even though underlying middleware supports that.
 To enable *Loaned Messages* on subscription, you need to set the environment variable ``ROS_DISABLE_LOANED_MESSAGES`` to ``0`` explicitly.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
@@ -269,7 +269,8 @@ To enable *Loaned Messages* on subscription, you need to set the environment var
 
         $ echo "export ROS_DISABLE_LOANED_MESSAGES=0" >> ~/.bashrc
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+      :sync: macOS
 
       .. code-block:: console
 
@@ -281,7 +282,8 @@ To enable *Loaned Messages* on subscription, you need to set the environment var
 
         $ echo "export ROS_DISABLE_LOANED_MESSAGES=0" >> ~/.bash_profile
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 

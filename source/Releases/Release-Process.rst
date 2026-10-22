@@ -16,10 +16,6 @@ Development process for a release
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Each ROS 2 distribution goes through a process of development more than a year long that begins prior to the release of the previous distribution.
 Below is a high-level view of this development process.
 There is no specific due date for the items in this process, but in general earlier items should be completed before later items can be completed.

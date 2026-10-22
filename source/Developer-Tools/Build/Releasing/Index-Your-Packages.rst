@@ -21,10 +21,6 @@ Indexing Your Packages - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Are you releasing a new ROS package into a ROS distribution?
 Make the process faster by indexing your packages first.
 

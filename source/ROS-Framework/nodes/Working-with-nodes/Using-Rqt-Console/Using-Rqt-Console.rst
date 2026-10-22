@@ -30,10 +30,6 @@ Using ``rqt_console`` to view logs - tutorial
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

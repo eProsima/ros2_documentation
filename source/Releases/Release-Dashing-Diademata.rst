@@ -16,10 +16,6 @@ Dashing Diademata (``dashing``)
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 *Dashing Diademata* is the fourth release of ROS 2.
 
 Supported Platforms

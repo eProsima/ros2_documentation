@@ -27,10 +27,6 @@ Installing Webots on Ubuntu - tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -69,9 +65,10 @@ Tasks
 ^^^^^^^^^^^^^^^^^^^^^^^^^
 You can either install the official released package, or install it from the latest up-to-date sources from `Github <https://github.com/cyberbotics/webots_ros2>`_.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Install ``webots_ros2`` distributed package
+    .. tab-item:: Install ``webots_ros2`` distributed package
+        :sync: Install ``webots_ros2`` distributed package
 
         Run the following command in a terminal.
 
@@ -79,7 +76,8 @@ You can either install the official released package, or install it from the lat
 
             $ sudo apt-get install ros-{DISTRO}-webots-ros2
 
-    .. group-tab:: Install ``webots_ros2`` from sources
+    .. tab-item:: Install ``webots_ros2`` from sources
+        :sync: Install ``webots_ros2`` from sources
 
         Create a ROS 2 workspace with its ``src`` directory.
 

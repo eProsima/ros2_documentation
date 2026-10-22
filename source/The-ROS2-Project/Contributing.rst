@@ -33,10 +33,6 @@ Contributing
    Contributing/Triaging-an-issue
    Contributing/Reporting-an-issue
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 A few things to remember before you start contributing to the ROS 2 project.
 
 Tenets

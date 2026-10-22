@@ -27,10 +27,6 @@ Understanding security-enabled deployments - tutorial
 
 **Time:** 20 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

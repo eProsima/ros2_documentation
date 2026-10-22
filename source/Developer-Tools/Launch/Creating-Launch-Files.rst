@@ -29,10 +29,6 @@ Creating a launch file - tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Prerequisites
 -------------
 
@@ -73,23 +69,26 @@ Create a new directory to store your launch files:
 Let's put together a ROS 2 launch file using the ``turtlesim`` package and its executables.
 As mentioned above, this can either be in XML, YAML, or Python.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     Copy and paste the complete code into the ``launch/turtlesim_mimic_launch.xml`` file:
 
     .. literalinclude:: launch/turtlesim_mimic_launch.xml
       :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     Copy and paste the complete code into the ``launch/turtlesim_mimic_launch.yaml`` file:
 
     .. literalinclude:: launch/turtlesim_mimic_launch.yaml
       :language: yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     Copy and paste the complete code into the ``launch/turtlesim_mimic_launch.py`` file:
 
@@ -119,9 +118,10 @@ This node has added configuration details in the form of remappings.
 This means ``mimic`` will subscribe to ``/turtlesim1/sim``'s pose topic and republish it for ``/turtlesim2/sim``'s velocity command topic to subscribe to.
 In other words, ``turtlesim2`` will mimic ``turtlesim1``'s movements.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     The first two actions launch the two turtlesim windows with different argument passing approaches:
 
@@ -135,7 +135,8 @@ In other words, ``turtlesim2`` will mimic ``turtlesim1``'s movements.
       :language: xml
       :lines: 5-8
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     The first two actions launch the two turtlesim windows with different argument passing approaches:
 
@@ -149,7 +150,8 @@ In other words, ``turtlesim2`` will mimic ``turtlesim1``'s movements.
       :language: yaml
       :lines: 18-26
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     These import statements pull in some Python ``launch`` modules.
 
@@ -181,23 +183,26 @@ In other words, ``turtlesim2`` will mimic ``turtlesim1``'s movements.
 
 To run the launch file created above, enter into the directory you created earlier and run the following command:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
       $ cd launch
       $ ros2 launch turtlesim_mimic_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
       $ cd launch
       $ ros2 launch turtlesim_mimic_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

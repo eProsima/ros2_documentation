@@ -22,10 +22,6 @@ Installing on RHEL / Fedora (RPM packages) - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 RPM packages for ROS 2 {DISTRO_TITLE_FULL} are currently available for RHEL 10 and supported Fedora releases.
 The Rolling Ridley distribution will change target platforms from time to time as new platforms are selected for development.
 The target platforms are defined in `REP 2000 <https://reps.openrobotics.org/rep-2000/>`__.
@@ -51,9 +47,10 @@ Set locale
 Enable required repositories
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: RHEL
+  .. tab-item:: RHEL
+    :sync: RHEL
 
     You will need to enable the EPEL repositories and the CodeReady Builder (CRB) repository:
 
@@ -73,7 +70,8 @@ Enable required repositories
        $ export ROS_APT_SOURCE_VERSION=$(curl -s https://api.github.com/repos/ros-infrastructure/ros-apt-source/releases/latest | grep -F "tag_name" | awk -F'"' '{print $4}')
        $ sudo dnf install "https://github.com/ros-infrastructure/ros-apt-source/releases/download/${ROS_APT_SOURCE_VERSION}/ros2-release-${ROS_APT_SOURCE_VERSION}-1.el.noarch.rpm"
 
-  .. group-tab:: Fedora
+  .. tab-item:: Fedora
+    :sync: Fedora
 
     Download the ``ros2-release`` package and install it:
 

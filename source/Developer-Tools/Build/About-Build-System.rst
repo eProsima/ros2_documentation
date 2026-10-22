@@ -21,10 +21,6 @@ The build system
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 .. include:: ../../../global_substitutions.txt
 
 The build system is what allows developers to build their ROS 2 code as needed.

@@ -23,10 +23,6 @@ Using Marker Points and Lines (C++) - tutorial
 
 **Time:** 15 Minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 .. note::
 
    This tutorial assumes that you have completed :doc:`Marker: Sending Basic Shapes <../Marker-Sending-Basic-Shapes/Marker-Sending-Basic-Shapes>`.

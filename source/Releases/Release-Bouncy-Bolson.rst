@@ -17,10 +17,6 @@ Bouncy Bolson (``bouncy``)
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 *Bouncy Bolson* is the second release of ROS 2.
 
 Supported Platforms

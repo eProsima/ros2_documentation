@@ -30,10 +30,6 @@ A hands-on exercise gives you practice listing active nodes and examining their 
 
 **Area: Nodes, Framework | Content-type: tutorial | Experience: beginner**
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Summary
 -------
 

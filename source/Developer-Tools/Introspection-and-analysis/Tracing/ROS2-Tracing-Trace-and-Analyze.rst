@@ -21,10 +21,6 @@ Using ros2_tracing to trace and analyze an application - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This tutorial shows how to use `ros2_tracing <https://github.com/ros2/ros2_tracing>`_ to trace and analyze a ROS 2 application.
 For this tutorial, the application will be `performance_test <https://gitlab.com/ApexAI/performance_test>`_.
 

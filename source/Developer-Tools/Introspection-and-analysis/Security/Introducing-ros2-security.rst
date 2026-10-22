@@ -31,10 +31,6 @@ Setting up security - tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -54,16 +50,18 @@ Installing from source
 
 Before installing from source, you will need to have a recent version openssl (1.0.2g or later) installed:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ sudo apt update
       $ sudo apt install libssl-dev
 
-  .. group-tab:: MacOS
+  .. tab-item:: MacOS
+    :sync: MacOS
 
     .. code-block:: console
 
@@ -78,7 +76,8 @@ Before installing from source, you will need to have a recent version openssl (1
       $ export OPENSSL_ROOT_DIR=`brew --prefix openssl`
 
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     If you don't have OpenSSL installed, please follow :ref:`these instructions <windows-install-binary-installing-prerequisites>`
 
@@ -106,21 +105,24 @@ Run the demo
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
   Begin by creating folder to store all the files necessary for this demo:
 
-  .. tabs::
+  .. tab-set::
 
-    .. group-tab:: Linux
-
-      .. code-block:: console
-
-        $ mkdir ~/sros2_demo
-
-    .. group-tab:: MacOS
+    .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
         $ mkdir ~/sros2_demo
 
-    .. group-tab:: Windows
+    .. tab-item:: MacOS
+      :sync: MacOS
+
+      .. code-block:: console
+
+        $ mkdir ~/sros2_demo
+
+    .. tab-item:: Windows
+      :sync: Windows
 
       .. code-block:: console
 
@@ -132,23 +134,26 @@ Run the demo
 Use the ``sros2`` utilities to create the keystore.
 Files in the keystore will be used to enable security for all the participants in the ROS 2 graph.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ cd ~/sros2_demo
-      $ ros2 security create_keystore demo_keystore
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ cd ~/sros2_demo
       $ ros2 security create_keystore demo_keystore
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ cd ~/sros2_demo
+      $ ros2 security create_keystore demo_keystore
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -164,23 +169,26 @@ Once the keystore is created, create keys and certificates for each node with se
 For our demo, that includes the talker and listener nodes.
 This command uses the ``create_enclave`` feature which is covered in more detail in the next tutorial.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ ros2 security create_enclave demo_keystore /talker_listener/talker
-      $ ros2 security create_enclave demo_keystore /talker_listener/listener
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
       $ ros2 security create_enclave demo_keystore /talker_listener/talker
       $ ros2 security create_enclave demo_keystore /talker_listener/listener
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ ros2 security create_enclave demo_keystore /talker_listener/talker
+      $ ros2 security create_enclave demo_keystore /talker_listener/listener
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -198,21 +206,24 @@ This command uses the ``create_enclave`` feature which is covered in more detail
 
 If the selected RMW implementation is Zenoh, then the Zenoh router also requires its own keys and certificates:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: bash
-
-      ros2 security create_enclave demo_keystore /zenohd
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       ros2 security create_enclave demo_keystore /zenohd
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: bash
+
+      ros2 security create_enclave demo_keystore /zenohd
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bat
 
@@ -233,17 +244,10 @@ If the selected RMW implementation is Zenoh, then the Zenoh router also requires
 Three environment variables allow the middleware to locate encryption materials and enable (and possibly enforce) security.
 These and other security-related environment variables are described in the `ROS 2 DDS-Security Integration design document <https://design.ros2.org/articles/ros2_dds_security.html>`_.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export ROS_SECURITY_KEYSTORE=~/sros2_demo/demo_keystore
-      $ export ROS_SECURITY_ENABLE=true
-      $ export ROS_SECURITY_STRATEGY=Enforce
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -251,7 +255,17 @@ These and other security-related environment variables are described in the `ROS
       $ export ROS_SECURITY_ENABLE=true
       $ export ROS_SECURITY_STRATEGY=Enforce
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ export ROS_SECURITY_KEYSTORE=~/sros2_demo/demo_keystore
+      $ export ROS_SECURITY_ENABLE=true
+      $ export ROS_SECURITY_STRATEGY=Enforce
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -287,23 +301,26 @@ The environment variables in this terminal must be properly set as described in 
 
 If the RMW implementation is ``rmw_zenoh_cpp``, in another terminal:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: bash
 
       export ZENOH_ROUTER_CONFIG_URI=~/sros2_demo/zenohd
       ros2 run rmw_zenoh_cpp zenohd
 
-  .. group-tab:: MacOS
+  .. tab-item:: MacOS
+    :sync: MacOS
 
     .. code-block:: bash
 
       export ZENOH_ROUTER_CONFIG_URI=<path to route config with keys and certificates>
       ros2 run rmw_zenoh_cpp zenohd
 
-  .. group-tab:: Windows
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: bat
 
@@ -326,18 +343,10 @@ Leave both nodes running as you use ``ros2cli`` and answer the questions below.
 To use ``ros2cli`` to iterate with ROS 2 secured network, you need to provide it with override enclave by ``ROS_SECURITY_ENCLAVE_OVERRIDE`` environmental variable.
 Open an another terminal and set up the following environmental variables.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-      $ export ROS_SECURITY_KEYSTORE=~/sros2_demo/demo_keystore
-      $ export ROS_SECURITY_ENABLE=true
-      $ export ROS_SECURITY_STRATEGY=Enforce
-      $ export ROS_SECURITY_ENCLAVE_OVERRIDE=/talker_listener/listener
-
-  .. group-tab:: MacOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -346,7 +355,18 @@ Open an another terminal and set up the following environmental variables.
       $ export ROS_SECURITY_STRATEGY=Enforce
       $ export ROS_SECURITY_ENCLAVE_OVERRIDE=/talker_listener/listener
 
-  .. group-tab:: Windows
+  .. tab-item:: MacOS
+    :sync: MacOS
+
+    .. code-block:: console
+
+      $ export ROS_SECURITY_KEYSTORE=~/sros2_demo/demo_keystore
+      $ export ROS_SECURITY_ENABLE=true
+      $ export ROS_SECURITY_STRATEGY=Enforce
+      $ export ROS_SECURITY_ENCLAVE_OVERRIDE=/talker_listener/listener
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -381,41 +401,47 @@ Now you can use ``ros2cli`` to communicate with ROS 2 secured network.
 Take the Quiz!
 --------------
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Question 1
+  .. tab-item:: Question 1
+    :sync: Question 1
 
     Open another terminal session, but **do not** set the environment variables so that security is not enabled.
     Start the listener.
     What do you expect to happen?
 
-  .. group-tab:: Answer 1
+  .. tab-item:: Answer 1
+    :sync: Answer 1
 
     The listener launches but does not receive any messages.
     All traffic is encrypted, and without security enabled the listener does not receive anything.
 
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Question 2
+  .. tab-item:: Question 2
+    :sync: Question 2
 
     Stop the listener, set the environment variable ``ROS_SECURITY_ENABLE`` to ``true`` and start the listener again.
     What results do you expect this time?
 
-  .. group-tab:: Answer 2
+  .. tab-item:: Answer 2
+    :sync: Answer 2
 
     The listener still launches but does not receive messages.
     Although security has now been enabled, it is not been configured properly since ROS is unable to locate the key files.
     The listener launches, but in non-secure mode since security is not enforced, which means that although the properly configured talker is sending encrypted messages, this listener is unable to decrypt them.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Question 3
+  .. tab-item:: Question 3
+    :sync: Question 3
 
     Stop the listener and set ``ROS_SECURITY_STRATEGY`` to ``Enforce``.
     What happens now?
 
-  .. group-tab:: Answer 3
+  .. tab-item:: Answer 3
+    :sync: Answer 3
 
     The listener fails to launch.
     Security has been enabled and is being enforced.

@@ -25,10 +25,6 @@ When predefined interface definitions are not enough, you need to create custom 
 In this article, you will learn how to define and build interfaces with different field types.
 This will help you implement custom interfaces in ROS to suit your needs.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 
@@ -204,9 +200,10 @@ Steps
 
       For example:
 
-      .. tabs::
+      .. tab-set::
 
-        .. group-tab:: Linux
+        .. tab-item:: Linux
+          :sync: Linux
 
           .. code-block:: console
 
@@ -215,7 +212,8 @@ Steps
             $ source install/local_setup.bash
             $ ros2 run more_interfaces publish_address_book
 
-        .. group-tab:: macOS
+        .. tab-item:: macOS
+          :sync: macOS
 
           .. code-block:: console
 
@@ -224,7 +222,8 @@ Steps
             $ . install/local_setup.bash
             $ ros2 run more_interfaces publish_address_book
 
-        .. group-tab:: Windows
+        .. tab-item:: Windows
+          :sync: Windows
 
           .. code-block:: console
 
@@ -244,23 +243,26 @@ Steps
 
       For example, for a message interface, you could open another terminal and use the following code:
 
-      .. tabs::
+      .. tab-set::
 
-        .. group-tab:: Linux
+        .. tab-item:: Linux
+          :sync: Linux
 
           .. code-block:: console
 
             $ source install/setup.bash
             $ ros2 topic echo /address_book
 
-        .. group-tab:: macOS
+        .. tab-item:: macOS
+          :sync: macOS
 
           .. code-block:: console
 
             $ . install/setup.bash
             $ ros2 topic echo /address_book
 
-        .. group-tab:: Windows
+        .. tab-item:: Windows
+          :sync: Windows
 
           .. code-block:: console
 

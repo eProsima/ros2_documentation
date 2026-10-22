@@ -25,10 +25,6 @@ For more information about GurumDDS, visit the `GurumNetworks website <https://g
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Prerequisites
 -------------
 This guide assumes you have completed the ROS 2 environment setup process, either by :doc:`Installing ROS 2 via Deb Packages <../../Ubuntu-Install-Debs>` or :doc:`Building ROS 2 from source on Ubuntu <../../Alternatives/Ubuntu-Development-Setup>`.

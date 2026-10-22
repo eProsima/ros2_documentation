@@ -21,9 +21,6 @@ Internal ROS 2 interfaces
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :local:
-
 .. include:: ../../../../global_substitutions.txt
 
 The internal ROS interfaces are public C |APIs| that are intended for use by developers who are creating |client libraries| or adding a new underlying middleware, but are not intended for use by typical ROS users.

@@ -22,10 +22,6 @@ Features status
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 The features listed below are available in the current ROS 2 release.
 Unless otherwise specified, the features are available for all supported platforms (Ubuntu 24.04 (Noble), Windows 10), DDS implementations (eProsima Fast DDS, RTI Connext DDS, and Eclipse Cyclone DDS) and programming language client libraries (C++ and Python).
 For planned future development, see the :doc:`Roadmap <Roadmap>`.

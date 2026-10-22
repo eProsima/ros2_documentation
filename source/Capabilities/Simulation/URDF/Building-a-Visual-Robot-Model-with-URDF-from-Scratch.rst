@@ -30,10 +30,6 @@ Building a visual robot model from scratch — tutorial
 
 **Time:** 20 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 .. note:: This tutorial assumes you know how to write well-formatted XML code
 
 In this tutorial, we're going to build a visual model of a robot that vaguely looks like R2D2.

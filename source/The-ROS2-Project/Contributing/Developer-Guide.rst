@@ -30,10 +30,6 @@ Contributing to code
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page defines the practices and policies we employ when developing ROS 2.
 
 .. _general-principles:

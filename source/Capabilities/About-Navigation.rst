@@ -19,9 +19,6 @@ This article summarizes ROS developer tools and guidance available to help with 
 
 **Area: navigation, capabilities | Content-type: about | Experience: beginner, intermediate, expert**
 
-.. contents:: Table of Contents
-   :local:
-
 Summary
 -------
 

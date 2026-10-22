@@ -8,10 +8,6 @@
 Integrations
 ============
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Coming Soon
 
 .. toctree::

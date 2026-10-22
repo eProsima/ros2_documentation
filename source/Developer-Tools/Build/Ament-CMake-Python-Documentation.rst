@@ -22,10 +22,6 @@ Using ament_cmake_python - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 ``ament_cmake_python`` is a package that provides CMake functions for packages of the ``ament_cmake`` build type that contain Python code.
 See the :doc:`ament_cmake user documentation <Ament-CMake-Documentation>` for more information.
 

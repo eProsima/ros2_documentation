@@ -25,10 +25,6 @@ See also: https://zenoh.io/docs/getting-started/first-app/
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Prerequisites
 -------------
 

@@ -28,10 +28,6 @@ Interfaces
    About-Tf2/About-Tf2
    Working-with-interfaces
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

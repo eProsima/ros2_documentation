@@ -27,10 +27,6 @@ Generating an URDF File — tutorial
 
 **Time:** 5 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Most roboticists work in teams, and often those teams include a mechanical engineer who develops a CAD model of robot.
 Instead of crafting an URDF by hand it is possible to export an URDF model from many different CAD and modeling programs.
 These export tools are often developed by individuals that are familiar with the particular CAD program they use.

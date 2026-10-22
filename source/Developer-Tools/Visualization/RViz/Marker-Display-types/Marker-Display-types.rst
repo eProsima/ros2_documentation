@@ -27,10 +27,6 @@ Using Marker Display Types - tutorial
 
 **Time:** 15 Minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 The Markers display allows programmatic addition of various primitive shapes to the 3D view by sending a

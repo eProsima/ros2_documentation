@@ -16,10 +16,6 @@ Release Schedule
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Frequency
 ---------
 New ROS 2 releases are produced every **every 12 months**.

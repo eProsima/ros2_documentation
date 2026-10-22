@@ -30,10 +30,6 @@ Services are one of the communication types used to exchange data in a ROS syste
 This article walks you through using command-line tools to examine and call services between nodes.
 A hands-on exercise with Turtlesim helps you understand how the call-and-response model works in the ROS graph.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

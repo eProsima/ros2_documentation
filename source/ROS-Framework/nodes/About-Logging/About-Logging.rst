@@ -22,9 +22,6 @@ Logging
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :local:
-
 Logging and logger configuration
 --------------------------------
 
@@ -59,9 +56,10 @@ APIs
 
 These are the APIs that end users of the ROS 2 logging infrastructure should use, split up by client library.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     * ``RCLCPP_{DEBUG,INFO,WARN,ERROR,FATAL}`` - output the given printf-style message every time this line is hit
     * ``RCLCPP_{DEBUG,INFO,WARN,ERROR,FATAL}_ONCE`` - output the given printf-style message only the first time this line is hit
@@ -84,7 +82,8 @@ These are the APIs that end users of the ROS 2 logging infrastructure should use
     * ``rcutils_logging_set_logger_level`` - Set the logging level for a particular logger name to the given severity level
     * ``rcutils_logging_get_logger_effective_level`` - Given a logger name, return the logger level (which may be unset)
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+      :sync: Python
 
     * ``logger.{debug,info,warning,error,fatal}`` - output the given Python string to the logging infrastructure.
       The calls accept the following keyword args to control behavior:
@@ -260,21 +259,24 @@ When using dynamic loading (the default), the ``RCL_LOGGING_IMPLEMENTATION`` env
 Syntax
 ~~~~~~
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       export RCL_LOGGING_IMPLEMENTATION=<implementation_name>
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
        export RCL_LOGGING_IMPLEMENTATION=<implementation_name>
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       export RCL_LOGGING_IMPLEMENTATION=<implementation_name>
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -289,21 +291,10 @@ Available implementations
 Example usage
 ~~~~~~~~~~~~~
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-       # Use spdlog for logging (default behavior)
-       export RCL_LOGGING_IMPLEMENTATION=rcl_logging_spdlog
-       ros2 run demo_nodes_cpp talker
-
-       # Use no-op logging implementation that discards all log messages to the logging backend
-       export RCL_LOGGING_IMPLEMENTATION=rcl_logging_noop
-       ros2 run demo_nodes_cpp talker
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
@@ -315,7 +306,21 @@ Example usage
        export RCL_LOGGING_IMPLEMENTATION=rcl_logging_noop
        ros2 run demo_nodes_cpp talker
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+       # Use spdlog for logging (default behavior)
+       export RCL_LOGGING_IMPLEMENTATION=rcl_logging_spdlog
+       ros2 run demo_nodes_cpp talker
+
+       # Use no-op logging implementation that discards all log messages to the logging backend
+       export RCL_LOGGING_IMPLEMENTATION=rcl_logging_noop
+       ros2 run demo_nodes_cpp talker
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -386,14 +391,16 @@ If the severity level of the macro is greater than or equal to the node severity
 Logging usage
 -------------
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: C++
+  .. tab-item:: C++
+    :sync: C++
 
     * See the `rclcpp logging demo <https://github.com/ros2/demos/tree/{REPOS_FILE_BRANCH}/logging_demo>`_ for some simple examples.
     * See the :doc:`logging demo <../../../Developer-Tools/Introspection-and-analysis/Logging-and-logger-configuration>` for example usage.
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     * See the `rclpy examples <https://github.com/ros2/examples/blob/{REPOS_FILE_BRANCH}/rclpy/services/minimal_client/examples_rclpy_minimal_client/client.py>`__ for example usage of a node's logger.
     * See the `rclpy tests <https://github.com/ros2/rclpy/blob/{REPOS_FILE_BRANCH}/rclpy/test/test_logging.py>`__ for example usage of keyword arguments (e.g. ``skip_first``, ``once``).

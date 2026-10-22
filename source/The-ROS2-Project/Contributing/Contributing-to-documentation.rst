@@ -33,10 +33,6 @@ This article describes where the documentation source lives, how it is structure
    Documentation/Creating-or-updating-documentation
    Documentation/Documentation-guidelines
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

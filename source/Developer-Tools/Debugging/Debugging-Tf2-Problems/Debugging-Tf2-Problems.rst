@@ -25,10 +25,6 @@ Debugging - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 **Goal:** Learn how to use a systematic approach for debugging tf2 related problems.
 
 **Tutorial level:** Intermediate
@@ -105,19 +101,22 @@ to
 And save changes to the file.
 In order to run this demo, we need to create a launch file ``start_tf2_debug_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``launch`` subdirectory of package ``learning_tf2_cpp``:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/start_tf2_debug_demo_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/start_tf2_debug_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/start_tf2_debug_demo_launch.yaml
         :language: yaml
@@ -126,21 +125,24 @@ Don't forget to add the ``turtle_tf2_listener_debug`` executable to the ``CMakeL
 
 Now let's run it to see what happens:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp start_tf2_debug_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp start_tf2_debug_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
@@ -216,9 +218,10 @@ To fix this bug, just replace ``turtle3`` with ``turtle2`` in line 65.
 
 And now stop the running demo, build it, and run it again:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
@@ -228,7 +231,8 @@ And now stop the running demo, build it, and run it again:
         time 1630223704.617054 but the latest data is at time 1630223704.616726, when looking up
         transform from frame [turtle1] to frame [turtle2]
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
@@ -238,7 +242,8 @@ And now stop the running demo, build it, and run it again:
         time 1630223704.617054 but the latest data is at time 1630223704.616726, when looking up
         transform from frame [turtle1] to frame [turtle2]
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 
@@ -288,21 +293,24 @@ In the new code we are asking for the transform between the turtles 100 millisec
 It is usual to use a longer periods, just to make sure that the transform will arrive.
 Stop the demo, build and run:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp start_tf2_debug_demo_launch.xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+    :sync: YAML
 
     .. code-block:: console
 
         $ ros2 launch learning_tf2_cpp start_tf2_debug_demo_launch.yaml
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+    :sync: Python
 
     .. code-block:: console
 

@@ -29,10 +29,6 @@ Configuring service introspection - tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 

@@ -23,10 +23,6 @@ Installing MVSim on Ubuntu - tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 
@@ -53,9 +49,10 @@ Tasks
 
 You can either install the released binary package or build from sources.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Install from ROS binary packages
+    .. tab-item:: Install from ROS binary packages
+        :sync: Install from ROS binary packages
 
         Run the following command in a terminal:
 
@@ -63,7 +60,8 @@ You can either install the released binary package or build from sources.
 
             $ sudo apt install ros-{DISTRO}-mvsim
 
-    .. group-tab:: Build from sources
+    .. tab-item:: Build from sources
+        :sync: Build from sources
 
         Create a ROS 2 workspace if you don't already have one:
 

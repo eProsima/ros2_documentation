@@ -27,10 +27,6 @@ Defining worlds, robots, and sensors - tutorial
 
 **Time:** 30 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 

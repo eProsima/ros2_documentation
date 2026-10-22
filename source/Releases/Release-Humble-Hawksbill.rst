@@ -23,10 +23,6 @@ Humble Hawksbill (``humble``)
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 *Humble Hawksbill* is the eighth release of ROS 2.
 What follows is highlights of the important changes and features in Humble Hawksbill since the last release.
 For a list of all of the changes since Galactic, see the `long form changelog <Humble-Hawksbill-Complete-Changelog>`.
@@ -233,9 +229,10 @@ Similar to launch configurations, now by default, the state of environment varia
 
 For example, in the following launch files the executed processe will echo the value ``1`` (before Humble it would echo ``2``):
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -247,7 +244,8 @@ For example, in the following launch files the executed processe will echo the v
         <executable cmd="echo $FOO" output="screen" shell="true" />
       </launch>
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: python
 
@@ -340,9 +338,10 @@ Passing ROS arguments to node actions
 
 It is now possible to provide `ROS-specific node arguments </Developer-Tools/Introspection-and-analysis/Node-arguments>` directly, without needing to use ``args`` with a leading ``--ros-args`` flag:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -350,7 +349,8 @@ It is now possible to provide `ROS-specific node arguments </Developer-Tools/Int
         <node pkg="demo_nodes_cpp" exec="talker" ros_args="--log-level debug" />
       </launch>
 
-   .. group-tab:: YAML
+   .. tab-item:: YAML
+      :sync: YAML
 
       .. code-block:: yaml
 
@@ -383,9 +383,10 @@ Frontend support for composable nodes
 
 We can now start node containers and load components into them from frontend launch files, for example:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: XML
+   .. tab-item:: XML
+    :sync: XML
 
     .. code-block:: xml
 
@@ -398,7 +399,8 @@ We can now start node containers and load components into them from frontend lau
          </load_composable_node>
        </launch>
 
-   .. group-tab:: YAML
+   .. tab-item:: YAML
+      :sync: YAML
 
       .. code-block:: yaml
 

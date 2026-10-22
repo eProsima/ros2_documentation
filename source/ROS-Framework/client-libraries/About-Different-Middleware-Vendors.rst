@@ -24,9 +24,6 @@ Different ROS 2 middleware vendors
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :local:
-
 ROS 2 supports multiple middleware implementations which provide discovery, serialisation, and transportation communications.
 This flexibility exists because it is not necessarily "one size fits all" when it comes to choosing a middleware vendor/implementation.
 While primarily built on top of DDS/RTPS as its initial middleware foundation, the ROS 2 ecosystem has expanded to include other middleware architectures such as Zenoh.

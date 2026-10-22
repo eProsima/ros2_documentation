@@ -21,10 +21,6 @@ Using variants - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Metapackages do not provide software directly but depend on a group of other related packages to provide a convenient installation mechanism for the complete group of packages.
 [#]_ [#]_
 Variants are a list of official metapackages for commonly useful groups of ROS packages.

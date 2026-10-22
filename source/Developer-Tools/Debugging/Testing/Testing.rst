@@ -22,10 +22,6 @@ Testing with pre-release binaries
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 
 Many ROS packages are provided as pre-built binaries.
 Usually, you will get the released version of binaries when following :doc:`../../../Get-Started/Installation`.
@@ -142,15 +138,17 @@ These packaging jobs produce archives with pre-built binaries that can be downlo
 
 5. To use the binary archive installation, source the ``setup.*`` file that can be found in the root of the archive.
 
-   .. tabs::
+   .. tab-set::
 
-     .. group-tab:: Ubuntu Linux and RHEL
+     .. tab-item:: Ubuntu Linux and RHEL
+       :sync: Ubuntu Linux and RHEL
 
        .. code-block:: console
 
           $ source path/to/extracted/archive/setup.bash
 
-     .. group-tab:: Windows
+     .. tab-item:: Windows
+       :sync: Windows
 
        .. code-block:: console
 

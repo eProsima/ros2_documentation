@@ -30,10 +30,6 @@ Using ``ros2doctor`` to identify issues — tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Summary
 -------
 

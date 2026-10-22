@@ -22,10 +22,6 @@ Building a real-time Linux kernel [community-contributed] - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This tutorial begins with a clean Ubuntu 20.04.1 install on Intel x86_64.
 Actual kernel is 5.4.0-54-generic, but we will install the Latest Stable RT_PREEMPT Version.
 To build the kernel you need at least 30GB free disk space.

@@ -23,10 +23,6 @@ Maintaining ROS Core Packages - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Each package in the ROS 2 core has one or more maintainers that are responsible for the general health of the package.
 This guide gives some information about the responsibilities of a ROS 2 core package maintainer.
 

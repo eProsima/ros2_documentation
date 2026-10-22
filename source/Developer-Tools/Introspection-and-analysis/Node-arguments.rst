@@ -24,10 +24,6 @@ Passing ROS arguments to nodes via the command-line - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 All ROS nodes take a set of arguments that allow various properties to be reconfigured.
 Examples include configuring the name/namespace of the node, topic/service names used, and parameters on the node.
 All ROS-specific arguments have to be specified after a ``--ros-args`` flag:

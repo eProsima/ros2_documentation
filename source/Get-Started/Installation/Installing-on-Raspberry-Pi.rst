@@ -29,10 +29,6 @@ This would mean either installing 64 bit Ubuntu on to the Raspberry Pi, or using
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Ubuntu Linux on Raspberry Pi with binary ROS 2 install
 ------------------------------------------------------
 

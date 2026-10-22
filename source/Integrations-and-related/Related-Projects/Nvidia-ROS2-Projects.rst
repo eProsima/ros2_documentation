@@ -16,10 +16,6 @@ NVIDIA ROS 2 Projects
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 NVIDIA Jetson is working towards developing ROS 2 packages to ease the development of AI applications for robotics.
 
 

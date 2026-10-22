@@ -21,10 +21,6 @@ Release Team / Repository - how-to
     :order: area, contentType, experience
     :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page explains the recommended method of hosting your release repositories on `ros2-gbp <https://github.com/ros2-gbp>`_.
 
 What is ROS 2 GBP?

@@ -28,10 +28,6 @@ Adding a frame (Python) — tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Contents
-   :depth: 3
-   :local:
-
 Background
 ----------
 
@@ -68,21 +64,24 @@ Let's first create the source files.
 Go to the ``learning_tf2_py`` package we created in the previous tutorials.
 Inside the ``src/learning_tf2_py/learning_tf2_py`` directory download the fixed frame broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/fixed_frame_tf2_broadcaster.py
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/fixed_frame_tf2_broadcaster.py
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/fixed_frame_tf2_broadcaster.py
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -178,20 +177,23 @@ Add the following line between the ``'console_scripts':`` brackets:
 Now let's create a launch file for this example.
 With your text editor, create a new file called ``turtle_tf2_fixed_frame_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``src/learning_tf2_py/launch`` directory, check the type (``.py``, ``.xml``, or ``yaml``) of the previous tutorial's launch file and add the following lines:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.py
         :name: turtle_tf2_fixed_frame_demo_launch.py
         :language: python
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.yaml
         :language: yaml
@@ -200,21 +202,24 @@ This launch file imports the required packages and then creates a ``demo_nodes``
 
 The last part of the code will add our fixed ``carrot1`` frame to the turtlesim world using our ``fixed_frame_tf2_broadcaster`` node.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.py
         :language: python
         :lines: 14-18
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.xml
         :language: xml
         :lines: 3-4
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_fixed_frame_demo_launch.yaml
         :language: yaml
@@ -225,39 +230,45 @@ The last part of the code will add our fixed ``carrot1`` frame to the turtlesim 
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -265,21 +276,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     In a Windows command line prompt:
 
@@ -341,21 +355,24 @@ Let's change our ``carrot1`` frame so that it changes relative to ``turtle1`` fr
 Go to the ``learning_tf2_py`` package we created in the previous tutorial.
 Inside the ``src/learning_tf2_py/learning_tf2_py`` directory download the dynamic frame broadcaster code by entering the following command:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
-
-      .. code-block:: console
-
-          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/dynamic_frame_tf2_broadcaster.py
-
-   .. group-tab:: macOS
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/dynamic_frame_tf2_broadcaster.py
 
-   .. group-tab:: Windows
+   .. tab-item:: macOS
+      :sync: macOS
+
+      .. code-block:: console
+
+          $ wget https://raw.githubusercontent.com/ros/geometry_tutorials/{DISTRO}/turtle_tf2_py/turtle_tf2_py/dynamic_frame_tf2_broadcaster.py
+
+   .. tab-item:: Windows
+      :sync: Windows
 
       In a Windows command line prompt:
 
@@ -447,19 +464,22 @@ Add the following line between the ``'console_scripts':`` brackets:
 
 To test this code, create a new launch file ``turtle_tf2_dynamic_frame_demo_launch`` with extension ``.py``, ``.xml``, or ``.yaml`` in the ``src/learning_tf2_py/launch`` directory and check the type (``.py``, ``.xml``, or ``.yaml``) of previous tutorial's launch file and update it in the following code:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Python
+  .. tab-item:: Python
+        :sync: Python
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.py
         :name: turtle_tf2_dynamic_frame_demo_launch.py
 
-  .. group-tab:: XML
+  .. tab-item:: XML
+        :sync: XML
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.xml
         :language: xml
 
-  .. group-tab:: YAML
+  .. tab-item:: YAML
+        :sync: YAML
 
     .. literalinclude:: launch/py_turtle_tf2_dynamic_frame_demo_launch.yaml
         :language: yaml
@@ -470,39 +490,45 @@ To test this code, create a new launch file ``turtle_tf2_dynamic_frame_demo_laun
 
 Run ``rosdep`` in the root of your workspace to check for missing dependencies.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Linux
+   .. tab-item:: Linux
+      :sync: Linux
 
       .. code-block:: console
 
           $ rosdep install -i --from-path src --rosdistro {DISTRO} -y
 
-   .. group-tab:: macOS
+   .. tab-item:: macOS
+        :sync: macOS
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
-   .. group-tab:: Windows
+   .. tab-item:: Windows
+        :sync: Windows
 
         rosdep only runs on Linux, so you will need to install ``geometry_msgs`` and ``turtlesim`` dependencies yourself
 
 Still in the root of your workspace, build your package:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ colcon build --packages-select learning_tf2_py
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ colcon build --packages-select learning_tf2_py
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ colcon build --packages-select learning_tf2_py
+
+  .. tab-item:: Windows
+    :sync: Windows
 
     .. code-block:: console
 
@@ -510,21 +536,24 @@ Still in the root of your workspace, build your package:
 
 Open a new terminal, navigate to the root of your workspace, and source the setup files:
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Linux
-
-    .. code-block:: console
-
-        $ . install/setup.bash
-
-  .. group-tab:: macOS
+  .. tab-item:: Linux
+    :sync: Linux
 
     .. code-block:: console
 
         $ . install/setup.bash
 
-  .. group-tab:: Windows
+  .. tab-item:: macOS
+    :sync: macOS
+
+    .. code-block:: console
+
+        $ . install/setup.bash
+
+  .. tab-item:: Windows
+    :sync: Windows
 
 
     In a Windows command line prompt:

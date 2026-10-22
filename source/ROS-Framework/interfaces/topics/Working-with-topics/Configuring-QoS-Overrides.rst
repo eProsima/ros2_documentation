@@ -23,10 +23,6 @@ Configuring QoS overrides using parameters — tutorial
 
 **Time:** 15 minutes
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 
@@ -59,9 +55,10 @@ To allow users to override QoS settings, the node author must opt in when constr
 This opt-in process does not change the QoS policy itself, but instead provides a way for users to change the policy via a parameter file specified at execution time.
 You can enable default reconfigurable policies (history, depth, and reliability) or specify a custom list of policy kinds with an optional validation callback.
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       In C++, include the ``rclcpp/qos_overriding_options.hpp`` header.
       Set the ``qos_overriding_options`` field on ``rclcpp::PublisherOptions`` or ``rclcpp::SubscriptionOptions``.
@@ -119,7 +116,8 @@ You can enable default reconfigurable policies (history, depth, and reliability)
            rclcpp::Subscription<std_msgs::msg::String>::SharedPtr sub_;
          };
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       In Python, import ``QoSOverridingOptions`` from ``rclpy.qos_overriding_options``.
       Pass ``qos_overriding_options`` when calling ``create_publisher`` or ``create_subscription``.
@@ -277,15 +275,17 @@ Step 1: Inspect default parameters
 
 Start the talker node in a terminal without any parameter overrides:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
          $ ros2 run quality_of_service_demo_py qos_overrides_talker
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       .. code-block:: console
 
@@ -335,15 +335,17 @@ Start the talker and listener passing the parameter file with ``--params-file``:
 
 In terminal 1:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
          $ ros2 run quality_of_service_demo_py qos_overrides_talker --ros-args --params-file qos_overrides.yaml
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       .. code-block:: console
 
@@ -351,15 +353,17 @@ In terminal 1:
 
 In terminal 2:
 
-.. tabs::
+.. tab-set::
 
-   .. group-tab:: Python
+   .. tab-item:: Python
+      :sync: Python
 
       .. code-block:: console
 
          $ ros2 run quality_of_service_demo_py qos_overrides_listener --ros-args --params-file qos_overrides.yaml
 
-   .. group-tab:: C++
+   .. tab-item:: C++
+      :sync: C++
 
       .. code-block:: console
 

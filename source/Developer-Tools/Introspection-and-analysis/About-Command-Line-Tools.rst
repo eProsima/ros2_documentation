@@ -23,10 +23,6 @@ Introspection with command line tools
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 ROS 2 includes a suite of command-line tools for introspecting a ROS 2 system.
 
 Usage

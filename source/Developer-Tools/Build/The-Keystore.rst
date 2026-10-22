@@ -24,10 +24,6 @@ Understanding the security keystore - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 **Goal:** Explore files located in the ROS 2 security keystore.
 
 **Tutorial level:** Advanced
@@ -246,9 +242,10 @@ Begin with a new terminal session and enable security with the keystore created 
 
 Make a backup copy of ``permissions.p7s`` before beginning.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Question 1
+  .. tab-item:: Question 1
+    :sync: Question 1
 
     Open ``permissions.p7s`` in a text editor.
     Make a negligible change to the XML content (e.g., add a space or a blank line) and save the file.
@@ -268,7 +265,8 @@ Make a backup copy of ``permissions.p7s`` before beginning.
 
     What is the difference between launching the listener and launching the talker?
 
-  .. group-tab:: Answer 1
+  .. tab-item:: Answer 1
+    :sync: Answer 1
 
     The listener fails to launch and throws an error.
     When the ``permissions.p7s`` file was modified--however minor--the file's signature became invalid.
@@ -277,13 +275,15 @@ Make a backup copy of ``permissions.p7s`` before beginning.
     The talker will start as expected.
     It uses the ``permissions.p7s`` file in a different enclave, and the file is still valid.
 
-.. tabs::
+.. tab-set::
 
-  .. group-tab:: Question 2
+  .. tab-item:: Question 2
+    :sync: Question 2
 
     What command lets you check to see if the signature on the modified ``permissions.p7s`` file is valid?
 
-  .. group-tab:: Answer 2
+  .. tab-item:: Answer 2
+    :sync: Answer 2
 
     Check that ``permissions.p7s`` has been properly signed by the Permissions CA using the ``openssl smime`` command:
 

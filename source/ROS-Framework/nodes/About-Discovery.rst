@@ -20,9 +20,6 @@ Discovery
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :local:
-
 Discovery of nodes happens automatically through the underlying middleware of ROS 2.
 It can be summarized as follows:
 

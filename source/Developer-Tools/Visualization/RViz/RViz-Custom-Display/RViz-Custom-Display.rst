@@ -21,10 +21,6 @@ Building a Custom RViz Display - tutorial
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 Background
 ----------
 There are many types of data that have existing visualizations in RViz.

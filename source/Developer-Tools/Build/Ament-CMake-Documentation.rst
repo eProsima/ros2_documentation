@@ -23,10 +23,6 @@ Building ROS packages with ament_cmake - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 ``ament_cmake`` is the build system for CMake based packages in ROS 2 (in particular, it will be used for most C/C++ projects).
 It is a set of scripts enhancing CMake and adding convenience functionality for package authors.
 Before using ``ament_cmake``, it is very helpful to know the basics of `CMake <https://cmake.org/cmake/help/v3.8/>`__.
@@ -133,9 +129,10 @@ Adding targets
 In CMake nomenclature, ``targets`` are the artifacts that this project will create.
 Either libraries or executables can be created, and a single project can contain zero or many of each of them.
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Libraries
+    .. tab-item:: Libraries
+        :sync: Libraries
 
         These are created with a call to ``add_library``, which should contain both the name of the target and the source files that should be compiled to create the library.
 
@@ -182,7 +179,8 @@ Either libraries or executables can be created, and a single project can contain
 
             For more details, see :ref:`Windows Symbol Visibility in the Windows Tips and Tricks document <Windows_Symbol_Visibility>`.
 
-    .. group-tab:: Executables
+    .. tab-item:: Executables
+        :sync: Executables
 
         These should be created with a call to ``add_executable``, which should contain both the name of the target and the source files that should be compiled to create the executable.
         The executable may also have to be linked with any libraries created in this package by using ``target_link_libraries``.
@@ -208,9 +206,10 @@ As an example, suppose we want to link ``my_library`` against the linear algebra
 Installing
 ^^^^^^^^^^
 
-.. tabs::
+.. tab-set::
 
-    .. group-tab:: Libraries
+    .. tab-item:: Libraries
+        :sync: Libraries
 
         When building a reusable library, some information needs to be exported for downstream packages to easily use it.
 
@@ -280,7 +279,8 @@ Installing
         Some of the macros can take different types of arguments for non-target exports, but since the recommended way for modern Make is to use targets, we will not cover them here.
         Documentation of these options can be found in the source code itself.
 
-    .. group-tab:: Executables
+    .. tab-item:: Executables
+        :sync: Executables
 
         When installing an executable, the following stanza *must be followed exactly* for the rest of the ROS tooling to find it:
 

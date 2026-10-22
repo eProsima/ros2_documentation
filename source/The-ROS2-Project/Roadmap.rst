@@ -22,10 +22,6 @@ Roadmap
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page describes planned work for ROS 2.
 The set of planned features and development efforts should provide insight into the overall direction of ROS 2.
 If you would like to see other features on the roadmap, please get in touch with us at info@openrobotics.org.

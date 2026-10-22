@@ -20,10 +20,6 @@ ROS 2 adopters
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Table of Contents
-   :depth: 2
-   :local:
-
 This page showcases organizations and projects using ROS in any capacity.
 It is a community-maintained, self-reported directory.
 If you use ROS, we encourage you to add your project.

@@ -17,10 +17,6 @@ Using ``rosidl::Buffer`` backends - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 Overview
 --------
 

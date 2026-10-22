@@ -21,10 +21,6 @@ Installing latest development (source) - how-to
    :order: area, contentType, experience
    :labels: area=Area, contentType=Content type, experience=Level
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 If you plan to contribute directly to the latest ROS development, you can install ROS by building it from source or installing testing binaries.
 This will give you the latest bug fixes and features.
 

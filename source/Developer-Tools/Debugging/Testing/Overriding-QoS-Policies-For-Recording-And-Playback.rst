@@ -27,10 +27,6 @@ rosbag2: Overriding Quality of Service (QoS) Policies - how-to
 
 **Goal:** Override Ros2Bag QoS profile settings for recording and playback.
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 Background
 ----------

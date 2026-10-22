@@ -40,10 +40,6 @@ Client libraries are the APIs that allow you to implement your ROS code.
 This article explains ``rcl``, the shared core library, and the main C++ and Python client libraries.
 With this information, you can choose the right library for your language and understand how nodes written in different languages work together.
 
-.. contents:: Contents
-    :depth: 2
-    :local:
-
 Summary
 -------
 

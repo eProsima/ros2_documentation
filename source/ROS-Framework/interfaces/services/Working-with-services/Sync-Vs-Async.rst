@@ -29,10 +29,6 @@ Synchronous vs. asynchronous service clients — tutorial
 
 **Time:** 10 minutes
 
-.. contents:: Contents
-   :depth: 2
-   :local:
-
 
 Introduction
 ------------
