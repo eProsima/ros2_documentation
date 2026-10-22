@@ -11,6 +11,8 @@
    :distribution: {DISTRO}
    :product: {PRODUCT}
 
+.. _ros2-advanced-tutorial-fastdds-discovery-server:
+
 Using Fast DDS Discovery Server as discovery protocol [community-contributed] - tutorial
 ========================================================================================
 

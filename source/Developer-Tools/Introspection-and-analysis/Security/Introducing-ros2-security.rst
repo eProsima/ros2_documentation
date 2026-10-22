@@ -155,6 +155,8 @@ Files in the keystore will be used to enable security for all the participants i
       $ cd sros2_demo
       $ ros2 security create_keystore demo_keystore
 
+.. _ros2_security_generate_keys_and_certificates:
+
 3) Generate keys and certificates
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 

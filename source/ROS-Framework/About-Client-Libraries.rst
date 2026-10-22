@@ -13,6 +13,8 @@
    :distribution: {DISTRO}
    :product: {PRODUCT}
 
+.. _ros-2-client-libraries:
+
 Client libraries
 ================
 

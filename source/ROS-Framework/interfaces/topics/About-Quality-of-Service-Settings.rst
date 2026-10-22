@@ -11,6 +11,8 @@
     Concepts/About-Quality-of-Service-Settings
     Concepts/Intermediate/About-Quality-of-Service-Settings
 
+.. _concepts_about_qos:
+
 Quality of Service settings
 ===========================
 

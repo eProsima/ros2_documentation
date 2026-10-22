@@ -10,6 +10,8 @@
     Tutorials/Content-Filtering-Subscription
     Tutorials/Demos/Content-Filtering-Subscription
 
+.. _content_filtering_subscription_tutorial:
+
 Creating a content filtering subscription — tutorial
 ====================================================
 

@@ -11,6 +11,8 @@
     Concepts/About-Different-Middleware-Vendors
     Concepts/Intermediate/About-Different-Middleware-Vendors
 
+.. _concepts_ros2_vendors:
+
 Different ROS 2 middleware vendors
 ==================================
 
