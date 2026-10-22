@@ -24,6 +24,7 @@ roman-numerals-py==3.1.0
 snowballstemmer==3.0.1
 Sphinx==8.2.3
 sphinx-copybutton==0.5.2
+sphinx-design==0.6.1
 sphinx-lint==1.0.0
 sphinx-multiversion==0.2.4
 sphinx-rtd-theme==3.0.2

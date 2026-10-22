@@ -95,6 +95,7 @@ extensions = [
     'short_description',
     'showmeta',
     'ros_related_articles',
+    'sphinx_design',
 ]
 
 # Intersphinx mapping
